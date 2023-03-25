@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CBA858AB29CF77CF00D863CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA858AA29CF77CF00D863CC /* AppDelegate.swift */; };
+		CBA858AD29CF77CF00D863CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA858AC29CF77CF00D863CC /* SceneDelegate.swift */; };
+		CBA858AF29CF77CF00D863CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA858AE29CF77CF00D863CC /* ViewController.swift */; };
+		CBA858B229CF77CF00D863CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBA858B029CF77CF00D863CC /* Main.storyboard */; };
+		CBA858B429CF77D100D863CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBA858B329CF77D100D863CC /* Assets.xcassets */; };
+		CBA858B729CF77D200D863CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBA858B529CF77D200D863CC /* LaunchScreen.storyboard */; };
+		CBA858C229CF77D200D863CC /* cosci_activity_kpiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA858C129CF77D200D863CC /* cosci_activity_kpiTests.swift */; };
+		CBA858CC29CF77D200D863CC /* cosci_activity_kpiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA858CB29CF77D200D863CC /* cosci_activity_kpiUITests.swift */; };
+		CBA858CE29CF77D200D863CC /* cosci_activity_kpiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA858CD29CF77D200D863CC /* cosci_activity_kpiUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CBA858BE29CF77D200D863CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBA8589F29CF77CF00D863CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBA858A629CF77CF00D863CC;
+			remoteInfo = "cosci-activity-kpi";
+		};
+		CBA858C829CF77D200D863CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBA8589F29CF77CF00D863CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBA858A629CF77CF00D863CC;
+			remoteInfo = "cosci-activity-kpi";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CBA858A729CF77CF00D863CC /* cosci-activity-kpi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cosci-activity-kpi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBA858AA29CF77CF00D863CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CBA858AC29CF77CF00D863CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CBA858AE29CF77CF00D863CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CBA858B129CF77CF00D863CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CBA858B329CF77D100D863CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CBA858B629CF77D200D863CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CBA858B829CF77D200D863CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBA858BD29CF77D200D863CC /* cosci-activity-kpiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cosci-activity-kpiTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBA858C129CF77D200D863CC /* cosci_activity_kpiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cosci_activity_kpiTests.swift; sourceTree = "<group>"; };
+		CBA858C729CF77D200D863CC /* cosci-activity-kpiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cosci-activity-kpiUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBA858CB29CF77D200D863CC /* cosci_activity_kpiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cosci_activity_kpiUITests.swift; sourceTree = "<group>"; };
+		CBA858CD29CF77D200D863CC /* cosci_activity_kpiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cosci_activity_kpiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CBA858A429CF77CF00D863CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBA858BA29CF77D200D863CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBA858C429CF77D200D863CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CBA8589E29CF77CF00D863CC = {
+			isa = PBXGroup;
+			children = (
+				CBA858A929CF77CF00D863CC /* cosci-activity-kpi */,
+				CBA858C029CF77D200D863CC /* cosci-activity-kpiTests */,
+				CBA858CA29CF77D200D863CC /* cosci-activity-kpiUITests */,
+				CBA858A829CF77CF00D863CC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CBA858A829CF77CF00D863CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBA858A729CF77CF00D863CC /* cosci-activity-kpi.app */,
+				CBA858BD29CF77D200D863CC /* cosci-activity-kpiTests.xctest */,
+				CBA858C729CF77D200D863CC /* cosci-activity-kpiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CBA858A929CF77CF00D863CC /* cosci-activity-kpi */ = {
+			isa = PBXGroup;
+			children = (
+				CBA858AA29CF77CF00D863CC /* AppDelegate.swift */,
+				CBA858AC29CF77CF00D863CC /* SceneDelegate.swift */,
+				CBA858AE29CF77CF00D863CC /* ViewController.swift */,
+				CBA858B029CF77CF00D863CC /* Main.storyboard */,
+				CBA858B329CF77D100D863CC /* Assets.xcassets */,
+				CBA858B529CF77D200D863CC /* LaunchScreen.storyboard */,
+				CBA858B829CF77D200D863CC /* Info.plist */,
+			);
+			path = "cosci-activity-kpi";
+			sourceTree = "<group>";
+		};
+		CBA858C029CF77D200D863CC /* cosci-activity-kpiTests */ = {
+			isa = PBXGroup;
+			children = (
+				CBA858C129CF77D200D863CC /* cosci_activity_kpiTests.swift */,
+			);
+			path = "cosci-activity-kpiTests";
+			sourceTree = "<group>";
+		};
+		CBA858CA29CF77D200D863CC /* cosci-activity-kpiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CBA858CB29CF77D200D863CC /* cosci_activity_kpiUITests.swift */,
+				CBA858CD29CF77D200D863CC /* cosci_activity_kpiUITestsLaunchTests.swift */,
+			);
+			path = "cosci-activity-kpiUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CBA858A629CF77CF00D863CC /* cosci-activity-kpi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBA858D129CF77D200D863CC /* Build configuration list for PBXNativeTarget "cosci-activity-kpi" */;
+			buildPhases = (
+				CBA858A329CF77CF00D863CC /* Sources */,
+				CBA858A429CF77CF00D863CC /* Frameworks */,
+				CBA858A529CF77CF00D863CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "cosci-activity-kpi";
+			productName = "cosci-activity-kpi";
+			productReference = CBA858A729CF77CF00D863CC /* cosci-activity-kpi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CBA858BC29CF77D200D863CC /* cosci-activity-kpiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBA858D429CF77D200D863CC /* Build configuration list for PBXNativeTarget "cosci-activity-kpiTests" */;
+			buildPhases = (
+				CBA858B929CF77D200D863CC /* Sources */,
+				CBA858BA29CF77D200D863CC /* Frameworks */,
+				CBA858BB29CF77D200D863CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBA858BF29CF77D200D863CC /* PBXTargetDependency */,
+			);
+			name = "cosci-activity-kpiTests";
+			productName = "cosci-activity-kpiTests";
+			productReference = CBA858BD29CF77D200D863CC /* cosci-activity-kpiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CBA858C629CF77D200D863CC /* cosci-activity-kpiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBA858D729CF77D200D863CC /* Build configuration list for PBXNativeTarget "cosci-activity-kpiUITests" */;
+			buildPhases = (
+				CBA858C329CF77D200D863CC /* Sources */,
+				CBA858C429CF77D200D863CC /* Frameworks */,
+				CBA858C529CF77D200D863CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBA858C929CF77D200D863CC /* PBXTargetDependency */,
+			);
+			name = "cosci-activity-kpiUITests";
+			productName = "cosci-activity-kpiUITests";
+			productReference = CBA858C729CF77D200D863CC /* cosci-activity-kpiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CBA8589F29CF77CF00D863CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					CBA858A629CF77CF00D863CC = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					CBA858BC29CF77D200D863CC = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = CBA858A629CF77CF00D863CC;
+					};
+					CBA858C629CF77D200D863CC = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = CBA858A629CF77CF00D863CC;
+					};
+				};
+			};
+			buildConfigurationList = CBA858A229CF77CF00D863CC /* Build configuration list for PBXProject "cosci-activity-kpi" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CBA8589E29CF77CF00D863CC;
+			productRefGroup = CBA858A829CF77CF00D863CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CBA858A629CF77CF00D863CC /* cosci-activity-kpi */,
+				CBA858BC29CF77D200D863CC /* cosci-activity-kpiTests */,
+				CBA858C629CF77D200D863CC /* cosci-activity-kpiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CBA858A529CF77CF00D863CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBA858B729CF77D200D863CC /* LaunchScreen.storyboard in Resources */,
+				CBA858B429CF77D100D863CC /* Assets.xcassets in Resources */,
+				CBA858B229CF77CF00D863CC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBA858BB29CF77D200D863CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBA858C529CF77D200D863CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CBA858A329CF77CF00D863CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBA858AF29CF77CF00D863CC /* ViewController.swift in Sources */,
+				CBA858AB29CF77CF00D863CC /* AppDelegate.swift in Sources */,
+				CBA858AD29CF77CF00D863CC /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBA858B929CF77D200D863CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBA858C229CF77D200D863CC /* cosci_activity_kpiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBA858C329CF77D200D863CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBA858CE29CF77D200D863CC /* cosci_activity_kpiUITestsLaunchTests.swift in Sources */,
+				CBA858CC29CF77D200D863CC /* cosci_activity_kpiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CBA858BF29CF77D200D863CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBA858A629CF77CF00D863CC /* cosci-activity-kpi */;
+			targetProxy = CBA858BE29CF77D200D863CC /* PBXContainerItemProxy */;
+		};
+		CBA858C929CF77D200D863CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBA858A629CF77CF00D863CC /* cosci-activity-kpi */;
+			targetProxy = CBA858C829CF77D200D863CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CBA858B029CF77CF00D863CC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBA858B129CF77CF00D863CC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CBA858B529CF77D200D863CC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBA858B629CF77D200D863CC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CBA858CF29CF77D200D863CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CBA858D029CF77D200D863CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CBA858D229CF77D200D863CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "cosci-activity-kpi/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Parisut.Nattapon.cosci-activity-kpi";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CBA858D329CF77D200D863CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "cosci-activity-kpi/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Parisut.Nattapon.cosci-activity-kpi";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CBA858D529CF77D200D863CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Parisut.Nattapon.cosci-activity-kpiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cosci-activity-kpi.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/cosci-activity-kpi";
+			};
+			name = Debug;
+		};
+		CBA858D629CF77D200D863CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Parisut.Nattapon.cosci-activity-kpiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cosci-activity-kpi.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/cosci-activity-kpi";
+			};
+			name = Release;
+		};
+		CBA858D829CF77D200D863CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Parisut.Nattapon.cosci-activity-kpiUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "cosci-activity-kpi";
+			};
+			name = Debug;
+		};
+		CBA858D929CF77D200D863CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Parisut.Nattapon.cosci-activity-kpiUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "cosci-activity-kpi";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CBA858A229CF77CF00D863CC /* Build configuration list for PBXProject "cosci-activity-kpi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBA858CF29CF77D200D863CC /* Debug */,
+				CBA858D029CF77D200D863CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBA858D129CF77D200D863CC /* Build configuration list for PBXNativeTarget "cosci-activity-kpi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBA858D229CF77D200D863CC /* Debug */,
+				CBA858D329CF77D200D863CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBA858D429CF77D200D863CC /* Build configuration list for PBXNativeTarget "cosci-activity-kpiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBA858D529CF77D200D863CC /* Debug */,
+				CBA858D629CF77D200D863CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBA858D729CF77D200D863CC /* Build configuration list for PBXNativeTarget "cosci-activity-kpiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBA858D829CF77D200D863CC /* Debug */,
+				CBA858D929CF77D200D863CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CBA8589F29CF77CF00D863CC /* Project object */;
+}
