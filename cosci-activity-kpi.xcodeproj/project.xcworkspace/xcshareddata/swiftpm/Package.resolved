@@ -17,6 +17,15 @@
         "revision" : "7918a343e674c7707e0be120bb4e21d679be014c",
         "version" : "3.0.1"
       }
+    },
+    {
+      "identity" : "swiftyrsa",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/TakeScoop/SwiftyRSA",
+      "state" : {
+        "revision" : "6521919ad0e99dff927685f142d8136479acb452",
+        "version" : "1.8.0"
+      }
     }
   ],
   "version" : 2

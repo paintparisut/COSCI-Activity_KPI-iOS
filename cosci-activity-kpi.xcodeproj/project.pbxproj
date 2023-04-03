@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9834152E87C08DB26AFF1547 /* Pods_cosci_activity_kpi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC7168CE2210A531250C52F4 /* Pods_cosci_activity_kpi.framework */; };
 		CB44AAEF29DB6B3A00D5B85D /* JWTDecode in Frameworks */ = {isa = PBXBuildFile; productRef = CB44AAEE29DB6B3A00D5B85D /* JWTDecode */; };
+		CB96591129DB798100FF309A /* SwiftyRSA in Frameworks */ = {isa = PBXBuildFile; productRef = CB96591029DB798100FF309A /* SwiftyRSA */; };
 		CBA2E1D729D5F3130078E722 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA2E1D629D5F3130078E722 /* Error.swift */; };
 		CBA2E1DB29D5F9AC0078E722 /* TacherUploadedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA2E1DA29D5F9AC0078E722 /* TacherUploadedViewController.swift */; };
 		CBA858AB29CF77CF00D863CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA858AA29CF77CF00D863CC /* AppDelegate.swift */; };
@@ -53,6 +55,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C6AE3BD004149EF24D1B4B3 /* Pods-cosci-activity-kpi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cosci-activity-kpi.release.xcconfig"; path = "Target Support Files/Pods-cosci-activity-kpi/Pods-cosci-activity-kpi.release.xcconfig"; sourceTree = "<group>"; };
+		BCFEA599D662EF261B5FD67D /* Pods-cosci-activity-kpi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cosci-activity-kpi.debug.xcconfig"; path = "Target Support Files/Pods-cosci-activity-kpi/Pods-cosci-activity-kpi.debug.xcconfig"; sourceTree = "<group>"; };
 		CBA2E1D629D5F3130078E722 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		CBA2E1DA29D5F9AC0078E722 /* TacherUploadedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TacherUploadedViewController.swift; sourceTree = "<group>"; };
 		CBA858A729CF77CF00D863CC /* cosci-activity-kpi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cosci-activity-kpi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +85,7 @@
 		CBA858F929CF790D00D863CC /* studentUploadedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studentUploadedModel.swift; sourceTree = "<group>"; };
 		CBA858FB29CF791F00D863CC /* teacherRegisteredModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teacherRegisteredModel.swift; sourceTree = "<group>"; };
 		CBA858FD29CF793100D863CC /* teacherUploadedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teacherUploadedModel.swift; sourceTree = "<group>"; };
+		EC7168CE2210A531250C52F4 /* Pods_cosci_activity_kpi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cosci_activity_kpi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +94,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB44AAEF29DB6B3A00D5B85D /* JWTDecode in Frameworks */,
+				CB96591129DB798100FF309A /* SwiftyRSA in Frameworks */,
 				CBA8590129D045C700D863CC /* Alamofire in Frameworks */,
+				9834152E87C08DB26AFF1547 /* Pods_cosci_activity_kpi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +117,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10DD3BB20824E1D471239338 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BCFEA599D662EF261B5FD67D /* Pods-cosci-activity-kpi.debug.xcconfig */,
+				4C6AE3BD004149EF24D1B4B3 /* Pods-cosci-activity-kpi.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9A205F8A4B6614A7C319D8F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC7168CE2210A531250C52F4 /* Pods_cosci_activity_kpi.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CBA8589E29CF77CF00D863CC = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +141,8 @@
 				CBA858C029CF77D200D863CC /* cosci-activity-kpiTests */,
 				CBA858CA29CF77D200D863CC /* cosci-activity-kpiUITests */,
 				CBA858A829CF77CF00D863CC /* Products */,
+				10DD3BB20824E1D471239338 /* Pods */,
+				9A205F8A4B6614A7C319D8F4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -239,9 +265,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CBA858D129CF77D200D863CC /* Build configuration list for PBXNativeTarget "cosci-activity-kpi" */;
 			buildPhases = (
+				F64482FED63E02F61706C159 /* [CP] Check Pods Manifest.lock */,
 				CBA858A329CF77CF00D863CC /* Sources */,
 				CBA858A429CF77CF00D863CC /* Frameworks */,
 				CBA858A529CF77CF00D863CC /* Resources */,
+				FF7BFA2FA1EA83F491273F42 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -251,6 +279,7 @@
 			packageProductDependencies = (
 				CBA8590029D045C700D863CC /* Alamofire */,
 				CB44AAEE29DB6B3A00D5B85D /* JWTDecode */,
+				CB96591029DB798100FF309A /* SwiftyRSA */,
 			);
 			productName = "cosci-activity-kpi";
 			productReference = CBA858A729CF77CF00D863CC /* cosci-activity-kpi.app */;
@@ -327,6 +356,7 @@
 			packageReferences = (
 				CBA858FF29D045C700D863CC /* XCRemoteSwiftPackageReference "Alamofire" */,
 				CB44AAED29DB6B3A00D5B85D /* XCRemoteSwiftPackageReference "JWTDecode" */,
+				CB96590F29DB798100FF309A /* XCRemoteSwiftPackageReference "SwiftyRSA" */,
 			);
 			productRefGroup = CBA858A829CF77CF00D863CC /* Products */;
 			projectDirPath = "";
@@ -365,6 +395,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F64482FED63E02F61706C159 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-cosci-activity-kpi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF7BFA2FA1EA83F491273F42 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-cosci-activity-kpi/Pods-cosci-activity-kpi-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-cosci-activity-kpi/Pods-cosci-activity-kpi-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-cosci-activity-kpi/Pods-cosci-activity-kpi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CBA858A329CF77CF00D863CC /* Sources */ = {
@@ -560,6 +632,7 @@
 		};
 		CBA858D229CF77D200D863CC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCFEA599D662EF261B5FD67D /* Pods-cosci-activity-kpi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -587,6 +660,7 @@
 		};
 		CBA858D329CF77D200D863CC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C6AE3BD004149EF24D1B4B3 /* Pods-cosci-activity-kpi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -734,6 +808,14 @@
 				minimumVersion = 3.0.0;
 			};
 		};
+		CB96590F29DB798100FF309A /* XCRemoteSwiftPackageReference "SwiftyRSA" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TakeScoop/SwiftyRSA";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		CBA858FF29D045C700D863CC /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -749,6 +831,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CB44AAED29DB6B3A00D5B85D /* XCRemoteSwiftPackageReference "JWTDecode" */;
 			productName = JWTDecode;
+		};
+		CB96591029DB798100FF309A /* SwiftyRSA */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB96590F29DB798100FF309A /* XCRemoteSwiftPackageReference "SwiftyRSA" */;
+			productName = SwiftyRSA;
 		};
 		CBA8590029D045C700D863CC /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;

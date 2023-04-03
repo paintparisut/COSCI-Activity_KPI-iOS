@@ -1,0 +1,30 @@
+PODS:
+  - Alamofire (5.6.4)
+  - JWTDecode (2.6.3)
+  - Kingfisher (7.6.2)
+  - SwiftyRSA (1.7.0):
+    - SwiftyRSA/ObjC (= 1.7.0)
+  - SwiftyRSA/ObjC (1.7.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - JWTDecode (~> 2.6)
+  - Kingfisher (~> 7.0)
+  - SwiftyRSA
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - JWTDecode
+    - Kingfisher
+    - SwiftyRSA
+
+SPEC CHECKSUMS:
+  Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
+  JWTDecode: 33e5e26e5ddbd21b2065820894c08fef0cad9509
+  Kingfisher: 6c5449c6450c5239166510ba04afe374a98afc4f
+  SwiftyRSA: 8c6dd1ea7db1b8dc4fb517a202f88bb1354bc2c6
+
+PODFILE CHECKSUM: bb1eb078e3583e88b20e269d2a734af49990ebf0
+
+COCOAPODS: 1.12.0
