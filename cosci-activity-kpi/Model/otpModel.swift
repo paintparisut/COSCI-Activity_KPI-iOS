@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+struct otpModel : Codable {
+    
+    let email: String?
+    let otp: String?
+    let expired: String?
+    let created: String?
+    
+}

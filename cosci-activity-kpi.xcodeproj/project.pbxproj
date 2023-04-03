@@ -7,15 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB44AAEF29DB6B3A00D5B85D /* JWTDecode in Frameworks */ = {isa = PBXBuildFile; productRef = CB44AAEE29DB6B3A00D5B85D /* JWTDecode */; };
+		CBA2E1D729D5F3130078E722 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA2E1D629D5F3130078E722 /* Error.swift */; };
+		CBA2E1DB29D5F9AC0078E722 /* TacherUploadedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA2E1DA29D5F9AC0078E722 /* TacherUploadedViewController.swift */; };
 		CBA858AB29CF77CF00D863CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA858AA29CF77CF00D863CC /* AppDelegate.swift */; };
 		CBA858AD29CF77CF00D863CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA858AC29CF77CF00D863CC /* SceneDelegate.swift */; };
-		CBA858AF29CF77CF00D863CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA858AE29CF77CF00D863CC /* ViewController.swift */; };
 		CBA858B229CF77CF00D863CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBA858B029CF77CF00D863CC /* Main.storyboard */; };
 		CBA858B429CF77D100D863CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBA858B329CF77D100D863CC /* Assets.xcassets */; };
 		CBA858B729CF77D200D863CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBA858B529CF77D200D863CC /* LaunchScreen.storyboard */; };
 		CBA858C229CF77D200D863CC /* cosci_activity_kpiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA858C129CF77D200D863CC /* cosci_activity_kpiTests.swift */; };
 		CBA858CC29CF77D200D863CC /* cosci_activity_kpiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA858CB29CF77D200D863CC /* cosci_activity_kpiUITests.swift */; };
 		CBA858CE29CF77D200D863CC /* cosci_activity_kpiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA858CD29CF77D200D863CC /* cosci_activity_kpiUITestsLaunchTests.swift */; };
+		CBA858E729CF781E00D863CC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA858DE29CF781E00D863CC /* Constants.swift */; };
+		CBA858E829CF781E00D863CC /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA858E029CF781E00D863CC /* AuthViewModel.swift */; };
+		CBA858E929CF781E00D863CC /* ExtensionsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA858E229CF781E00D863CC /* ExtensionsHelper.swift */; };
+		CBA858EA29CF781E00D863CC /* AuthForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA858E429CF781E00D863CC /* AuthForm.swift */; };
+		CBA858EB29CF781E00D863CC /* OTPVerifyForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA858E529CF781E00D863CC /* OTPVerifyForm.swift */; };
+		CBA858EC29CF781E00D863CC /* AppUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA858E629CF781E00D863CC /* AppUtils.swift */; };
+		CBA858F029CF78B700D863CC /* eventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA858EF29CF78B700D863CC /* eventModel.swift */; };
+		CBA858F229CF78C600D863CC /* fileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA858F129CF78C600D863CC /* fileModel.swift */; };
+		CBA858F429CF78D700D863CC /* otpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA858F329CF78D700D863CC /* otpModel.swift */; };
+		CBA858F629CF78E700D863CC /* requestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA858F529CF78E600D863CC /* requestModel.swift */; };
+		CBA858F829CF78FA00D863CC /* studentRegisteredModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA858F729CF78FA00D863CC /* studentRegisteredModel.swift */; };
+		CBA858FA29CF790D00D863CC /* studentUploadedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA858F929CF790D00D863CC /* studentUploadedModel.swift */; };
+		CBA858FC29CF791F00D863CC /* teacherRegisteredModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA858FB29CF791F00D863CC /* teacherRegisteredModel.swift */; };
+		CBA858FE29CF793100D863CC /* teacherUploadedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA858FD29CF793100D863CC /* teacherUploadedModel.swift */; };
+		CBA8590129D045C700D863CC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CBA8590029D045C700D863CC /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +53,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CBA2E1D629D5F3130078E722 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		CBA2E1DA29D5F9AC0078E722 /* TacherUploadedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TacherUploadedViewController.swift; sourceTree = "<group>"; };
 		CBA858A729CF77CF00D863CC /* cosci-activity-kpi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cosci-activity-kpi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBA858AA29CF77CF00D863CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBA858AC29CF77CF00D863CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CBA858AE29CF77CF00D863CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CBA858B129CF77CF00D863CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CBA858B329CF77D100D863CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBA858B629CF77D200D863CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +67,20 @@
 		CBA858C729CF77D200D863CC /* cosci-activity-kpiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cosci-activity-kpiUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBA858CB29CF77D200D863CC /* cosci_activity_kpiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cosci_activity_kpiUITests.swift; sourceTree = "<group>"; };
 		CBA858CD29CF77D200D863CC /* cosci_activity_kpiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cosci_activity_kpiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CBA858DE29CF781E00D863CC /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CBA858E029CF781E00D863CC /* AuthViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		CBA858E229CF781E00D863CC /* ExtensionsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionsHelper.swift; sourceTree = "<group>"; };
+		CBA858E429CF781E00D863CC /* AuthForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthForm.swift; sourceTree = "<group>"; };
+		CBA858E529CF781E00D863CC /* OTPVerifyForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPVerifyForm.swift; sourceTree = "<group>"; };
+		CBA858E629CF781E00D863CC /* AppUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUtils.swift; sourceTree = "<group>"; };
+		CBA858EF29CF78B700D863CC /* eventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eventModel.swift; sourceTree = "<group>"; };
+		CBA858F129CF78C600D863CC /* fileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fileModel.swift; sourceTree = "<group>"; };
+		CBA858F329CF78D700D863CC /* otpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = otpModel.swift; sourceTree = "<group>"; };
+		CBA858F529CF78E600D863CC /* requestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = requestModel.swift; sourceTree = "<group>"; };
+		CBA858F729CF78FA00D863CC /* studentRegisteredModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studentRegisteredModel.swift; sourceTree = "<group>"; };
+		CBA858F929CF790D00D863CC /* studentUploadedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studentUploadedModel.swift; sourceTree = "<group>"; };
+		CBA858FB29CF791F00D863CC /* teacherRegisteredModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teacherRegisteredModel.swift; sourceTree = "<group>"; };
+		CBA858FD29CF793100D863CC /* teacherUploadedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teacherUploadedModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +88,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB44AAEF29DB6B3A00D5B85D /* JWTDecode in Frameworks */,
+				CBA8590129D045C700D863CC /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,9 +133,13 @@
 		CBA858A929CF77CF00D863CC /* cosci-activity-kpi */ = {
 			isa = PBXGroup;
 			children = (
+				CBA858DD29CF781E00D863CC /* Services */,
+				CBA858E129CF781E00D863CC /* Utilities */,
+				CBA858DF29CF781E00D863CC /* ViewModel */,
+				CBA858DA29CF77F800D863CC /* Model */,
 				CBA858AA29CF77CF00D863CC /* AppDelegate.swift */,
 				CBA858AC29CF77CF00D863CC /* SceneDelegate.swift */,
-				CBA858AE29CF77CF00D863CC /* ViewController.swift */,
+				CBA858ED29CF787B00D863CC /* View */,
 				CBA858B029CF77CF00D863CC /* Main.storyboard */,
 				CBA858B329CF77D100D863CC /* Assets.xcassets */,
 				CBA858B529CF77D200D863CC /* LaunchScreen.storyboard */,
@@ -127,6 +165,73 @@
 			path = "cosci-activity-kpiUITests";
 			sourceTree = "<group>";
 		};
+		CBA858DA29CF77F800D863CC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CBA858EF29CF78B700D863CC /* eventModel.swift */,
+				CBA858F129CF78C600D863CC /* fileModel.swift */,
+				CBA858F329CF78D700D863CC /* otpModel.swift */,
+				CBA858F529CF78E600D863CC /* requestModel.swift */,
+				CBA858F729CF78FA00D863CC /* studentRegisteredModel.swift */,
+				CBA858F929CF790D00D863CC /* studentUploadedModel.swift */,
+				CBA858FB29CF791F00D863CC /* teacherRegisteredModel.swift */,
+				CBA858FD29CF793100D863CC /* teacherUploadedModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CBA858DD29CF781E00D863CC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CBA858DE29CF781E00D863CC /* Constants.swift */,
+				CBA2E1D629D5F3130078E722 /* Error.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CBA858DF29CF781E00D863CC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CBA858E029CF781E00D863CC /* AuthViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CBA858E129CF781E00D863CC /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CBA858E229CF781E00D863CC /* ExtensionsHelper.swift */,
+				CBA858E329CF781E00D863CC /* Form */,
+				CBA858E629CF781E00D863CC /* AppUtils.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		CBA858E329CF781E00D863CC /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				CBA858E429CF781E00D863CC /* AuthForm.swift */,
+				CBA858E529CF781E00D863CC /* OTPVerifyForm.swift */,
+			);
+			path = Form;
+			sourceTree = "<group>";
+		};
+		CBA858ED29CF787B00D863CC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CBA2E1DA29D5F9AC0078E722 /* TacherUploadedViewController.swift */,
+				CBA858EE29CF788200D863CC /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CBA858EE29CF788200D863CC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +248,10 @@
 			dependencies = (
 			);
 			name = "cosci-activity-kpi";
+			packageProductDependencies = (
+				CBA8590029D045C700D863CC /* Alamofire */,
+				CB44AAEE29DB6B3A00D5B85D /* JWTDecode */,
+			);
 			productName = "cosci-activity-kpi";
 			productReference = CBA858A729CF77CF00D863CC /* cosci-activity-kpi.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +324,10 @@
 				Base,
 			);
 			mainGroup = CBA8589E29CF77CF00D863CC;
+			packageReferences = (
+				CBA858FF29D045C700D863CC /* XCRemoteSwiftPackageReference "Alamofire" */,
+				CB44AAED29DB6B3A00D5B85D /* XCRemoteSwiftPackageReference "JWTDecode" */,
+			);
 			productRefGroup = CBA858A829CF77CF00D863CC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,9 +371,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBA858AF29CF77CF00D863CC /* ViewController.swift in Sources */,
+				CBA858FA29CF790D00D863CC /* studentUploadedModel.swift in Sources */,
+				CBA858E729CF781E00D863CC /* Constants.swift in Sources */,
+				CBA858FC29CF791F00D863CC /* teacherRegisteredModel.swift in Sources */,
+				CBA858F429CF78D700D863CC /* otpModel.swift in Sources */,
+				CBA858F629CF78E700D863CC /* requestModel.swift in Sources */,
+				CBA858F829CF78FA00D863CC /* studentRegisteredModel.swift in Sources */,
+				CBA858F229CF78C600D863CC /* fileModel.swift in Sources */,
+				CBA858EB29CF781E00D863CC /* OTPVerifyForm.swift in Sources */,
+				CBA858E829CF781E00D863CC /* AuthViewModel.swift in Sources */,
+				CBA858F029CF78B700D863CC /* eventModel.swift in Sources */,
 				CBA858AB29CF77CF00D863CC /* AppDelegate.swift in Sources */,
+				CBA858FE29CF793100D863CC /* teacherUploadedModel.swift in Sources */,
+				CBA858EC29CF781E00D863CC /* AppUtils.swift in Sources */,
+				CBA858E929CF781E00D863CC /* ExtensionsHelper.swift in Sources */,
 				CBA858AD29CF77CF00D863CC /* SceneDelegate.swift in Sources */,
+				CBA2E1D729D5F3130078E722 /* Error.swift in Sources */,
+				CBA2E1DB29D5F9AC0078E722 /* TacherUploadedViewController.swift in Sources */,
+				CBA858EA29CF781E00D863CC /* AuthForm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,6 +724,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CB44AAED29DB6B3A00D5B85D /* XCRemoteSwiftPackageReference "JWTDecode" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/auth0/JWTDecode.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		CBA858FF29D045C700D863CC /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CB44AAEE29DB6B3A00D5B85D /* JWTDecode */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB44AAED29DB6B3A00D5B85D /* XCRemoteSwiftPackageReference "JWTDecode" */;
+			productName = JWTDecode;
+		};
+		CBA8590029D045C700D863CC /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CBA858FF29D045C700D863CC /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CBA8589F29CF77CF00D863CC /* Project object */;
 }

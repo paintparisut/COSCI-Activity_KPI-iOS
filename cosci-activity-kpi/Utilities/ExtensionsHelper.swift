@@ -1,8 +1,8 @@
 //
 //  ExtensionsHelper.swift
-//  COOK POS
+//  cosci-activity-kpi
 //
-//  Created by Parisut Supchokpool on 4/1/2566 BE.
+//  Created by Parisut Supchokpool on 26/3/2566 BE.
 //
 
 import Foundation

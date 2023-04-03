@@ -1,0 +1,6 @@
+use_frameworks!
+target 'cosci-activity-kpi' do
+    pod 'SwiftyRSA'
+    pod 'JWTDecode'
+    pod 'Alamofire'
+end
