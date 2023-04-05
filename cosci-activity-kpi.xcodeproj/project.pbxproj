@@ -7,9 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9834152E87C08DB26AFF1547 /* Pods_cosci_activity_kpi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC7168CE2210A531250C52F4 /* Pods_cosci_activity_kpi.framework */; };
-		CB44AAEF29DB6B3A00D5B85D /* JWTDecode in Frameworks */ = {isa = PBXBuildFile; productRef = CB44AAEE29DB6B3A00D5B85D /* JWTDecode */; };
-		CB96591129DB798100FF309A /* SwiftyRSA in Frameworks */ = {isa = PBXBuildFile; productRef = CB96591029DB798100FF309A /* SwiftyRSA */; };
+		3FB760549DFF40AAEED13067 /* Pods_cosci_activity_kpi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B414E1EDE0E4AF2B09FA93AC /* Pods_cosci_activity_kpi.framework */; };
+		CB96591429DC388400FF309A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB96591329DC388400FF309A /* LoginViewController.swift */; };
+		CB96591629DC38DF00FF309A /* StudentUploadedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB96591529DC38DF00FF309A /* StudentUploadedViewController.swift */; };
+		CB96591829DC396B00FF309A /* StudentRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB96591729DC396B00FF309A /* StudentRegisterViewController.swift */; };
+		CB96591A29DC397600FF309A /* TeacherRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB96591929DC397600FF309A /* TeacherRegisterViewController.swift */; };
+		CB96591C29DC39C000FF309A /* OTPVerifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB96591B29DC39C000FF309A /* OTPVerifyViewController.swift */; };
+		CB96592029DC3D5200FF309A /* TeacherKPIListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB96591F29DC3D5200FF309A /* TeacherKPIListViewController.swift */; };
+		CB96592229DC3D7100FF309A /* StudentEventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB96592129DC3D7100FF309A /* StudentEventListViewController.swift */; };
+		CB96592429DC403F00FF309A /* StudentCheckHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB96592329DC403F00FF309A /* StudentCheckHistoryViewController.swift */; };
+		CB96592629DC405100FF309A /* StudentHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB96592529DC405100FF309A /* StudentHistoryViewController.swift */; };
+		CB96592829DC40A000FF309A /* StudentProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB96592729DC40A000FF309A /* StudentProfileViewController.swift */; };
+		CB96592A29DC40C600FF309A /* TeacherHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB96592929DC40C600FF309A /* TeacherHistoryViewController.swift */; };
+		CB96592C29DC410800FF309A /* TeachProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB96592B29DC410800FF309A /* TeachProfileViewController.swift */; };
 		CBA2E1D729D5F3130078E722 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA2E1D629D5F3130078E722 /* Error.swift */; };
 		CBA2E1DB29D5F9AC0078E722 /* TacherUploadedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA2E1DA29D5F9AC0078E722 /* TacherUploadedViewController.swift */; };
 		CBA858AB29CF77CF00D863CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA858AA29CF77CF00D863CC /* AppDelegate.swift */; };
@@ -34,7 +44,7 @@
 		CBA858FA29CF790D00D863CC /* studentUploadedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA858F929CF790D00D863CC /* studentUploadedModel.swift */; };
 		CBA858FC29CF791F00D863CC /* teacherRegisteredModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA858FB29CF791F00D863CC /* teacherRegisteredModel.swift */; };
 		CBA858FE29CF793100D863CC /* teacherUploadedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA858FD29CF793100D863CC /* teacherUploadedModel.swift */; };
-		CBA8590129D045C700D863CC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CBA8590029D045C700D863CC /* Alamofire */; };
+		CBE09EC629DE097F00F7566E /* SelectRoleRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE09EC529DE097F00F7566E /* SelectRoleRegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,8 +65,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4C6AE3BD004149EF24D1B4B3 /* Pods-cosci-activity-kpi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cosci-activity-kpi.release.xcconfig"; path = "Target Support Files/Pods-cosci-activity-kpi/Pods-cosci-activity-kpi.release.xcconfig"; sourceTree = "<group>"; };
-		BCFEA599D662EF261B5FD67D /* Pods-cosci-activity-kpi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cosci-activity-kpi.debug.xcconfig"; path = "Target Support Files/Pods-cosci-activity-kpi/Pods-cosci-activity-kpi.debug.xcconfig"; sourceTree = "<group>"; };
+		A013922E8BFA0CB27EB073F5 /* Pods-cosci-activity-kpi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cosci-activity-kpi.release.xcconfig"; path = "Target Support Files/Pods-cosci-activity-kpi/Pods-cosci-activity-kpi.release.xcconfig"; sourceTree = "<group>"; };
+		B414E1EDE0E4AF2B09FA93AC /* Pods_cosci_activity_kpi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cosci_activity_kpi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB96591329DC388400FF309A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CB96591529DC38DF00FF309A /* StudentUploadedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentUploadedViewController.swift; sourceTree = "<group>"; };
+		CB96591729DC396B00FF309A /* StudentRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentRegisterViewController.swift; sourceTree = "<group>"; };
+		CB96591929DC397600FF309A /* TeacherRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherRegisterViewController.swift; sourceTree = "<group>"; };
+		CB96591B29DC39C000FF309A /* OTPVerifyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPVerifyViewController.swift; sourceTree = "<group>"; };
+		CB96591F29DC3D5200FF309A /* TeacherKPIListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherKPIListViewController.swift; sourceTree = "<group>"; };
+		CB96592129DC3D7100FF309A /* StudentEventListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentEventListViewController.swift; sourceTree = "<group>"; };
+		CB96592329DC403F00FF309A /* StudentCheckHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentCheckHistoryViewController.swift; sourceTree = "<group>"; };
+		CB96592529DC405100FF309A /* StudentHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentHistoryViewController.swift; sourceTree = "<group>"; };
+		CB96592729DC40A000FF309A /* StudentProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentProfileViewController.swift; sourceTree = "<group>"; };
+		CB96592929DC40C600FF309A /* TeacherHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherHistoryViewController.swift; sourceTree = "<group>"; };
+		CB96592B29DC410800FF309A /* TeachProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeachProfileViewController.swift; sourceTree = "<group>"; };
 		CBA2E1D629D5F3130078E722 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		CBA2E1DA29D5F9AC0078E722 /* TacherUploadedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TacherUploadedViewController.swift; sourceTree = "<group>"; };
 		CBA858A729CF77CF00D863CC /* cosci-activity-kpi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cosci-activity-kpi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,7 +107,8 @@
 		CBA858F929CF790D00D863CC /* studentUploadedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studentUploadedModel.swift; sourceTree = "<group>"; };
 		CBA858FB29CF791F00D863CC /* teacherRegisteredModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teacherRegisteredModel.swift; sourceTree = "<group>"; };
 		CBA858FD29CF793100D863CC /* teacherUploadedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teacherUploadedModel.swift; sourceTree = "<group>"; };
-		EC7168CE2210A531250C52F4 /* Pods_cosci_activity_kpi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cosci_activity_kpi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBE09EC529DE097F00F7566E /* SelectRoleRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRoleRegisterViewController.swift; sourceTree = "<group>"; };
+		F508E1F9497F7DB192D57F5A /* Pods-cosci-activity-kpi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cosci-activity-kpi.debug.xcconfig"; path = "Target Support Files/Pods-cosci-activity-kpi/Pods-cosci-activity-kpi.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,10 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB44AAEF29DB6B3A00D5B85D /* JWTDecode in Frameworks */,
-				CB96591129DB798100FF309A /* SwiftyRSA in Frameworks */,
-				CBA8590129D045C700D863CC /* Alamofire in Frameworks */,
-				9834152E87C08DB26AFF1547 /* Pods_cosci_activity_kpi.framework in Frameworks */,
+				3FB760549DFF40AAEED13067 /* Pods_cosci_activity_kpi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,18 +140,53 @@
 		10DD3BB20824E1D471239338 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BCFEA599D662EF261B5FD67D /* Pods-cosci-activity-kpi.debug.xcconfig */,
-				4C6AE3BD004149EF24D1B4B3 /* Pods-cosci-activity-kpi.release.xcconfig */,
+				F508E1F9497F7DB192D57F5A /* Pods-cosci-activity-kpi.debug.xcconfig */,
+				A013922E8BFA0CB27EB073F5 /* Pods-cosci-activity-kpi.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		9A205F8A4B6614A7C319D8F4 /* Frameworks */ = {
+		B13C86DA5A30A177312D4A13 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EC7168CE2210A531250C52F4 /* Pods_cosci_activity_kpi.framework */,
+				B414E1EDE0E4AF2B09FA93AC /* Pods_cosci_activity_kpi.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB96591229DC384D00FF309A /* AuthController */ = {
+			isa = PBXGroup;
+			children = (
+				CBA2E1DA29D5F9AC0078E722 /* TacherUploadedViewController.swift */,
+				CB96591B29DC39C000FF309A /* OTPVerifyViewController.swift */,
+				CBE09EC529DE097F00F7566E /* SelectRoleRegisterViewController.swift */,
+				CB96591929DC397600FF309A /* TeacherRegisterViewController.swift */,
+				CB96591529DC38DF00FF309A /* StudentUploadedViewController.swift */,
+				CB96591729DC396B00FF309A /* StudentRegisterViewController.swift */,
+				CB96591329DC388400FF309A /* LoginViewController.swift */,
+			);
+			path = AuthController;
+			sourceTree = "<group>";
+		};
+		CB96591D29DC39F000FF309A /* TeacherController */ = {
+			isa = PBXGroup;
+			children = (
+				CB96591F29DC3D5200FF309A /* TeacherKPIListViewController.swift */,
+				CB96592929DC40C600FF309A /* TeacherHistoryViewController.swift */,
+				CB96592B29DC410800FF309A /* TeachProfileViewController.swift */,
+			);
+			path = TeacherController;
+			sourceTree = "<group>";
+		};
+		CB96591E29DC3A0A00FF309A /* StudentController */ = {
+			isa = PBXGroup;
+			children = (
+				CB96592129DC3D7100FF309A /* StudentEventListViewController.swift */,
+				CB96592329DC403F00FF309A /* StudentCheckHistoryViewController.swift */,
+				CB96592729DC40A000FF309A /* StudentProfileViewController.swift */,
+				CB96592529DC405100FF309A /* StudentHistoryViewController.swift */,
+			);
+			path = StudentController;
 			sourceTree = "<group>";
 		};
 		CBA8589E29CF77CF00D863CC = {
@@ -142,7 +197,7 @@
 				CBA858CA29CF77D200D863CC /* cosci-activity-kpiUITests */,
 				CBA858A829CF77CF00D863CC /* Products */,
 				10DD3BB20824E1D471239338 /* Pods */,
-				9A205F8A4B6614A7C319D8F4 /* Frameworks */,
+				B13C86DA5A30A177312D4A13 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -245,7 +300,9 @@
 		CBA858ED29CF787B00D863CC /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CBA2E1DA29D5F9AC0078E722 /* TacherUploadedViewController.swift */,
+				CB96591E29DC3A0A00FF309A /* StudentController */,
+				CB96591D29DC39F000FF309A /* TeacherController */,
+				CB96591229DC384D00FF309A /* AuthController */,
 				CBA858EE29CF788200D863CC /* Cell */,
 			);
 			path = View;
@@ -265,22 +322,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CBA858D129CF77D200D863CC /* Build configuration list for PBXNativeTarget "cosci-activity-kpi" */;
 			buildPhases = (
-				F64482FED63E02F61706C159 /* [CP] Check Pods Manifest.lock */,
+				6E3EA3365614089569671B96 /* [CP] Check Pods Manifest.lock */,
 				CBA858A329CF77CF00D863CC /* Sources */,
 				CBA858A429CF77CF00D863CC /* Frameworks */,
 				CBA858A529CF77CF00D863CC /* Resources */,
-				FF7BFA2FA1EA83F491273F42 /* [CP] Embed Pods Frameworks */,
+				47C0FB93674BB78A6FBDE8D4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "cosci-activity-kpi";
-			packageProductDependencies = (
-				CBA8590029D045C700D863CC /* Alamofire */,
-				CB44AAEE29DB6B3A00D5B85D /* JWTDecode */,
-				CB96591029DB798100FF309A /* SwiftyRSA */,
-			);
 			productName = "cosci-activity-kpi";
 			productReference = CBA858A729CF77CF00D863CC /* cosci-activity-kpi.app */;
 			productType = "com.apple.product-type.application";
@@ -353,11 +405,6 @@
 				Base,
 			);
 			mainGroup = CBA8589E29CF77CF00D863CC;
-			packageReferences = (
-				CBA858FF29D045C700D863CC /* XCRemoteSwiftPackageReference "Alamofire" */,
-				CB44AAED29DB6B3A00D5B85D /* XCRemoteSwiftPackageReference "JWTDecode" */,
-				CB96590F29DB798100FF309A /* XCRemoteSwiftPackageReference "SwiftyRSA" */,
-			);
 			productRefGroup = CBA858A829CF77CF00D863CC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -397,7 +444,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		F64482FED63E02F61706C159 /* [CP] Check Pods Manifest.lock */ = {
+		47C0FB93674BB78A6FBDE8D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-cosci-activity-kpi/Pods-cosci-activity-kpi-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-cosci-activity-kpi/Pods-cosci-activity-kpi-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-cosci-activity-kpi/Pods-cosci-activity-kpi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E3EA3365614089569671B96 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -419,23 +483,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FF7BFA2FA1EA83F491273F42 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-cosci-activity-kpi/Pods-cosci-activity-kpi-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-cosci-activity-kpi/Pods-cosci-activity-kpi-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-cosci-activity-kpi/Pods-cosci-activity-kpi-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -443,19 +490,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB96591829DC396B00FF309A /* StudentRegisterViewController.swift in Sources */,
+				CB96591C29DC39C000FF309A /* OTPVerifyViewController.swift in Sources */,
 				CBA858FA29CF790D00D863CC /* studentUploadedModel.swift in Sources */,
+				CB96592229DC3D7100FF309A /* StudentEventListViewController.swift in Sources */,
+				CBE09EC629DE097F00F7566E /* SelectRoleRegisterViewController.swift in Sources */,
 				CBA858E729CF781E00D863CC /* Constants.swift in Sources */,
 				CBA858FC29CF791F00D863CC /* teacherRegisteredModel.swift in Sources */,
+				CB96592A29DC40C600FF309A /* TeacherHistoryViewController.swift in Sources */,
 				CBA858F429CF78D700D863CC /* otpModel.swift in Sources */,
+				CB96591429DC388400FF309A /* LoginViewController.swift in Sources */,
 				CBA858F629CF78E700D863CC /* requestModel.swift in Sources */,
+				CB96592C29DC410800FF309A /* TeachProfileViewController.swift in Sources */,
+				CB96592029DC3D5200FF309A /* TeacherKPIListViewController.swift in Sources */,
 				CBA858F829CF78FA00D863CC /* studentRegisteredModel.swift in Sources */,
 				CBA858F229CF78C600D863CC /* fileModel.swift in Sources */,
+				CB96592829DC40A000FF309A /* StudentProfileViewController.swift in Sources */,
 				CBA858EB29CF781E00D863CC /* OTPVerifyForm.swift in Sources */,
+				CB96591A29DC397600FF309A /* TeacherRegisterViewController.swift in Sources */,
 				CBA858E829CF781E00D863CC /* AuthViewModel.swift in Sources */,
 				CBA858F029CF78B700D863CC /* eventModel.swift in Sources */,
+				CB96592429DC403F00FF309A /* StudentCheckHistoryViewController.swift in Sources */,
 				CBA858AB29CF77CF00D863CC /* AppDelegate.swift in Sources */,
 				CBA858FE29CF793100D863CC /* teacherUploadedModel.swift in Sources */,
+				CB96592629DC405100FF309A /* StudentHistoryViewController.swift in Sources */,
 				CBA858EC29CF781E00D863CC /* AppUtils.swift in Sources */,
+				CB96591629DC38DF00FF309A /* StudentUploadedViewController.swift in Sources */,
 				CBA858E929CF781E00D863CC /* ExtensionsHelper.swift in Sources */,
 				CBA858AD29CF77CF00D863CC /* SceneDelegate.swift in Sources */,
 				CBA2E1D729D5F3130078E722 /* Error.swift in Sources */,
@@ -632,7 +692,7 @@
 		};
 		CBA858D229CF77D200D863CC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BCFEA599D662EF261B5FD67D /* Pods-cosci-activity-kpi.debug.xcconfig */;
+			baseConfigurationReference = F508E1F9497F7DB192D57F5A /* Pods-cosci-activity-kpi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -660,7 +720,7 @@
 		};
 		CBA858D329CF77D200D863CC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4C6AE3BD004149EF24D1B4B3 /* Pods-cosci-activity-kpi.release.xcconfig */;
+			baseConfigurationReference = A013922E8BFA0CB27EB073F5 /* Pods-cosci-activity-kpi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -798,51 +858,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		CB44AAED29DB6B3A00D5B85D /* XCRemoteSwiftPackageReference "JWTDecode" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/auth0/JWTDecode.swift";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 3.0.0;
-			};
-		};
-		CB96590F29DB798100FF309A /* XCRemoteSwiftPackageReference "SwiftyRSA" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/TakeScoop/SwiftyRSA";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
-		CBA858FF29D045C700D863CC /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		CB44AAEE29DB6B3A00D5B85D /* JWTDecode */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CB44AAED29DB6B3A00D5B85D /* XCRemoteSwiftPackageReference "JWTDecode" */;
-			productName = JWTDecode;
-		};
-		CB96591029DB798100FF309A /* SwiftyRSA */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CB96590F29DB798100FF309A /* XCRemoteSwiftPackageReference "SwiftyRSA" */;
-			productName = SwiftyRSA;
-		};
-		CBA8590029D045C700D863CC /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CBA858FF29D045C700D863CC /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CBA8589F29CF77CF00D863CC /* Project object */;
 }
