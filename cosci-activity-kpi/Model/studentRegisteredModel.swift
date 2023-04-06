@@ -32,6 +32,6 @@ struct responseLoginStudentModel: Codable {
 }
 
 struct resquestForgotStudentModel: Codable {
-    let user_id: String? = "co631010206"
+    var user_id: String?
 }
 

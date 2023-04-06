@@ -14,17 +14,21 @@ struct dataStudentUploadedModel : Codable {
     let major : String?
     let teacher : String?
     let register_check: Bool?
+    
 }
 
 
 
-struct requestStudentUploadedModel: Codable {
+struct requestStudentUploadedModel: Encodable {
     var user_id: String = "63130010046"
 }
 
 struct responseStudentUploadedModel: Codable {
     let result: String
     let message: String
-    let data: dataStudentUploadedModel
+    let data: resstu
 }
 
+struct resstu : Codable {
+    let data : dataStudentUploadedModel
+}

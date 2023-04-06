@@ -13,20 +13,22 @@ struct dataTeacherUploadedModel : Codable {
     let name : String?
     let role : String?
     let email : String?
-    let gswu : String?
     let tel : String?
     let register_check:Bool?
-    
 }
 
 struct requestTeacherUploadedModel : Codable {
-    let user_id : String? = "sittichaiza"
+    var user_id : String?
 }
 
 struct responseTeacherUploadedModel: Codable {
     let result: String
     let message: String
-    let data: dataTeacherUploadedModel
+    let data: resteach
+}
+
+struct resteach : Codable {
+    let data : dataTeacherUploadedModel
 }
 
 
