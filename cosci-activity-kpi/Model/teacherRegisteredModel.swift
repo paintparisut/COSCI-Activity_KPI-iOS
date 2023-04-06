@@ -7,7 +7,12 @@
 
 import Foundation
 
-struct teacherRegisteredModel : Codable {
+struct requestLoginTeacherModel : Codable  {
+    let user_id : String? = "sittichaiw"
+    let password : String? = "12345678"
+}
+
+struct dataLoginTeacherModel : Codable {
     
     let user_id : String?
     let name : String?
@@ -17,4 +22,10 @@ struct teacherRegisteredModel : Codable {
     let tel : String?
     let img_user : String?
     
+}
+
+struct respondLoginTeacherModel: Codable {
+    let result: String
+    let message: String
+    let data: dataLoginTeacherModel
 }

@@ -10,7 +10,7 @@ import Foundation
 public enum ServiceError:Error {
     case UnParsableError
     case Non200StatusCodeError(APIError)
-    case BackEndError(errorMessage:String)
+    case BackEndError(errorMessage:String,data:String)
     case NoNetworkError
 }
 

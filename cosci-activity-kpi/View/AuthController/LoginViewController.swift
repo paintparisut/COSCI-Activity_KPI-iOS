@@ -18,7 +18,8 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func loginButton(_ sender: Any) {
-        fetchLoginStudent()
+//        fetchLoginStudent()
+        fetchLoginTeacher()
     }
     
 
@@ -34,15 +35,58 @@ class LoginViewController: UIViewController {
               switch result {
               case .success(let response):
                   print("Success",response)
-//                  AppUtils.saveUsrEmail(email: response.email ?? "")
-//                  AppUtils.saveUsrProfile(profile: response.profile_pic ?? "")
-//                  AppUtils.saveUsrUsername(username: response.username ?? "")
-//                  AppUtils.saveUsrName(firstname: response.name?.firstname ?? "", lastname:
+
                   
               case .failure(let error):
                   switch error{
                   case .BackEndError(let msg):
-                      print(msg)
+                      if msg.errorMessage == "nOK" { // case invalid
+                          print(msg)
+                      }
+                      else if msg.errorMessage == "Wait" { // case otp
+                          print(msg.data)
+                      }
+                      else {
+                          print("error")
+                      }
+//                      isError = true
+                  case .Non200StatusCodeError(let val):
+                      print("Error Code: \(val.status) - \(val.message)")
+                  case .UnParsableError:
+                      print("Error \(error)")
+                  case .NoNetworkError:
+                      print("No Network")
+                  }
+              }
+          }
+      }
+    
+    private func fetchLoginTeacher() {
+        var model = requestLoginTeacherModel()
+//        model.user_id = usernameTF.text ?? ""
+//        model.password = passwordTF.text ?? ""
+//          model.username = username.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
+//          model.password = password.trimmingCharacters(in: .whitespacesAndNewlines)
+//          model.device_id = AppUtils.getDeviceUUIDToken()
+                    
+        AuthViewModel().loginTeacher(reqObj: model) { result in
+              switch result {
+              case .success(let response):
+                  print("Success",response)
+
+                  
+              case .failure(let error):
+                  switch error{
+                  case .BackEndError(let msg):
+                      if msg.errorMessage == "nOK" { // case invalid
+                          print(msg)
+                      }
+                      else if msg.errorMessage == "Wait" { // case otp
+                          print(msg.data)
+                      }
+                      else {
+                          print("error")
+                      }
 //                      isError = true
                   case .Non200StatusCodeError(let val):
                       print("Error Code: \(val.status) - \(val.message)")

@@ -15,3 +15,8 @@ struct otpModel : Codable {
     let created: String?
     
 }
+
+struct respondOtpModel : Codable {
+    let email: String?
+    let otp: String?
+}
