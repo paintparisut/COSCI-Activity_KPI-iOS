@@ -24,7 +24,7 @@ struct dataLoginTeacherModel : Codable {
     
 }
 
-struct respondLoginTeacherModel: Codable {
+struct responseLoginTeacherModel: Codable {
     let result: String
     let message: String
     let data: dataLoginTeacherModel

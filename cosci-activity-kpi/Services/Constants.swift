@@ -38,8 +38,8 @@ struct Constants {
     static let URL_PATH_AUTH_REGISTER_TEACHER = "/teacher-register"
     static let URL_PATH_AUTH_VERIFY_STUDENT = "/verifystudent"
     static let URL_PATH_AUTH_VERIFY_TEACHER = "/verifyteacher"
-    static let URL_PATH_AUTH_RESEND_STUDENT = "/resendstudent"
-    static let URL_PATH_AUTH_RESEND_TEACHER = "/resendteacher"
+    static let URL_PATH_AUTH_RESEND_STUDENT = "/verify/resendstudent"
+    static let URL_PATH_AUTH_RESEND_TEACHER = "/verufy/resendteacher"
     static let URL_PATH_AUTH_FORGOTPASSWORD_STUDENT = "/forgotpassword-student"
     static let URL_PATH_AUTH_FORGOTPASSWORD_TEACHER = "/forgotpassword-teacher"
 

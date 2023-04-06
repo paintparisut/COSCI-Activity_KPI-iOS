@@ -12,7 +12,7 @@
 		CB96591629DC38DF00FF309A /* StudentUploadedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB96591529DC38DF00FF309A /* StudentUploadedViewController.swift */; };
 		CB96591829DC396B00FF309A /* StudentRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB96591729DC396B00FF309A /* StudentRegisterViewController.swift */; };
 		CB96591A29DC397600FF309A /* TeacherRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB96591929DC397600FF309A /* TeacherRegisterViewController.swift */; };
-		CB96591C29DC39C000FF309A /* OTPVerifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB96591B29DC39C000FF309A /* OTPVerifyViewController.swift */; };
+		CB96591C29DC39C000FF309A /* OTPVerifyStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB96591B29DC39C000FF309A /* OTPVerifyStudentViewController.swift */; };
 		CB96592029DC3D5200FF309A /* TeacherKPIListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB96591F29DC3D5200FF309A /* TeacherKPIListViewController.swift */; };
 		CB96592229DC3D7100FF309A /* StudentEventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB96592129DC3D7100FF309A /* StudentEventListViewController.swift */; };
 		CB96592429DC403F00FF309A /* StudentCheckHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB96592329DC403F00FF309A /* StudentCheckHistoryViewController.swift */; };
@@ -44,6 +44,7 @@
 		CBA858FA29CF790D00D863CC /* studentUploadedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA858F929CF790D00D863CC /* studentUploadedModel.swift */; };
 		CBA858FC29CF791F00D863CC /* teacherRegisteredModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA858FB29CF791F00D863CC /* teacherRegisteredModel.swift */; };
 		CBA858FE29CF793100D863CC /* teacherUploadedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA858FD29CF793100D863CC /* teacherUploadedModel.swift */; };
+		CBAC2B9529DEF7E90032FEF9 /* OTPVerifyTeacherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAC2B9429DEF7E90032FEF9 /* OTPVerifyTeacherViewController.swift */; };
 		CBE09EC629DE097F00F7566E /* SelectRoleRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE09EC529DE097F00F7566E /* SelectRoleRegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -71,7 +72,7 @@
 		CB96591529DC38DF00FF309A /* StudentUploadedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentUploadedViewController.swift; sourceTree = "<group>"; };
 		CB96591729DC396B00FF309A /* StudentRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentRegisterViewController.swift; sourceTree = "<group>"; };
 		CB96591929DC397600FF309A /* TeacherRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherRegisterViewController.swift; sourceTree = "<group>"; };
-		CB96591B29DC39C000FF309A /* OTPVerifyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPVerifyViewController.swift; sourceTree = "<group>"; };
+		CB96591B29DC39C000FF309A /* OTPVerifyStudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPVerifyStudentViewController.swift; sourceTree = "<group>"; };
 		CB96591F29DC3D5200FF309A /* TeacherKPIListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherKPIListViewController.swift; sourceTree = "<group>"; };
 		CB96592129DC3D7100FF309A /* StudentEventListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentEventListViewController.swift; sourceTree = "<group>"; };
 		CB96592329DC403F00FF309A /* StudentCheckHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentCheckHistoryViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +108,7 @@
 		CBA858F929CF790D00D863CC /* studentUploadedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studentUploadedModel.swift; sourceTree = "<group>"; };
 		CBA858FB29CF791F00D863CC /* teacherRegisteredModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teacherRegisteredModel.swift; sourceTree = "<group>"; };
 		CBA858FD29CF793100D863CC /* teacherUploadedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teacherUploadedModel.swift; sourceTree = "<group>"; };
+		CBAC2B9429DEF7E90032FEF9 /* OTPVerifyTeacherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPVerifyTeacherViewController.swift; sourceTree = "<group>"; };
 		CBE09EC529DE097F00F7566E /* SelectRoleRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRoleRegisterViewController.swift; sourceTree = "<group>"; };
 		F508E1F9497F7DB192D57F5A /* Pods-cosci-activity-kpi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cosci-activity-kpi.debug.xcconfig"; path = "Target Support Files/Pods-cosci-activity-kpi/Pods-cosci-activity-kpi.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -158,7 +160,8 @@
 			isa = PBXGroup;
 			children = (
 				CBA2E1DA29D5F9AC0078E722 /* TacherUploadedViewController.swift */,
-				CB96591B29DC39C000FF309A /* OTPVerifyViewController.swift */,
+				CB96591B29DC39C000FF309A /* OTPVerifyStudentViewController.swift */,
+				CBAC2B9429DEF7E90032FEF9 /* OTPVerifyTeacherViewController.swift */,
 				CBE09EC529DE097F00F7566E /* SelectRoleRegisterViewController.swift */,
 				CB96591929DC397600FF309A /* TeacherRegisterViewController.swift */,
 				CB96591529DC38DF00FF309A /* StudentUploadedViewController.swift */,
@@ -491,7 +494,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB96591829DC396B00FF309A /* StudentRegisterViewController.swift in Sources */,
-				CB96591C29DC39C000FF309A /* OTPVerifyViewController.swift in Sources */,
+				CB96591C29DC39C000FF309A /* OTPVerifyStudentViewController.swift in Sources */,
+				CBAC2B9529DEF7E90032FEF9 /* OTPVerifyTeacherViewController.swift in Sources */,
 				CBA858FA29CF790D00D863CC /* studentUploadedModel.swift in Sources */,
 				CB96592229DC3D7100FF309A /* StudentEventListViewController.swift in Sources */,
 				CBE09EC629DE097F00F7566E /* SelectRoleRegisterViewController.swift in Sources */,
