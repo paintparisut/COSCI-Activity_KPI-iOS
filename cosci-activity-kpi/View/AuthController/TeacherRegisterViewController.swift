@@ -9,6 +9,8 @@ import UIKit
 
 class TeacherRegisterViewController: UIViewController {
 
+    @IBOutlet weak var useridTF: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -16,6 +18,8 @@ class TeacherRegisterViewController: UIViewController {
     }
     
 
+    @IBAction func submitButton(_ sender: Any) {
+    }
     /*
     // MARK: - Navigation
 

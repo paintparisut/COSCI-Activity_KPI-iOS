@@ -17,10 +17,10 @@ struct otpModel : Codable {
 }
 
 struct requestOtpModel : Codable {
-    let email: String? = "parisut.supchokpool@g.swu.ac.th"
-    let otp: String? = "033786"
+    var email: String?
+    var otp: String?
 }
 
 struct requestResendOtpModel : Codable {
-    let email: String? = "parisut.supchokpool@g.swu.ac.th"
+    var email: String?
 }

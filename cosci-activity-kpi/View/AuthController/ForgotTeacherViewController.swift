@@ -1,31 +1,32 @@
 //
-//  StudentUploadedViewController.swift
+//  ForgotTeacherViewController.swift
 //  cosci-activity-kpi
 //
-//  Created by Parisut Supchokpool on 4/4/2566 BE.
+//  Created by Parisut Supchokpool on 6/4/2566 BE.
 //
 
 import UIKit
 
-class StudentUploadedViewController: UIViewController {
+class ForgotTeacherViewController: UIViewController {
 
     @IBOutlet weak var useridTF: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
-    @IBAction func submitButton(_ sender: Any) {
-        fetchStudentUploaded()
+    @IBAction func Submit(_ sender: Any) {
+        forgotPassword()
     }
     
-    private func fetchStudentUploaded() {
-            var model = requestStudentUploadedModel()
+
+    private func forgotPassword() {
+            var model = resquestForgotTeacherModel()
+            
             print(model)
             
-            AuthViewModel().studentUploaded(reqObj: model) { result in
+            AuthViewModel().forgotPasswordTeacher(reqObj: model) { result in
                 switch result {
                 case .success(let response):
                     print("Success",response)

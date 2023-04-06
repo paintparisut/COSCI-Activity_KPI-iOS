@@ -8,8 +8,8 @@
 import Foundation
 
 struct requestLoginStudentModel : Codable  {
-    let user_id : String? = "co631010206"
-    let password : String? = "dx55by9amk"
+    var user_id : String?
+    var password : String?
 }
 
 struct dataLoginStudentModel : Codable {
@@ -30,3 +30,8 @@ struct responseLoginStudentModel: Codable {
     let message: String
     let data: dataLoginStudentModel
 }
+
+struct resquestForgotStudentModel: Codable {
+    let user_id: String? = "co631010206"
+}
+

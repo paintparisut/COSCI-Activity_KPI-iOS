@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3FB760549DFF40AAEED13067 /* Pods_cosci_activity_kpi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B414E1EDE0E4AF2B09FA93AC /* Pods_cosci_activity_kpi.framework */; };
+		CB095D0529DF26C4007E456C /* ForgotStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB095D0429DF26C4007E456C /* ForgotStudentViewController.swift */; };
+		CB095D0729DF26D0007E456C /* ForgotTeacherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB095D0629DF26D0007E456C /* ForgotTeacherViewController.swift */; };
 		CB96591429DC388400FF309A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB96591329DC388400FF309A /* LoginViewController.swift */; };
 		CB96591629DC38DF00FF309A /* StudentUploadedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB96591529DC38DF00FF309A /* StudentUploadedViewController.swift */; };
 		CB96591829DC396B00FF309A /* StudentRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB96591729DC396B00FF309A /* StudentRegisterViewController.swift */; };
@@ -68,6 +70,8 @@
 /* Begin PBXFileReference section */
 		A013922E8BFA0CB27EB073F5 /* Pods-cosci-activity-kpi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cosci-activity-kpi.release.xcconfig"; path = "Target Support Files/Pods-cosci-activity-kpi/Pods-cosci-activity-kpi.release.xcconfig"; sourceTree = "<group>"; };
 		B414E1EDE0E4AF2B09FA93AC /* Pods_cosci_activity_kpi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cosci_activity_kpi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB095D0429DF26C4007E456C /* ForgotStudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotStudentViewController.swift; sourceTree = "<group>"; };
+		CB095D0629DF26D0007E456C /* ForgotTeacherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotTeacherViewController.swift; sourceTree = "<group>"; };
 		CB96591329DC388400FF309A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CB96591529DC38DF00FF309A /* StudentUploadedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentUploadedViewController.swift; sourceTree = "<group>"; };
 		CB96591729DC396B00FF309A /* StudentRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentRegisterViewController.swift; sourceTree = "<group>"; };
@@ -162,6 +166,8 @@
 				CBA2E1DA29D5F9AC0078E722 /* TacherUploadedViewController.swift */,
 				CB96591B29DC39C000FF309A /* OTPVerifyStudentViewController.swift */,
 				CBAC2B9429DEF7E90032FEF9 /* OTPVerifyTeacherViewController.swift */,
+				CB095D0429DF26C4007E456C /* ForgotStudentViewController.swift */,
+				CB095D0629DF26D0007E456C /* ForgotTeacherViewController.swift */,
 				CBE09EC529DE097F00F7566E /* SelectRoleRegisterViewController.swift */,
 				CB96591929DC397600FF309A /* TeacherRegisterViewController.swift */,
 				CB96591529DC38DF00FF309A /* StudentUploadedViewController.swift */,
@@ -505,6 +511,7 @@
 				CBA858F429CF78D700D863CC /* otpModel.swift in Sources */,
 				CB96591429DC388400FF309A /* LoginViewController.swift in Sources */,
 				CBA858F629CF78E700D863CC /* requestModel.swift in Sources */,
+				CB095D0529DF26C4007E456C /* ForgotStudentViewController.swift in Sources */,
 				CB96592C29DC410800FF309A /* TeachProfileViewController.swift in Sources */,
 				CB96592029DC3D5200FF309A /* TeacherKPIListViewController.swift in Sources */,
 				CBA858F829CF78FA00D863CC /* studentRegisteredModel.swift in Sources */,
@@ -520,6 +527,7 @@
 				CB96592629DC405100FF309A /* StudentHistoryViewController.swift in Sources */,
 				CBA858EC29CF781E00D863CC /* AppUtils.swift in Sources */,
 				CB96591629DC38DF00FF309A /* StudentUploadedViewController.swift in Sources */,
+				CB095D0729DF26D0007E456C /* ForgotTeacherViewController.swift in Sources */,
 				CBA858E929CF781E00D863CC /* ExtensionsHelper.swift in Sources */,
 				CBA858AD29CF77CF00D863CC /* SceneDelegate.swift in Sources */,
 				CBA2E1D729D5F3130078E722 /* Error.swift in Sources */,

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct teacherUploadedModel : Codable {
+struct dataTeacherUploadedModel : Codable {
     
     let user_id : String?
     let name : String?
@@ -19,12 +19,14 @@ struct teacherUploadedModel : Codable {
     
 }
 
-struct reqteacherverify : Codable {
-    let user_id : String?
+struct requestTeacherUploadedModel : Codable {
+    let user_id : String? = "sittichaiza"
 }
 
-struct responseteacherUploadedModel: Codable {
+struct responseTeacherUploadedModel: Codable {
     let result: String
     let message: String
-    let data: teacherUploadedModel
+    let data: dataTeacherUploadedModel
 }
+
+
