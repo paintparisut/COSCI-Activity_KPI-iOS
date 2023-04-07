@@ -17,6 +17,12 @@ struct dataTeacherUploadedModel : Codable {
     let register_check:Bool?
 }
 
+struct responseTeacherUploadRegisModel : Codable {
+    let result: String
+    let message: String
+    let data: dataTeacherUploadedModel
+}
+
 struct requestTeacherUploadedModel : Codable {
     var user_id : String?
 }

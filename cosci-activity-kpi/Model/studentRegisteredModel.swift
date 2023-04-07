@@ -34,4 +34,13 @@ struct responseLoginStudentModel: Codable {
 struct resquestForgotStudentModel: Codable {
     var user_id: String?
 }
-
+struct requestRegisterStudentModel : Encodable {
+    var name: String?
+    var password: String?
+    var confirmpassword: String?
+    var student_id: String?
+    var teacher: String?
+    var major: String?
+    var email: String?
+    var tel: String? 
+}

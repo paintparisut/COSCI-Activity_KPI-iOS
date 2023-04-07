@@ -17,10 +17,16 @@ struct dataStudentUploadedModel : Codable {
     
 }
 
+struct responseStudentUploadRegisModel : Codable {
+    let result: String
+    let message: String
+    let data: dataStudentUploadedModel
+}
+
 
 
 struct requestStudentUploadedModel: Encodable {
-    var user_id: String = "63130010046"
+    var user_id: String = 
 }
 
 struct responseStudentUploadedModel: Codable {

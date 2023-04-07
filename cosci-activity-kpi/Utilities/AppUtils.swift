@@ -10,6 +10,7 @@ import SwiftyRSA
 import JWTDecode
 
 struct AppUtils {
+    
     static func saveUsrAuthToken(token:String) {
         UserDefaults.standard.setValue(token, forKey: Constants.AppConstants.CUR_USR_TOKEN)
     }

@@ -12,6 +12,16 @@ struct requestLoginTeacherModel : Codable  {
     var password : String?
 }
 
+struct requestRegisterTeacherModel : Codable  {
+    var user_id: String?
+    var name: String?
+    var password: String?
+    var confirmpassword: String?
+    var role: String?
+    var email: String?
+    var tel: String?
+}
+
 struct dataLoginTeacherModel : Codable {
     
     let user_id : String?

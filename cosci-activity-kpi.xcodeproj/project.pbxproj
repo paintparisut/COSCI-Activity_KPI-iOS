@@ -170,8 +170,8 @@
 				CB095D0629DF26D0007E456C /* ForgotTeacherViewController.swift */,
 				CBE09EC529DE097F00F7566E /* SelectRoleRegisterViewController.swift */,
 				CB96591929DC397600FF309A /* TeacherRegisterViewController.swift */,
-				CB96591529DC38DF00FF309A /* StudentUploadedViewController.swift */,
 				CB96591729DC396B00FF309A /* StudentRegisterViewController.swift */,
+				CB96591529DC38DF00FF309A /* StudentUploadedViewController.swift */,
 				CB96591329DC388400FF309A /* LoginViewController.swift */,
 			);
 			path = AuthController;

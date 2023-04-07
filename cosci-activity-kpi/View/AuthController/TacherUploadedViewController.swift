@@ -22,7 +22,6 @@ class TacherUploadedViewController: UIViewController {
     
     private func fetchUploaded() {
             var model = requestTeacherUploadedModel()
-            print(model)
             
             AuthViewModel().teacherUploaded(reqObj: model) { result in
                 switch result {
