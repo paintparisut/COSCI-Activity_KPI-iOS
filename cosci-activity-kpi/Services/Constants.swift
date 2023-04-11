@@ -60,9 +60,25 @@ struct Constants {
     
     struct AppConstants {
         static let CUR_USR_TOKEN = "UserAuthToken"
-        static let CUR_USR_ID = "UserDocsID"
-        static let CUR_USR_USERID = "UserID"
-        static let CUR_USR_ROLE = "UserRole"
+        
+        static let CUR_STU_IMG = "StudentImage"
+        static let CUR_STU_NAME = "StudentName"
+        static let CUR_STU_USER_ID = "StudentUserID"
+        static let CUR_STU_STUDENT_ID = "StudentStudentID"
+        static let CUR_STU_TEACHER = "StudentTeacher"
+        static let CUR_STU_MAJOR = "StudentMajor"
+        static let CUR_STU_EMAIL = "StudentEmail"
+        static let CUR_STU_TEL = "StudentTel"
+
+        static let CUR_TEA_IMG = "TeacherImage"
+        static let CUR_TEA_NAME = "TeacherName"
+        static let CUR_TEA_USER_ID = "TeacheUserID"
+        static let CUR_TEA_ROLE = "TeacherRole"
+        static let CUR_TEA_EMAIL = "TeacherEmail"
+        static let CUR_TEA_TEL = "TeacherTel"
+
+        static let OTP_EMAIL = "OTPEmail"
+
     }
     
     struct GraphicColors {

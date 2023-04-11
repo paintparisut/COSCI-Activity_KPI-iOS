@@ -14,7 +14,7 @@ class OTPVerifyStudentViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        emailTF.text = AppUtils.getEmailOTP()
     }
     
 
@@ -28,61 +28,68 @@ class OTPVerifyStudentViewController: UIViewController {
     
     
     private func fetchVerify() {
-            var model = requestOtpModel()
+        var model = requestOtpModel()
+        model.email = emailTF.text
+        model.otp = OtpTF.text
             
-            print(model)
-            
-            AuthViewModel().verifyStudent(reqObj: model) { result in
-                switch result {
-                case .success(let response):
-                    print("Success",response)
-//                    AppUtils.saveUsrProfile(profile: response.profile_pic ?? "")
-//                    AppUtils.saveUsrUsername(username: response.username ?? "")
-//                    AppUtils.saveUsrEmail(email: response.email ?? "")
-//                    AppUtils.saveUsrName(firstname: response.name?.firstname ?? "", lastname: response.name?.lastname ?? "")
-                case .failure(let error):
-                    switch error{
-                    case .BackEndError(let msg):
-                        print(msg)
-                    case .Non200StatusCodeError(let val):
-                        print("Error Code: \(val.status) - \(val.message)")
-                    case .UnParsableError:
-                        print("Error \(error)")
-                    case .NoNetworkError:
-                        print("No network")
-                    }
+        AuthViewModel().verifyStudent(reqObj: model) { result in
+            switch result {
+            case .success(let response):
+                AppUtils.saveStudentImg(img: response.img_user ?? "")
+                AppUtils.saveStudentName(name: response.name ?? "")
+                AppUtils.saveStudentUserID(userID: response.user_id ?? "")
+                AppUtils.saveStudentStudentID(studentID: response.student_id ?? "")
+                AppUtils.saveStudentTeacher(teacher: response.teacher ?? "")
+                AppUtils.saveStudentMajor(major: response.major ?? "")
+                AppUtils.saveStudentEmail(email: response.email ?? "")
+                AppUtils.saveStudentTel(tel: response.tel ?? "")
+                AppUtils.deleteEmailOTP()
+                self.stundentHome()
+            case .failure(let error):
+                switch error{
+                case .BackEndError(let msg):
+                    print(msg)
+                case .Non200StatusCodeError(let val):
+                    print("Error Code: \(val.status) - \(val.message)")
+                case .UnParsableError:
+                    print("Error \(error)")
+                case .NoNetworkError:
+                    print("No network")
                 }
             }
+        }
     }
     
     private func resendVerify() {
-            var model = requestResendOtpModel()
-            
-            print(model)
-            
-            AuthViewModel().resendOTPStudent(reqObj: model) { result in
-                switch result {
-                case .success(let response):
-                    print("Success",response)
-//                    AppUtils.saveUsrProfile(profile: response.profile_pic ?? "")
-//                    AppUtils.saveUsrUsername(username: response.username ?? "")
-//                    AppUtils.saveUsrEmail(email: response.email ?? "")
-//                    AppUtils.saveUsrName(firstname: response.name?.firstname ?? "", lastname: response.name?.lastname ?? "")
-                case .failure(let error):
-                    switch error{
-                    case .BackEndError(let msg):
-                        print(msg)
-                    case .Non200StatusCodeError(let val):
-                        print("Error Code: \(val.status) - \(val.message)")
-                    case .UnParsableError:
-                        print("Error \(error)")
-                    case .NoNetworkError:
-                        print("No network")
-                    }
+        var model = requestResendOtpModel()
+        model.email = emailTF.text
+        print(model)
+        
+        AuthViewModel().resendOTPStudent(reqObj: model) { result in
+            switch result {
+            case .success(let response):
+                print("Success",response)
+            case .failure(let error):
+                switch error{
+                case .BackEndError(let msg):
+                    print(msg)
+                case .Non200StatusCodeError(let val):
+                    print("Error Code: \(val.status) - \(val.message)")
+                case .UnParsableError:
+                    print("Error \(error)")
+                case .NoNetworkError:
+                    print("No network")
                 }
             }
+        }
     }
     
 
+    func stundentHome() {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "student") as! UITabBarController
+        nextViewController.modalPresentationStyle = .fullScreen
+        self.present(nextViewController, animated:true, completion:nil)
+    }
 
 }

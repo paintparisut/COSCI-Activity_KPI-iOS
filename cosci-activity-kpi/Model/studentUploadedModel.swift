@@ -26,7 +26,7 @@ struct responseStudentUploadRegisModel : Codable {
 
 
 struct requestStudentUploadedModel: Encodable {
-    var user_id: String = 
+    var user_id: String?
 }
 
 struct responseStudentUploadedModel: Codable {
