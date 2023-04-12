@@ -8,22 +8,50 @@
 import UIKit
 
 class StudentEventListViewController: UIViewController {
-
+    
+    let refreshControl = UIRefreshControl() // ทำpull refreshด้วย
+    var data = eventModel(data: [])
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        getEventData()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewDidAppear(_ animated: Bool) {
+        
     }
-    */
 
+    private func getEventData() {
+
+            
+        StudentViewModel().getEventData() { result in
+            switch result {
+            case .success(let response):
+                print("Success",response)
+                self.data = response
+            case .failure(let error):
+                switch error{
+                case .BackEndError(let msg):
+                    print(msg)
+                case .Non200StatusCodeError(let val):
+                    print("Error Code: \(val.status) - \(val.message)")
+                case .UnParsableError:
+                    print("Error \(error)")
+                case .NoNetworkError:
+                    print("No network")
+                }
+            }
+        }
+    }
+
+    private func pullrefresh() {
+        refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+          refreshControl.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
+    }
+    
+    @objc func refresh(_ sender: AnyObject) {
+        getEventData()
+        refreshControl.endRefreshing()
+        
+    }
 }

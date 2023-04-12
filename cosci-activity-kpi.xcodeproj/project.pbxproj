@@ -49,6 +49,8 @@
 		CBAA505929E622B90023B3C5 /* StudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAA505829E622B90023B3C5 /* StudentViewController.swift */; };
 		CBAA505B29E622C70023B3C5 /* TeacherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAA505A29E622C70023B3C5 /* TeacherViewController.swift */; };
 		CBAA505D29E73CE40023B3C5 /* SelectRoleForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAA505C29E73CE40023B3C5 /* SelectRoleForgotPasswordViewController.swift */; };
+		CBAA505F29E753B70023B3C5 /* StudentChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAA505E29E753B60023B3C5 /* StudentChangePasswordViewController.swift */; };
+		CBAA506129E753CB0023B3C5 /* TeacherChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAA506029E753CB0023B3C5 /* TeacherChangePasswordViewController.swift */; };
 		CBAC2B9529DEF7E90032FEF9 /* OTPVerifyTeacherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAC2B9429DEF7E90032FEF9 /* OTPVerifyTeacherViewController.swift */; };
 		CBE09EC629DE097F00F7566E /* SelectRoleRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE09EC529DE097F00F7566E /* SelectRoleRegisterViewController.swift */; };
 /* End PBXBuildFile section */
@@ -118,6 +120,8 @@
 		CBAA505829E622B90023B3C5 /* StudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentViewController.swift; sourceTree = "<group>"; };
 		CBAA505A29E622C70023B3C5 /* TeacherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherViewController.swift; sourceTree = "<group>"; };
 		CBAA505C29E73CE40023B3C5 /* SelectRoleForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRoleForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		CBAA505E29E753B60023B3C5 /* StudentChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentChangePasswordViewController.swift; sourceTree = "<group>"; };
+		CBAA506029E753CB0023B3C5 /* TeacherChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherChangePasswordViewController.swift; sourceTree = "<group>"; };
 		CBAC2B9429DEF7E90032FEF9 /* OTPVerifyTeacherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPVerifyTeacherViewController.swift; sourceTree = "<group>"; };
 		CBE09EC529DE097F00F7566E /* SelectRoleRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRoleRegisterViewController.swift; sourceTree = "<group>"; };
 		F508E1F9497F7DB192D57F5A /* Pods-cosci-activity-kpi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cosci-activity-kpi.debug.xcconfig"; path = "Target Support Files/Pods-cosci-activity-kpi/Pods-cosci-activity-kpi.debug.xcconfig"; sourceTree = "<group>"; };
@@ -190,6 +194,7 @@
 				CB96591F29DC3D5200FF309A /* TeacherKPIListViewController.swift */,
 				CB96592929DC40C600FF309A /* TeacherHistoryViewController.swift */,
 				CB96592B29DC410800FF309A /* TeachProfileViewController.swift */,
+				CBAA506029E753CB0023B3C5 /* TeacherChangePasswordViewController.swift */,
 			);
 			path = TeacherController;
 			sourceTree = "<group>";
@@ -198,9 +203,10 @@
 			isa = PBXGroup;
 			children = (
 				CB96592129DC3D7100FF309A /* StudentEventListViewController.swift */,
+				CB96592529DC405100FF309A /* StudentHistoryViewController.swift */,
 				CB96592329DC403F00FF309A /* StudentCheckHistoryViewController.swift */,
 				CB96592729DC40A000FF309A /* StudentProfileViewController.swift */,
-				CB96592529DC405100FF309A /* StudentHistoryViewController.swift */,
+				CBAA505E29E753B60023B3C5 /* StudentChangePasswordViewController.swift */,
 			);
 			path = StudentController;
 			sourceTree = "<group>";
@@ -518,6 +524,7 @@
 				CBE09EC629DE097F00F7566E /* SelectRoleRegisterViewController.swift in Sources */,
 				CBA858E729CF781E00D863CC /* Constants.swift in Sources */,
 				CBA858FC29CF791F00D863CC /* teacherRegisteredModel.swift in Sources */,
+				CBAA505F29E753B70023B3C5 /* StudentChangePasswordViewController.swift in Sources */,
 				CB96592A29DC40C600FF309A /* TeacherHistoryViewController.swift in Sources */,
 				CBA858F429CF78D700D863CC /* otpModel.swift in Sources */,
 				CB96591429DC388400FF309A /* LoginViewController.swift in Sources */,
@@ -533,6 +540,7 @@
 				CB96591A29DC397600FF309A /* TeacherRegisterViewController.swift in Sources */,
 				CBA858E829CF781E00D863CC /* AuthViewModel.swift in Sources */,
 				CBA858F029CF78B700D863CC /* eventModel.swift in Sources */,
+				CBAA506129E753CB0023B3C5 /* TeacherChangePasswordViewController.swift in Sources */,
 				CB96592429DC403F00FF309A /* StudentCheckHistoryViewController.swift in Sources */,
 				CBA858AB29CF77CF00D863CC /* AppDelegate.swift in Sources */,
 				CBA858FE29CF793100D863CC /* teacherUploadedModel.swift in Sources */,

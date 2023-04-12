@@ -35,9 +35,13 @@ class StudentRegisterViewController: UIViewController {
         self.loginPage()
     }
     
+
     @IBAction func backButton(_ sender: Any) {
         AppUtils.deleteUploadedStudent()
+        self.dismiss(animated: false, completion: nil)
+
     }
+    
     private func register() {
         var model = requestRegisterStudentModel()
         model.student_id = studentidTF.text

@@ -17,6 +17,11 @@ class StudentUploadedViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    
+    @IBAction func backButton(_ sender: Any) {
+        self.dismiss(animated: false, completion: nil)
+    }
+    
     @IBAction func submitButton(_ sender: Any) {
         fetchStudentUploaded()
     }

@@ -7,8 +7,7 @@
 
 import Foundation
 
-struct eventModel : Codable {
-    
+struct eventDataModel : Codable {
     let name_event : String?
     let detail_event : String?
     let start_date : String?
@@ -21,4 +20,14 @@ struct eventModel : Codable {
     let event_status : Bool?
     let permissions_type : String?
 
+}
+
+struct ResponseEventDataModel: Codable {
+    let result: String
+    let message: String
+    var data: eventModel
+}
+
+struct eventModel : Codable {
+    var data : [eventDataModel]
 }

@@ -7,12 +7,20 @@
 
 import Foundation
 
-struct requestModel : Encodable {
-    let user : userreq?
-    let event : eventreq?
+struct requestDataModel : Codable {
+    let _id : String?
+    let id_user : String?
+    let user_id : String?
+    let name : String?
+    let student_id : String?
+    let id_event : String?
+    let name_event :String?
+    let event_img : String?
+    let event_type : String?
+    let activity_hour : String?
     let start_date : String?
     let end_date : String?
-    let uploaded_img : String?
+    let uploaded_img : [String]?
     let uploaded_pdf : String?
     let date_request : String?
     let status_request : String?
@@ -20,23 +28,43 @@ struct requestModel : Encodable {
     let permissions_request : String?
 }
 
-struct userreq : Codable {
+struct ResponseRequestDataModel: Codable {
+    var result: String
+    var message: String
+    var data: requestModel
+}
+
+struct requestModel : Codable {
+    var data : [requestDataModel]
+}
+
+
+struct requestReqTeacherDataModel : Codable {
+    let _id : String?
     let id_user : String?
     let user_id : String?
     let name : String?
-    let student_id : String?
+    let id_event : String?
+    let name_event :String?
+    let event_img : String?
+    let event_type : String?
+    let activity_hour : String?
+    let start_date : String?
+    let end_date : String?
+    let uploaded_img : [String]?
+    let uploaded_pdf : String?
+    let date_request : String?
+    let status_request : String?
+    let type_request : String?
+    let permissions_request : String?
 }
 
-struct eventreq : Codable {
-    let id_event : String?
-    let name_event : String?
-    let detail_event : String?
-    let start_date : Date?
-    let end_date : Date?
-    let posted_timestamp : String?
-    let event_type : String?
-    let event_img : String?
-    let event_img_list : [String]?
-    let activity_hour : Int
-    let event_status : Bool?
+struct ResponseRequestTeacherDataModel: Codable {
+    var result: String
+    var message: String
+    var data: requestTeacherModel
+}
+
+struct requestTeacherModel : Codable {
+    var data : [requestReqTeacherDataModel]
 }

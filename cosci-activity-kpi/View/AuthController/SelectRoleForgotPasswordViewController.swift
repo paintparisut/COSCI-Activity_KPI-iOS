@@ -16,6 +16,9 @@ class SelectRoleForgotPasswordViewController: UIViewController {
     }
     
 
+    @IBAction func backButton(_ sender: Any) {
+        self.dismiss(animated: false, completion: nil)
+    }
     /*
     // MARK: - Navigation
 

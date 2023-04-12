@@ -43,3 +43,9 @@ struct responseLoginTeacherModel: Codable {
 struct resquestForgotTeacherModel: Codable {
     var user_id: String? 
 }
+
+struct resquestChangeTeacherModel: Codable {
+    var oldpassword: String?
+    var password: String?
+    var confirmpassword: String?
+}

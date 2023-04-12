@@ -17,6 +17,9 @@ class ForgotStudentViewController: UIViewController {
     }
     
 
+    @IBAction func backButton(_ sender: Any) {
+        self.dismiss(animated: false, completion: nil)
+    }
     @IBAction func submitButton(_ sender: Any) {
         forgotPassword()
     }

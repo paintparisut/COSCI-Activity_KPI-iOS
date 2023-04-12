@@ -40,6 +40,15 @@
                                     <action selector="cancleButton:" destination="ygY-VC-GjQ" eventType="touchUpInside" id="pUa-vd-2cf"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="whG-M9-2XM">
+                                <rect key="frame" x="16" y="46" width="62" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Back"/>
+                                <connections>
+                                    <action selector="backButton:" destination="ygY-VC-GjQ" eventType="touchUpInside" id="3VO-mF-8fy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2cS-3y-VgE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -85,7 +94,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Back"/>
                                 <connections>
-                                    <segue destination="Vb6-tq-lMZ" kind="show" animates="NO" id="zRv-ag-2gf"/>
+                                    <action selector="backButton:" destination="qgP-WI-PiU" eventType="touchUpInside" id="QCc-UF-59h"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -249,7 +258,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Back"/>
                                 <connections>
-                                    <segue destination="SBb-Pe-HTU" kind="show" id="Zsj-Hh-t5n"/>
+                                    <action selector="backButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TmX-jX-xrt"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -324,8 +333,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Back"/>
                                 <connections>
-                                    <action selector="backButton:" destination="fXI-yE-Vku" eventType="touchUpInside" id="HCB-Zb-7xJ"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="EPS-fo-sC3"/>
+                                    <action selector="backButton:" destination="fXI-yE-Vku" eventType="touchUpInside" id="qZb-Y6-4D6"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W2f-y1-b0L">
@@ -362,7 +370,7 @@
             </objects>
             <point key="canvasLocation" x="-1080" y="2387"/>
         </scene>
-        <!--Item-->
+        <!--Event-->
         <scene sceneID="TZH-Il-gEL">
             <objects>
                 <viewController storyboardIdentifier="teacherkpi" id="9gI-pN-fUG" customClass="TeacherKPIListViewController" customModule="cosci_activity_kpi" customModuleProvider="target" sceneMemberID="viewController">
@@ -372,17 +380,17 @@
                         <viewLayoutGuide key="safeArea" id="q8k-Nk-mVi"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="arq-eL-Z0n"/>
+                    <tabBarItem key="tabBarItem" title="Event" id="arq-eL-Z0n"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k8b-L7-f6x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="198" y="-1521"/>
         </scene>
-        <!--Item-->
+        <!--Profile-->
         <scene sceneID="ONp-Qe-fax">
             <objects>
-                <viewController id="LMj-9b-ywE" customClass="TeachProfileViewController" customModule="cosci_activity_kpi" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="LMj-9b-ywE" customClass="TeachProfileViewController" customModule="cosci_activity_kpi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="emC-m4-hEh">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -436,12 +444,16 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="change password"/>
+                                <connections>
+                                    <segue destination="Srq-oa-lOg" kind="show" animates="NO" id="ST7-Yr-HMT"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="B5q-c2-zrr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="7Cf-h9-jfG"/>
+                    <tabBarItem key="tabBarItem" title="Profile" id="7Cf-h9-jfG"/>
+                    <navigationItem key="navigationItem" id="TTX-L2-smu"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="emailTF" destination="lmq-Lz-0rl" id="FWf-7f-Y9N"/>
@@ -456,7 +468,66 @@
             </objects>
             <point key="canvasLocation" x="199" y="-163"/>
         </scene>
-        <!--Item-->
+        <!--Teacher Change Password View Controller-->
+        <scene sceneID="vUB-yO-JWf">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="Srq-oa-lOg" customClass="TeacherChangePasswordViewController" customModule="cosci_activity_kpi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JaJ-Hj-AET">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Niq-nX-acV">
+                                <rect key="frame" x="23" y="59" width="62" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Back"/>
+                                <connections>
+                                    <action selector="backButton:" destination="Srq-oa-lOg" eventType="touchUpInside" id="vkp-qX-BVh"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ORp-fM-WQb">
+                                <rect key="frame" x="128" y="220" width="136" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ba1-Su-XQx">
+                                <rect key="frame" x="128" y="289" width="136" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aQU-En-BHs">
+                                <rect key="frame" x="128" y="368" width="136" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6It-Ov-daO">
+                                <rect key="frame" x="125" y="476" width="143" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="ยืนยันเปลี่ยนรหัส"/>
+                                <connections>
+                                    <action selector="submitButton:" destination="Srq-oa-lOg" eventType="touchUpInside" id="bMb-bq-8WV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="IDy-1f-c3i"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="KLK-BX-9ND"/>
+                    <connections>
+                        <outlet property="confirmnewpassword" destination="aQU-En-BHs" id="oat-xs-ZEh"/>
+                        <outlet property="newpassword" destination="Ba1-Su-XQx" id="jph-G1-j7g"/>
+                        <outlet property="oldpassword" destination="ORp-fM-WQb" id="OVr-D1-4bs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i2v-91-5Se" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1175" y="-163"/>
+        </scene>
+        <!--History-->
         <scene sceneID="S1G-KA-qSn">
             <objects>
                 <viewController id="5LQ-NM-ZuG" customClass="TeacherHistoryViewController" customModule="cosci_activity_kpi" customModuleProvider="target" sceneMemberID="viewController">
@@ -466,14 +537,14 @@
                         <viewLayoutGuide key="safeArea" id="TZe-d3-02w"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="vKw-UK-dbL"/>
+                    <tabBarItem key="tabBarItem" title="History" id="vKw-UK-dbL"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vSW-LK-YIz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="198" y="-851"/>
         </scene>
-        <!--Item-->
+        <!--Event-->
         <scene sceneID="5u1-B9-cyh">
             <objects>
                 <viewController storyboardIdentifier="studentevent" id="gF5-ov-99U" customClass="StudentEventListViewController" customModule="cosci_activity_kpi" customModuleProvider="target" sceneMemberID="viewController">
@@ -483,13 +554,13 @@
                         <viewLayoutGuide key="safeArea" id="PSh-9N-gAW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="1J4-aZ-egD"/>
+                    <tabBarItem key="tabBarItem" title="Event" id="1J4-aZ-egD"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="njb-iF-Ic2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="198" y="535"/>
         </scene>
-        <!--Item-->
+        <!--History-->
         <scene sceneID="Hs2-VC-1bn">
             <objects>
                 <viewController id="orG-fF-mHe" customClass="StudentCheckHistoryViewController" customModule="cosci_activity_kpi" customModuleProvider="target" sceneMemberID="viewController">
@@ -499,13 +570,13 @@
                         <viewLayoutGuide key="safeArea" id="Vmd-t6-8YL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="AOG-q3-nHH"/>
+                    <tabBarItem key="tabBarItem" title="History" id="AOG-q3-nHH"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AGf-6Q-Ezl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="198" y="1202"/>
         </scene>
-        <!--Item-->
+        <!--Detail-->
         <scene sceneID="HYg-PS-xjk">
             <objects>
                 <viewController id="DJp-mp-Z3V" customClass="StudentHistoryViewController" customModule="cosci_activity_kpi" customModuleProvider="target" sceneMemberID="viewController">
@@ -515,7 +586,7 @@
                         <viewLayoutGuide key="safeArea" id="2Ta-Kg-itA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="XIw-gI-HkZ"/>
+                    <tabBarItem key="tabBarItem" title="Detail" id="XIw-gI-HkZ"/>
                     <navigationItem key="navigationItem" id="Hbi-RK-k76"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DHO-4t-xws" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -525,20 +596,11 @@
         <!--Item-->
         <scene sceneID="qIx-YI-vxk">
             <objects>
-                <viewController id="pRU-FJ-UW3" customClass="StudentProfileViewController" customModule="cosci_activity_kpi" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="pRU-FJ-UW3" customClass="StudentProfileViewController" customModule="cosci_activity_kpi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZfC-Zj-bD1">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="swP-Jd-X0Q">
-                                <rect key="frame" x="-5" y="795" width="393" height="48"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <items>
-                                    <tabBarItem systemItem="favorites" id="W83-tN-Ykn"/>
-                                    <tabBarItem systemItem="more" id="M7Z-RJ-hnu"/>
-                                </items>
-                            </tabBar>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dat-xV-D4C">
                                 <rect key="frame" x="76" y="121" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -548,6 +610,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="change password"/>
+                                <connections>
+                                    <segue destination="MqU-uh-CJo" kind="show" animates="NO" id="D6Q-SX-X8h"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="ชื่อ" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T9k-YJ-lDz">
                                 <rect key="frame" x="144" y="290" width="97" height="34"/>
@@ -606,6 +671,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="alc-pr-z8x" userLabel="item"/>
+                    <navigationItem key="navigationItem" id="dBJ-4O-RVf"/>
                     <connections>
                         <outlet property="emailTF" destination="0fS-YC-pE1" id="EtS-27-s64"/>
                         <outlet property="majorTF" destination="baw-fd-S1K" id="pBF-hg-t95"/>
@@ -650,7 +716,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Back"/>
                                 <connections>
-                                    <segue destination="SBb-Pe-HTU" kind="show" id="ES0-ic-dn8"/>
+                                    <action selector="backButton:" destination="iAi-4V-7yc" eventType="touchUpInside" id="bcX-Bx-b4d"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -726,14 +792,10 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b1e-HC-mzp">
-                                <rect key="frame" x="16" y="59" width="62" height="35"/>
+                                <rect key="frame" x="16" y="-236" width="62" height="295"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Back"/>
-                                <connections>
-                                    <action selector="backButton:" destination="0FO-wo-pEg" eventType="touchUpInside" id="QmX-oO-PK6"/>
-                                    <segue destination="iAi-4V-7yc" kind="show" animates="NO" id="hKs-pU-pbx"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dzu-ZF-B3Y">
                                 <rect key="frame" x="161" y="642" width="71" height="35"/>
@@ -750,6 +812,15 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oOK-VK-2sO">
+                                <rect key="frame" x="39" y="44" width="62" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Back"/>
+                                <connections>
+                                    <action selector="backButton:" destination="0FO-wo-pEg" eventType="touchUpInside" id="lhZ-yF-DwB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="73D-Lb-mKZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -768,7 +839,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JEL-mT-tuQ" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2341" y="2387"/>
+            <point key="canvasLocation" x="-2341.2213740458014" y="2386.6197183098593"/>
         </scene>
         <!--Select Role Register View Controller-->
         <scene sceneID="O6t-zZ-9Uo">
@@ -802,7 +873,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Back"/>
                                 <connections>
-                                    <segue destination="Vb6-tq-lMZ" kind="show" id="unm-KJ-qYy"/>
+                                    <action selector="backButton:" destination="SBb-Pe-HTU" eventType="touchUpInside" id="2M0-dO-53D"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -898,6 +969,15 @@
                                     <action selector="cancleButton:" destination="bRo-ez-xTs" eventType="touchUpInside" id="eS9-hc-umr"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RfZ-FF-rsN">
+                                <rect key="frame" x="16" y="59" width="62" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Back"/>
+                                <connections>
+                                    <action selector="backButton:" destination="bRo-ez-xTs" eventType="touchUpInside" id="08j-P0-ptQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LV2-UH-eY7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -952,12 +1032,68 @@
             </objects>
             <point key="canvasLocation" x="-639" y="922"/>
         </scene>
+        <!--Student Change Password View Controller-->
+        <scene sceneID="nax-dK-C0p">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="MqU-uh-CJo" customClass="StudentChangePasswordViewController" customModule="cosci_activity_kpi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p72-qn-S3F">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yEJ-nD-UkQ">
+                                <rect key="frame" x="23" y="59" width="62" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Back"/>
+                                <connections>
+                                    <action selector="backButton:" destination="MqU-uh-CJo" eventType="touchUpInside" id="EVm-va-3W5"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XRJ-EW-pSp">
+                                <rect key="frame" x="128" y="220" width="136" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qut-2B-dc6">
+                                <rect key="frame" x="128" y="289" width="136" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="134-Ax-xEV">
+                                <rect key="frame" x="128" y="368" width="136" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BaX-As-B1C">
+                                <rect key="frame" x="125" y="476" width="143" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="ยืนยันเปลี่ยนรหัส"/>
+                                <connections>
+                                    <action selector="submitButton:" destination="MqU-uh-CJo" eventType="touchUpInside" id="Ez2-cW-kxY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4ik-8e-2tJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="n32-xE-gUW"/>
+                    <connections>
+                        <outlet property="newpassword" destination="Qut-2B-dc6" id="RHj-hK-HVI"/>
+                        <outlet property="newpasswordconfirm" destination="134-Ax-xEV" id="mZi-PL-vCt"/>
+                        <outlet property="oldpassword" destination="XRJ-EW-pSp" id="yZq-ej-4pu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z2K-eq-KYB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1175" y="2608"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Zsj-Hh-t5n"/>
-        <segue reference="whB-IU-G0j"/>
-        <segue reference="odF-1N-GfI"/>
-        <segue reference="zRv-ag-2gf"/>
+        <segue reference="RC1-8S-rpc"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
