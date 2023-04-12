@@ -89,7 +89,7 @@ class OTPVerifyStudentViewController: UIViewController {
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         let nextViewController = storyBoard.instantiateViewController(withIdentifier: "student") as! UITabBarController
         nextViewController.modalPresentationStyle = .fullScreen
-        self.present(nextViewController, animated:true, completion:nil)
+        self.present(nextViewController, animated:false, completion:nil)
     }
 
 }

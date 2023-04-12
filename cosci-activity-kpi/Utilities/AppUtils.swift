@@ -37,13 +37,95 @@ struct AppUtils {
     static func saveEmailOTP(email:String) {
         UserDefaults.standard.setValue(email, forKeyPath: Constants.AppConstants.OTP_EMAIL)
     }
-    
+        
     static func getEmailOTP() -> String? {
            return UserDefaults.standard.value(forKey: Constants.AppConstants.OTP_EMAIL) as? String
        }
     
     static func deleteEmailOTP() {
         UserDefaults.standard.removeObject(forKey: Constants.AppConstants.OTP_EMAIL)
+    }
+    
+    //UPLOADED STUDENT
+    static func saveUploadedStudentId(studentid:String) {
+        UserDefaults.standard.setValue(studentid, forKeyPath: Constants.AppConstants.UP_STUDENT_STUDENT_ID)
+    }
+        
+    static func saveUploadedStudentName(name:String) {
+        UserDefaults.standard.setValue(name, forKeyPath: Constants.AppConstants.UP_STUDENT_NAME)
+    }
+    
+    static func saveUploadedStudentMajor(major:String) {
+        UserDefaults.standard.setValue(major, forKeyPath: Constants.AppConstants.UP_STUDENT_MAJOR)
+    }
+    static func saveUploadedStudentTeacher(teacher:String) {
+        UserDefaults.standard.setValue(teacher, forKeyPath: Constants.AppConstants.UP_STUDENT_TEACHER)
+    }
+    
+    static func getUploadedStudentId() -> String? {
+           return UserDefaults.standard.value(forKey: Constants.AppConstants.UP_STUDENT_STUDENT_ID) as? String
+    }
+    static func getUploadedStudentName() -> String? {
+           return UserDefaults.standard.value(forKey: Constants.AppConstants.UP_STUDENT_NAME) as? String
+    }
+    static func getUploadedStudentMajor() -> String? {
+           return UserDefaults.standard.value(forKey: Constants.AppConstants.UP_STUDENT_MAJOR) as? String
+    }
+    static func getUploadedStudentTeacher() -> String? {
+           return UserDefaults.standard.value(forKey: Constants.AppConstants.UP_STUDENT_TEACHER) as? String
+    }
+        
+    static func deleteUploadedStudent() {
+        UserDefaults.standard.removeObject(forKey: Constants.AppConstants.UP_STUDENT_NAME)
+        UserDefaults.standard.removeObject(forKey: Constants.AppConstants.UP_STUDENT_STUDENT_ID)
+        UserDefaults.standard.removeObject(forKey: Constants.AppConstants.UP_STUDENT_MAJOR)
+        UserDefaults.standard.removeObject(forKey: Constants.AppConstants.UP_STUDENT_TEACHER)
+    }
+    
+    //UPLOADED TEACHER
+    static func saveUploadedTeacherUserID(userid:String) {
+        UserDefaults.standard.setValue(userid, forKeyPath: Constants.AppConstants.UP_TEACHER_USERID)
+    }
+    
+    static func saveUploadedTeacherName(name:String) {
+        UserDefaults.standard.setValue(name, forKeyPath: Constants.AppConstants.UP_TEACHER_NAME)
+    }
+    
+    static func saveUploadedTeacherRole(role:String) {
+        UserDefaults.standard.setValue(role, forKeyPath: Constants.AppConstants.UP_TEACHER_ROLE)
+    }
+    
+    static func saveUploadedTeacherEmail(email:String) {
+        UserDefaults.standard.setValue(email, forKeyPath: Constants.AppConstants.UP_TEACHER_EMAIL)
+    }
+    
+    static func saveUploadedTeacherTel(tel:String) {
+        UserDefaults.standard.setValue(tel, forKeyPath: Constants.AppConstants.UP_TEACHER_TEL)
+    }
+    
+    static func getUploadedTeacherId() -> String? {
+           return UserDefaults.standard.value(forKey: Constants.AppConstants.UP_TEACHER_USERID) as? String
+    }
+    static func getUploadedTeacherName() -> String? {
+           return UserDefaults.standard.value(forKey: Constants.AppConstants.UP_TEACHER_NAME) as? String
+    }
+    
+    static func getUploadedTeacherRole() -> String? {
+           return UserDefaults.standard.value(forKey: Constants.AppConstants.UP_TEACHER_ROLE) as? String
+    }
+    static func getUploadedTeacherEmail() -> String? {
+           return UserDefaults.standard.value(forKey: Constants.AppConstants.UP_TEACHER_EMAIL) as? String
+    }
+    static func getUploadedTeacherTel() -> String? {
+           return UserDefaults.standard.value(forKey: Constants.AppConstants.UP_TEACHER_TEL) as? String
+    }
+    
+    static func deleteUploadedTeacher() {
+        UserDefaults.standard.removeObject(forKey: Constants.AppConstants.UP_TEACHER_USERID)
+        UserDefaults.standard.removeObject(forKey: Constants.AppConstants.UP_TEACHER_NAME)
+        UserDefaults.standard.removeObject(forKey: Constants.AppConstants.UP_TEACHER_ROLE)
+        UserDefaults.standard.removeObject(forKey: Constants.AppConstants.UP_TEACHER_EMAIL)
+        UserDefaults.standard.removeObject(forKey: Constants.AppConstants.UP_TEACHER_TEL)
     }
     
     //GET SAVE REMOVE CURRENT​ USER

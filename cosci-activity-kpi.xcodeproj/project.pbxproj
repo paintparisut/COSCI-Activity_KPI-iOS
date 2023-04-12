@@ -48,6 +48,7 @@
 		CBA858FE29CF793100D863CC /* teacherUploadedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA858FD29CF793100D863CC /* teacherUploadedModel.swift */; };
 		CBAA505929E622B90023B3C5 /* StudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAA505829E622B90023B3C5 /* StudentViewController.swift */; };
 		CBAA505B29E622C70023B3C5 /* TeacherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAA505A29E622C70023B3C5 /* TeacherViewController.swift */; };
+		CBAA505D29E73CE40023B3C5 /* SelectRoleForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAA505C29E73CE40023B3C5 /* SelectRoleForgotPasswordViewController.swift */; };
 		CBAC2B9529DEF7E90032FEF9 /* OTPVerifyTeacherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAC2B9429DEF7E90032FEF9 /* OTPVerifyTeacherViewController.swift */; };
 		CBE09EC629DE097F00F7566E /* SelectRoleRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE09EC529DE097F00F7566E /* SelectRoleRegisterViewController.swift */; };
 /* End PBXBuildFile section */
@@ -116,6 +117,7 @@
 		CBA858FD29CF793100D863CC /* teacherUploadedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teacherUploadedModel.swift; sourceTree = "<group>"; };
 		CBAA505829E622B90023B3C5 /* StudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentViewController.swift; sourceTree = "<group>"; };
 		CBAA505A29E622C70023B3C5 /* TeacherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherViewController.swift; sourceTree = "<group>"; };
+		CBAA505C29E73CE40023B3C5 /* SelectRoleForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRoleForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		CBAC2B9429DEF7E90032FEF9 /* OTPVerifyTeacherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPVerifyTeacherViewController.swift; sourceTree = "<group>"; };
 		CBE09EC529DE097F00F7566E /* SelectRoleRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRoleRegisterViewController.swift; sourceTree = "<group>"; };
 		F508E1F9497F7DB192D57F5A /* Pods-cosci-activity-kpi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cosci-activity-kpi.debug.xcconfig"; path = "Target Support Files/Pods-cosci-activity-kpi/Pods-cosci-activity-kpi.debug.xcconfig"; sourceTree = "<group>"; };
@@ -167,15 +169,16 @@
 		CB96591229DC384D00FF309A /* AuthController */ = {
 			isa = PBXGroup;
 			children = (
+				CB96591529DC38DF00FF309A /* StudentUploadedViewController.swift */,
 				CBA2E1DA29D5F9AC0078E722 /* TacherUploadedViewController.swift */,
 				CB96591B29DC39C000FF309A /* OTPVerifyStudentViewController.swift */,
 				CBAC2B9429DEF7E90032FEF9 /* OTPVerifyTeacherViewController.swift */,
 				CB095D0429DF26C4007E456C /* ForgotStudentViewController.swift */,
 				CB095D0629DF26D0007E456C /* ForgotTeacherViewController.swift */,
-				CBE09EC529DE097F00F7566E /* SelectRoleRegisterViewController.swift */,
 				CB96591929DC397600FF309A /* TeacherRegisterViewController.swift */,
 				CB96591729DC396B00FF309A /* StudentRegisterViewController.swift */,
-				CB96591529DC38DF00FF309A /* StudentUploadedViewController.swift */,
+				CBE09EC529DE097F00F7566E /* SelectRoleRegisterViewController.swift */,
+				CBAA505C29E73CE40023B3C5 /* SelectRoleForgotPasswordViewController.swift */,
 				CB96591329DC388400FF309A /* LoginViewController.swift */,
 			);
 			path = AuthController;
@@ -522,6 +525,7 @@
 				CB095D0529DF26C4007E456C /* ForgotStudentViewController.swift in Sources */,
 				CB96592C29DC410800FF309A /* TeachProfileViewController.swift in Sources */,
 				CB96592029DC3D5200FF309A /* TeacherKPIListViewController.swift in Sources */,
+				CBAA505D29E73CE40023B3C5 /* SelectRoleForgotPasswordViewController.swift in Sources */,
 				CBA858F829CF78FA00D863CC /* studentRegisteredModel.swift in Sources */,
 				CBA858F229CF78C600D863CC /* fileModel.swift in Sources */,
 				CB96592829DC40A000FF309A /* StudentProfileViewController.swift in Sources */,

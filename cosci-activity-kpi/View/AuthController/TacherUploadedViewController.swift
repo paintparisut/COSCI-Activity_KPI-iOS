@@ -21,26 +21,37 @@ class TacherUploadedViewController: UIViewController {
     }
     
     private func fetchUploaded() {
-            var model = requestTeacherUploadedModel()
-            
-            AuthViewModel().teacherUploaded(reqObj: model) { result in
-                switch result {
-                case .success(let response):
-                    print("Success",response)
-                case .failure(let error):
-                    switch error{
-                    case .BackEndError(let msg):
-                        print(msg)
-                    case .Non200StatusCodeError(let val):
-                        print("Error Code: \(val.status) - \(val.message)")
-                    case .UnParsableError:
-                        print("Error \(error)")
-                    case .NoNetworkError:
-                        print("No network")
-                    }
+        var model = requestTeacherUploadedModel()
+        model.user_id = teacherTF.text
+        AuthViewModel().teacherUploaded(reqObj: model) { result in
+            switch result {
+            case .success(let response):
+                AppUtils.saveUploadedTeacherUserID(userid: response.user_id ?? "")
+                AppUtils.saveUploadedTeacherName(name: response.name ?? "")
+                AppUtils.saveUploadedTeacherRole(role: response.role ?? "")
+                AppUtils.saveUploadedTeacherEmail(email: response.email ?? "")
+                AppUtils.saveUploadedTeacherTel(tel: response.tel ?? "")
+                self.registerView()
+            case .failure(let error):
+                switch error{
+                case .BackEndError(let msg):
+                    print(msg)
+                case .Non200StatusCodeError(let val):
+                    print("Error Code: \(val.status) - \(val.message)")
+                case .UnParsableError:
+                    print("Error \(error)")
+                case .NoNetworkError:
+                    print("No network")
                 }
             }
+        }
     }
+    
 
+    func registerView() {
+        let secondVC = storyboard?.instantiateViewController(withIdentifier: "teacherregister") as! TeacherRegisterViewController
+        secondVC.modalPresentationStyle = .fullScreen
+        self.present(secondVC, animated:false, completion:nil)
+    }
 
 }

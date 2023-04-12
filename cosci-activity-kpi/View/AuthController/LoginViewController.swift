@@ -120,25 +120,25 @@ class LoginViewController: UIViewController {
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         let nextViewController = storyBoard.instantiateViewController(withIdentifier: "student") as! UITabBarController
         nextViewController.modalPresentationStyle = .fullScreen
-        self.present(nextViewController, animated:true, completion:nil)
+        self.present(nextViewController, animated:false, completion:nil)
     }
     
     func teacherHome() {
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         let nextViewController = storyBoard.instantiateViewController(withIdentifier: "teacher") as! UITabBarController
         nextViewController.modalPresentationStyle = .fullScreen
-        self.present(nextViewController, animated:true, completion:nil)
+        self.present(nextViewController, animated:false, completion:nil)
     }
     
     func verifystudent() {
         let secondVC = storyboard?.instantiateViewController(withIdentifier: "verifystudent") as! OTPVerifyStudentViewController
         secondVC.modalPresentationStyle = .fullScreen
-        self.present(secondVC, animated:true, completion:nil)
+        self.present(secondVC, animated:false, completion:nil)
     }
     
     func verifyteacher() {
         let secondVC = storyboard?.instantiateViewController(withIdentifier: "verifyteacher") as! OTPVerifyTeacherViewController
         secondVC.modalPresentationStyle = .fullScreen
-        self.present(secondVC, animated:true, completion:nil)
+        self.present(secondVC, animated:false, completion:nil)
     }
 }

@@ -13,6 +13,8 @@ struct Constants {
     
     static let URL_BASE = "http://localhost:8081"
     
+    static let URL_IMG = "/public/img/"
+    
     static let URL_MIDDLEWARE = "/api"
     
     static let URL_ROUTES_ADMIN = "/admin"
@@ -78,6 +80,18 @@ struct Constants {
         static let CUR_TEA_TEL = "TeacherTel"
 
         static let OTP_EMAIL = "OTPEmail"
+        
+        static let UP_STUDENT_STUDENT_ID = "UploadedStudentID"
+        static let UP_STUDENT_NAME = "UploadedStudentName"
+        static let UP_STUDENT_MAJOR = "UploadedStudentMajor"
+        static let UP_STUDENT_TEACHER = "UploadedStudentTeacher"
+
+        static let UP_TEACHER_USERID = "UploadedTeacherUserID"
+        static let UP_TEACHER_NAME = "UploadedTeacherName"
+        static let UP_TEACHER_ROLE = "UploadedTeacherRole"
+        static let UP_TEACHER_EMAIL = "UploadedTeacherEmail"
+        static let UP_TEACHER_TEL = "UploadedTeacherTel"
+
 
     }
     

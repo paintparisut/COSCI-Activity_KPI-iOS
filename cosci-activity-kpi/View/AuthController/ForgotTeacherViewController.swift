@@ -21,28 +21,38 @@ class ForgotTeacherViewController: UIViewController {
     }
     
 
+    @IBAction func cancleButton(_ sender: Any) {
+        loginPage()
+    }
     private func forgotPassword() {
-            var model = resquestForgotTeacherModel()
-            
-            print(model)
-            
-            AuthViewModel().forgotPasswordTeacher(reqObj: model) { result in
-                switch result {
-                case .success(let response):
-                    print("Success",response)
-                case .failure(let error):
-                    switch error{
-                    case .BackEndError(let msg):
-                        print(msg)
-                    case .Non200StatusCodeError(let val):
-                        print("Error Code: \(val.status) - \(val.message)")
-                    case .UnParsableError:
-                        print("Error \(error)")
-                    case .NoNetworkError:
-                        print("No network")
-                    }
+        var model = resquestForgotTeacherModel()
+        
+        model.user_id = useridTF.text
+
+        AuthViewModel().forgotPasswordTeacher(reqObj: model) { result in
+            switch result {
+            case .success(let response):
+                print("Success",response)
+                self.loginPage()
+            case .failure(let error):
+                switch error{
+                case .BackEndError(let msg):
+                    print(msg)
+                case .Non200StatusCodeError(let val):
+                    print("Error Code: \(val.status) - \(val.message)")
+                case .UnParsableError:
+                    print("Error \(error)")
+                case .NoNetworkError:
+                    print("No network")
                 }
             }
+        }
+    }
+    
+    private func loginPage() {
+        let secondVC = storyboard?.instantiateViewController(withIdentifier: "login") as! LoginViewController
+        secondVC.modalPresentationStyle = .fullScreen
+        self.present(secondVC, animated:false, completion:nil)
     }
 
 }
