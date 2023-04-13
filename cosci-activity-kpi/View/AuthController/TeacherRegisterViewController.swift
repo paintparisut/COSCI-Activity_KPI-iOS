@@ -39,7 +39,6 @@ class TeacherRegisterViewController: UIViewController {
     @IBAction func backButton(_ sender: Any) {
         AppUtils.deleteUploadedTeacher()
         self.dismiss(animated: false, completion: nil)
-
     }
     private func register() {
         var model = requestRegisterTeacherModel()

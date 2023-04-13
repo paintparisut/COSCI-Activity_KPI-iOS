@@ -99,6 +99,9 @@ class LoginViewController: UIViewController {
                   case .BackEndError(let msg):
                       if msg.errorMessage == "nOK" { // case invalid
                           print(msg)
+                          let alert = UIAlertController(title: "เกิดข้อผิดพลาด", message: "ไม่มีผู้ใช้ หรือกรอกข้อมูลผิด", preferredStyle: UIAlertController.Style.alert)
+                          alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+                          self.present(alert, animated: true, completion: nil)
                       }
                       else if msg.errorMessage == "Wait" { // case otp
                           print(msg.data)

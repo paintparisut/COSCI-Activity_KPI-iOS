@@ -28,7 +28,6 @@
 		2D246E0429E88F1100646D19 /* Kanit-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D246DF229E88F1100646D19 /* Kanit-SemiBold.ttf */; };
 		2D246E0529E88F1100646D19 /* Kanit-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D246DF329E88F1100646D19 /* Kanit-Thin.ttf */; };
 		2D246E0729E8915600646D19 /* CustomLable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D246E0629E8915600646D19 /* CustomLable.swift */; };
-		2D246E0929E8A98300646D19 /* CustomSegmentControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D246E0829E8A98300646D19 /* CustomSegmentControl.swift */; };
 		3FB760549DFF40AAEED13067 /* Pods_cosci_activity_kpi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B414E1EDE0E4AF2B09FA93AC /* Pods_cosci_activity_kpi.framework */; };
 		CB095D0529DF26C4007E456C /* ForgotStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB095D0429DF26C4007E456C /* ForgotStudentViewController.swift */; };
 		CB095D0729DF26D0007E456C /* ForgotTeacherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB095D0629DF26D0007E456C /* ForgotTeacherViewController.swift */; };
@@ -116,7 +115,6 @@
 		2D246DF229E88F1100646D19 /* Kanit-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Kanit-SemiBold.ttf"; path = "../../../../../Downloads/Kanit/Kanit-SemiBold.ttf"; sourceTree = "<group>"; };
 		2D246DF329E88F1100646D19 /* Kanit-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Kanit-Thin.ttf"; path = "../../../../../Downloads/Kanit/Kanit-Thin.ttf"; sourceTree = "<group>"; };
 		2D246E0629E8915600646D19 /* CustomLable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLable.swift; sourceTree = "<group>"; };
-		2D246E0829E8A98300646D19 /* CustomSegmentControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentControl.swift; sourceTree = "<group>"; };
 		A013922E8BFA0CB27EB073F5 /* Pods-cosci-activity-kpi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cosci-activity-kpi.release.xcconfig"; path = "Target Support Files/Pods-cosci-activity-kpi/Pods-cosci-activity-kpi.release.xcconfig"; sourceTree = "<group>"; };
 		B414E1EDE0E4AF2B09FA93AC /* Pods_cosci_activity_kpi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cosci_activity_kpi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB095D0429DF26C4007E456C /* ForgotStudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotStudentViewController.swift; sourceTree = "<group>"; };
@@ -212,7 +210,6 @@
 				2D246DDD29E881E400646D19 /* CustomButton.swift */,
 				2D246DDF29E8891900646D19 /* CustomTextField.swift */,
 				2D246E0629E8915600646D19 /* CustomLable.swift */,
-				2D246E0829E8A98300646D19 /* CustomSegmentControl.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -625,7 +622,6 @@
 				2D246DE029E8891900646D19 /* CustomTextField.swift in Sources */,
 				CBAA505929E622B90023B3C5 /* StudentViewController.swift in Sources */,
 				CBE09EC629DE097F00F7566E /* SelectRoleRegisterViewController.swift in Sources */,
-				2D246E0929E8A98300646D19 /* CustomSegmentControl.swift in Sources */,
 				CBA858E729CF781E00D863CC /* Constants.swift in Sources */,
 				CBA858FC29CF791F00D863CC /* teacherRegisteredModel.swift in Sources */,
 				CBAA505F29E753B70023B3C5 /* StudentChangePasswordViewController.swift in Sources */,
@@ -848,9 +844,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Parisut.Nattapon.cosci-activity-kpi";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -876,9 +875,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Parisut.Nattapon.cosci-activity-kpi";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

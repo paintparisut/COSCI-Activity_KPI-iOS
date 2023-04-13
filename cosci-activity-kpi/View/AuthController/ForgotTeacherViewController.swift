@@ -13,7 +13,6 @@ class ForgotTeacherViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
     
     @IBAction func Submit(_ sender: Any) {

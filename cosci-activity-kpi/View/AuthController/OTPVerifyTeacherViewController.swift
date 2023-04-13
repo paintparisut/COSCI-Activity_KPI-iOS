@@ -25,6 +25,11 @@ class OTPVerifyTeacherViewController: UIViewController {
         resendVerify()
     }
     
+    
+    @IBAction func backButton(_ sender: Any) {
+        AppUtils.deleteEmailOTP()
+        self.dismiss(animated: false, completion: nil)
+    }
     private func fetchVerify() {
         var model = requestOtpModel()
         model.email = emailTF.text
