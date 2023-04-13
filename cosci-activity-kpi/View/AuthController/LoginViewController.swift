@@ -8,14 +8,15 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-
+    
     @IBOutlet weak var usernameTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
     @IBOutlet weak var selectRoleSegment: UISegmentedControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let font = UIFont(name: Constants.ConstantFont.Medium, size: 16) // Compute the right size
+        UISegmentedControl.appearance().setTitleTextAttributes([NSAttributedString.Key.font: font, .foregroundColor: UIColor.white,], for: .normal)
     }
     
     @IBAction func loginButton(_ sender: Any) {
@@ -53,7 +54,9 @@ class LoginViewController: UIViewController {
                   switch error{
                   case .BackEndError(let msg):
                       if msg.errorMessage == "nOK" { // case invalid
-                          print(msg)
+                          let alert = UIAlertController(title: "เกิดข้อผิดพลาด", message: "ไม่มีผู้ใช้ หรือกรอกข้อมูลผิด", preferredStyle: UIAlertController.Style.alert)
+                          alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+                          self.present(alert, animated: true, completion: nil)
                       }
                       else if msg.errorMessage == "Wait" { // case otp
                           print(msg.data)
