@@ -10,6 +10,7 @@ target 'cosci-activity-kpi' do
   pod 'Kingfisher', '~> 7.0'
   pod 'SwiftyRSA'
   pod 'JWTDecode', '~> 2.6'
+  pod 'OTPFieldView'
 
 end
 

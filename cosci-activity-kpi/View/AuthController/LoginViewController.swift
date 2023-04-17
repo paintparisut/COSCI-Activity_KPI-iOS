@@ -15,8 +15,17 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        let font = UIFont(name: Constants.ConstantFont.Medium, size: 16) // Compute the right size
-//        UISegmentedControl.appearance().setTitleTextAttributes([NSAttributedString.Key.font: font, .foregroundColor: UIColor.white,], for: .normal)
+        usernameTF.text = "co631010046"
+        passwordTF.text = "12341234"
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+        let font = UIFont(name: ConstantsInterface.ConstantFont.Medium, size: 16)
+        
+        UISegmentedControl.appearance().setTitleTextAttributes([NSAttributedString.Key.font: font, .foregroundColor: UIColor.white,], for: .normal)
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
     
     @IBAction func loginButton(_ sender: Any) {
@@ -147,4 +156,20 @@ class LoginViewController: UIViewController {
         secondVC.modalPresentationStyle = .fullScreen
         self.present(secondVC, animated:false, completion:nil)
     }
+    
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0 {
+                self.view.frame.origin.y -= keyboardSize.height/2.2
+            }
+        }
+    }
+
+    @objc func keyboardWillHide(notification: NSNotification) {
+        if self.view.frame.origin.y != 0 {
+            self.view.frame.origin.y = 0
+        }
+    }
+    
+    
 }

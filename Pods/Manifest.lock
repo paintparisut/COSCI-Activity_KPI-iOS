@@ -2,6 +2,7 @@ PODS:
   - Alamofire (5.6.4)
   - JWTDecode (2.6.3)
   - Kingfisher (7.6.2)
+  - OTPFieldView (1.0.1)
   - SwiftyRSA (1.7.0):
     - SwiftyRSA/ObjC (= 1.7.0)
   - SwiftyRSA/ObjC (1.7.0)
@@ -10,6 +11,7 @@ DEPENDENCIES:
   - Alamofire
   - JWTDecode (~> 2.6)
   - Kingfisher (~> 7.0)
+  - OTPFieldView
   - SwiftyRSA
 
 SPEC REPOS:
@@ -17,14 +19,16 @@ SPEC REPOS:
     - Alamofire
     - JWTDecode
     - Kingfisher
+    - OTPFieldView
     - SwiftyRSA
 
 SPEC CHECKSUMS:
   Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
   JWTDecode: 33e5e26e5ddbd21b2065820894c08fef0cad9509
   Kingfisher: 6c5449c6450c5239166510ba04afe374a98afc4f
+  OTPFieldView: 700a752fe62c41d1c4914c78aa500fb30d97c255
   SwiftyRSA: 8c6dd1ea7db1b8dc4fb517a202f88bb1354bc2c6
 
-PODFILE CHECKSUM: 441325139eb5cb984e7dbe5dd0ee2dbe88cdee1f
+PODFILE CHECKSUM: 23ed61b7517c103fad65f9ffdd82a6c552e0975a
 
 COCOAPODS: 1.12.0
