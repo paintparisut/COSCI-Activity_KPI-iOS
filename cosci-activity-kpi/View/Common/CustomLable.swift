@@ -19,6 +19,6 @@ class CustomLable: UILabel {
     }
     
     private func setup() {
-        self.font = UIFont(name: Constants.ConstantFont.Regular, size: 14)
+//        self.font = UIFont(name: Constants.ConstantFont.Regular, size: 14)
     }
 }

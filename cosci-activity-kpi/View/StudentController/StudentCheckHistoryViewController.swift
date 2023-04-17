@@ -10,21 +10,24 @@ import UIKit
 class StudentCheckHistoryViewController: UIViewController {
 
     let refreshControl = UIRefreshControl() // ทำpull refreshด้วย
-    var data = requestModel(data: [])
+    var data = [requestDataModel]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         getHistoryData()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        getHistoryData()
+    }
+    
     private func getHistoryData() {
-
             
         StudentViewModel().getHistoryData() { result in
             switch result {
             case .success(let response):
                 print("Success",response)
-                self.data = response
+                self.data = response.data
             case .failure(let error):
                 switch error{
                 case .BackEndError(let msg):

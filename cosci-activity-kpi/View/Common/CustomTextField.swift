@@ -18,7 +18,7 @@ final class CustomTextField: UITextField {
         self.leftViewMode = .always
         self.layer.cornerRadius = 8
         self.layer.masksToBounds = true
-        self.font = UIFont(name: Constants.ConstantFont.Regular, size: 14)
+//        self.font = UIFont(name: Constants.ConstantFont.Regular, size: 14)
     }
 
     override init(frame: CGRect) {

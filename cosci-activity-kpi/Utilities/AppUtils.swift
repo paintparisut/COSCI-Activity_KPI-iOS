@@ -32,7 +32,131 @@ struct AppUtils {
     static func getUserRole() -> String? {
         return AppUtils.JWT.decryptUsrAuthTokenUserRole()
     }
+    
+    //Event Student
+    static func saveStudentEventName(name:String) {
+        UserDefaults.standard.setValue(name, forKeyPath: Constants.AppConstants.STUDENT_EVENT_NAME)
+    }
+    static func saveStudentEventImg(img:String) {
+        UserDefaults.standard.setValue(img, forKeyPath: Constants.AppConstants.STUDENT_EVENT_IMG)
+    }
+    static func saveStudentEventDetail(detail:String) {
+        UserDefaults.standard.setValue(detail, forKeyPath: Constants.AppConstants.STUDENT_EVENT_DETAIL)
+    }
+    static func saveStudentEventType(type:String) {
+        UserDefaults.standard.setValue(type, forKeyPath: Constants.AppConstants.STUDENT_EVENT_TYPE)
+    }
+    static func saveStudentEventHour(hour:Int) {
+        UserDefaults.standard.setValue(hour, forKeyPath: Constants.AppConstants.STUDENT_EVENT_HOUR)
+    }
+    static func saveStudentEventStart(time:String) {
+        UserDefaults.standard.setValue(time, forKeyPath: Constants.AppConstants.STUDENT_EVENT_START)
+    }
+    static func saveStudentEventEnd(time:String) {
+        UserDefaults.standard.setValue(time, forKeyPath: Constants.AppConstants.STUDENT_EVENT_END)
+    }
+    static func saveStudentEventTimeStamp(time:String) {
+        UserDefaults.standard.setValue(time, forKeyPath: Constants.AppConstants.STUDENT_EVENT_POSTEDTIMESTAMP)
+    }
+    static func saveStudentEventImglist(imgList:[String]) {
+        UserDefaults.standard.setValue(imgList, forKeyPath: Constants.AppConstants.STUDENT_EVENT_IMGLIST)
+    }
 
+    static func getStudentEventName() -> String? {
+           return UserDefaults.standard.value(forKey: Constants.AppConstants.STUDENT_EVENT_NAME) as? String
+    }
+    static func getStudentEventImg() -> String? {
+           return UserDefaults.standard.value(forKey: Constants.AppConstants.STUDENT_EVENT_IMG) as? String
+    }
+    static func getStudentEventDetail() -> String? {
+           return UserDefaults.standard.value(forKey: Constants.AppConstants.STUDENT_EVENT_DETAIL) as? String
+    }
+    static func getStudentEventType() -> String? {
+           return UserDefaults.standard.value(forKey: Constants.AppConstants.STUDENT_EVENT_TYPE) as? String
+    }
+    static func getStudentEventHour() -> Int? {
+           return UserDefaults.standard.value(forKey: Constants.AppConstants.STUDENT_EVENT_HOUR) as? Int
+    }
+    static func getStudentEventStart() -> String? {
+           return UserDefaults.standard.value(forKey: Constants.AppConstants.STUDENT_EVENT_START) as? String
+    }
+    static func getStudentEventEnd() -> String? {
+           return UserDefaults.standard.value(forKey: Constants.AppConstants.STUDENT_EVENT_END) as? String
+    }
+    static func getStudentEventTimeStamp() -> String? {
+           return UserDefaults.standard.value(forKey: Constants.AppConstants.STUDENT_EVENT_POSTEDTIMESTAMP) as? String
+    }
+    static func getStudentEventImgList() -> String? {
+           return UserDefaults.standard.value(forKey: Constants.AppConstants.STUDENT_EVENT_IMGLIST) as? String
+    }
+    
+    static func deleteEventStudent() {
+        UserDefaults.standard.removeObject(forKey: Constants.AppConstants.STUDENT_EVENT_NAME)
+        UserDefaults.standard.removeObject(forKey: Constants.AppConstants.STUDENT_EVENT_IMG)
+        UserDefaults.standard.removeObject(forKey: Constants.AppConstants.STUDENT_EVENT_DETAIL)
+        UserDefaults.standard.removeObject(forKey: Constants.AppConstants.STUDENT_EVENT_TYPE)
+        UserDefaults.standard.removeObject(forKey: Constants.AppConstants.STUDENT_EVENT_HOUR)
+        UserDefaults.standard.removeObject(forKey: Constants.AppConstants.STUDENT_EVENT_START)
+        UserDefaults.standard.removeObject(forKey: Constants.AppConstants.STUDENT_EVENT_END)
+        UserDefaults.standard.removeObject(forKey: Constants.AppConstants.STUDENT_EVENT_IMGLIST)
+        UserDefaults.standard.removeObject(forKey: Constants.AppConstants.STUDENT_EVENT_POSTEDTIMESTAMP)
+    }
+    
+//    static let REQ_EVENT_NAME = "RequestEventName"
+//    static let REQ_EVENT_IMG = "RequestEventImg"
+//    static let REQ_EVENT_STUDENT_NAME = "RequestEventStudentName"
+//    static let REQ_EVENT_TYPE = "RequestEventType"
+//    static let REQ_EVENT_HOUR = "RequestEventHour"
+//    static let REQ_EVENT_TIME = "RequestEventTime"
+    
+    //REQ HISTORY
+    static func saveReqEventName(name:String) {
+        UserDefaults.standard.setValue(name, forKeyPath: Constants.AppConstants.REQ_EVENT_NAME)
+    }
+    static func saveReqEventImg(img:String) {
+        UserDefaults.standard.setValue(img, forKeyPath: Constants.AppConstants.REQ_EVENT_IMG)
+    }
+    static func saveReqEventStudentName(name:String) {
+        UserDefaults.standard.setValue(name, forKeyPath: Constants.AppConstants.REQ_EVENT_STUDENT_NAME)
+    }
+    static func saveReqEventType(type:String) {
+        UserDefaults.standard.setValue(type, forKeyPath: Constants.AppConstants.REQ_EVENT_TYPE)
+    }
+    static func saveReqEventHour(hour:String) {
+        UserDefaults.standard.setValue(hour, forKeyPath: Constants.AppConstants.REQ_EVENT_HOUR)
+    }
+    static func saveReqEventTime(time:String) {
+        UserDefaults.standard.setValue(time, forKeyPath: Constants.AppConstants.REQ_EVENT_TIME)
+    }
+    
+    static func getReqEventName() -> String? {
+           return UserDefaults.standard.value(forKey: Constants.AppConstants.REQ_EVENT_NAME) as? String
+    }
+    static func getReqEventImg() -> String? {
+           return UserDefaults.standard.value(forKey: Constants.AppConstants.REQ_EVENT_IMG) as? String
+    }
+    static func getReqEventStudentName() -> String? {
+           return UserDefaults.standard.value(forKey: Constants.AppConstants.REQ_EVENT_STUDENT_NAME) as? String
+    }
+    static func getReqEventType() -> String? {
+           return UserDefaults.standard.value(forKey: Constants.AppConstants.REQ_EVENT_TYPE) as? String
+    }
+    static func getReqEventHour() -> String? {
+           return UserDefaults.standard.value(forKey: Constants.AppConstants.REQ_EVENT_HOUR) as? String
+    }
+    static func getReqEventTime() -> String? {
+           return UserDefaults.standard.value(forKey: Constants.AppConstants.REQ_EVENT_TIME) as? String
+    }
+
+    static func deleteReq() {
+        UserDefaults.standard.removeObject(forKey: Constants.AppConstants.REQ_EVENT_NAME)
+        UserDefaults.standard.removeObject(forKey: Constants.AppConstants.REQ_EVENT_IMG)
+        UserDefaults.standard.removeObject(forKey: Constants.AppConstants.REQ_EVENT_STUDENT_NAME)
+        UserDefaults.standard.removeObject(forKey: Constants.AppConstants.REQ_EVENT_TYPE)
+        UserDefaults.standard.removeObject(forKey: Constants.AppConstants.REQ_EVENT_HOUR)
+        UserDefaults.standard.removeObject(forKey: Constants.AppConstants.REQ_EVENT_TIME)
+    }
+    
     //OTP
     static func saveEmailOTP(email:String) {
         UserDefaults.standard.setValue(email, forKeyPath: Constants.AppConstants.OTP_EMAIL)

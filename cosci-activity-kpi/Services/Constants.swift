@@ -92,6 +92,23 @@ struct Constants {
         static let UP_TEACHER_EMAIL = "UploadedTeacherEmail"
         static let UP_TEACHER_TEL = "UploadedTeacherTel"
 
+        static let STUDENT_EVENT_IMG = "EventStudentImg"
+        static let STUDENT_EVENT_NAME = "EventStudentName"
+        static let STUDENT_EVENT_DETAIL = "EventStudentDetail"
+        static let STUDENT_EVENT_TYPE = "EventStudentType"
+        static let STUDENT_EVENT_HOUR = "EventStudentHour"
+        static let STUDENT_EVENT_START = "EventStudentStart"
+        static let STUDENT_EVENT_END = "EventStudentEnd"
+        static let STUDENT_EVENT_POSTEDTIMESTAMP = "EventStudentTimeStamp"
+        static let STUDENT_EVENT_IMGLIST = "EventStudentImgList"
+
+        static let REQ_EVENT_NAME = "RequestEventName"
+        static let REQ_EVENT_IMG = "RequestEventImg"
+        static let REQ_EVENT_STUDENT_NAME = "RequestEventStudentName"
+        static let REQ_EVENT_TYPE = "RequestEventType"
+        static let REQ_EVENT_HOUR = "RequestEventHour"
+        static let REQ_EVENT_TIME = "RequestEventTime"
+
 
     }
     
@@ -105,12 +122,12 @@ struct Constants {
     }
     
     
-    struct ConstantFont {
-        static let BOLD = "Kanit-Bold"
-        static let Medium = "Kanit-Medium"
-        static let Regular = "Kanit-Regular"
-        static let Thin = "Kanit-Thin"
-    }
+//    struct ConstantFont {
+//        static let BOLD = "Kanit-Bold"
+//        static let Medium = "Kanit-Medium"
+//        static let Regular = "Kanit-Regular"
+//        static let Thin = "Kanit-Thin"
+//    }
 }
 
 

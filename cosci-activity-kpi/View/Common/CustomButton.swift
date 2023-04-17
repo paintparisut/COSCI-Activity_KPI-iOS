@@ -19,7 +19,7 @@ final class CustomButton: UIButton {
     }
     
     private func setup() {
-        self.titleLabel?.font = UIFont(name: Constants.ConstantFont.Medium, size: 16)
+//        self.titleLabel?.font = UIFont(name: Constants.ConstantFont.Medium, size: 16)
         self.clipsToBounds = true
         self.layer.cornerRadius = 5
         self.layer.masksToBounds = true

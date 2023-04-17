@@ -15,8 +15,8 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let font = UIFont(name: Constants.ConstantFont.Medium, size: 16) // Compute the right size
-        UISegmentedControl.appearance().setTitleTextAttributes([NSAttributedString.Key.font: font, .foregroundColor: UIColor.white,], for: .normal)
+//        let font = UIFont(name: Constants.ConstantFont.Medium, size: 16) // Compute the right size
+//        UISegmentedControl.appearance().setTitleTextAttributes([NSAttributedString.Key.font: font, .foregroundColor: UIColor.white,], for: .normal)
     }
     
     @IBAction func loginButton(_ sender: Any) {
