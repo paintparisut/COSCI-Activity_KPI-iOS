@@ -139,7 +139,7 @@
                                             <constraint firstAttribute="height" constant="40" id="L7I-Kt-lvo"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" textContentType="password"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="HSd-bU-2QR" customClass="CustomTextField" customModule="cosci_activity_kpi" customModuleProvider="target">
                                         <rect key="frame" x="32" y="109.33333333333331" width="316" height="40"/>
@@ -1261,73 +1261,6 @@
             </objects>
             <point key="canvasLocation" x="-2228" y="213"/>
         </scene>
-        <!--Verify Teacher View Controller-->
-        <scene sceneID="eBQ-UG-dha">
-            <objects>
-                <viewController storyboardIdentifier="verifyteacher" id="ztN-6U-kfW" customClass="OTPVerifyTeacherViewController" customModule="cosci_activity_kpi" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="4dH-IT-uPf">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7X3-GG-FnL">
-                                <rect key="frame" x="32" y="363" width="366" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YrP-JO-eGF" customClass="CustomTextField" customModule="cosci_activity_kpi" customModuleProvider="target">
-                                <rect key="frame" x="32" y="309" width="366" height="34"/>
-                                <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="djW-Zb-uGV">
-                                <rect key="frame" x="145" y="519" width="102" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Verify"/>
-                                <connections>
-                                    <action selector="VerifyButton:" destination="ztN-6U-kfW" eventType="touchUpInside" id="GZc-iT-cjh"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yzu-rI-FyB">
-                                <rect key="frame" x="250" y="446" width="102" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="resend"/>
-                                <connections>
-                                    <action selector="resendButton:" destination="ztN-6U-kfW" eventType="touchUpInside" id="Z51-kv-jdE"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UX7-py-2Xe">
-                                <rect key="frame" x="39" y="449" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                <connections>
-                                    <action selector="backButton:" destination="ztN-6U-kfW" eventType="touchUpInside" id="2X4-Y6-IMb"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="tIr-3w-oA9"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="tIr-3w-oA9" firstAttribute="trailing" secondItem="YrP-JO-eGF" secondAttribute="trailing" constant="32" id="3Ku-Cd-eHG"/>
-                            <constraint firstItem="YrP-JO-eGF" firstAttribute="top" secondItem="tIr-3w-oA9" secondAttribute="top" constant="250" id="Kkt-E4-Taa"/>
-                            <constraint firstItem="tIr-3w-oA9" firstAttribute="trailing" secondItem="7X3-GG-FnL" secondAttribute="trailing" constant="32" id="f3q-qt-6in"/>
-                            <constraint firstItem="7X3-GG-FnL" firstAttribute="leading" secondItem="tIr-3w-oA9" secondAttribute="leading" constant="32" id="lhl-sY-9TH"/>
-                            <constraint firstItem="7X3-GG-FnL" firstAttribute="top" secondItem="YrP-JO-eGF" secondAttribute="bottom" constant="20" id="qZv-bk-DhE"/>
-                            <constraint firstItem="YrP-JO-eGF" firstAttribute="leading" secondItem="tIr-3w-oA9" secondAttribute="leading" constant="32" id="wO0-JZ-iuY"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="OtpTF" destination="7X3-GG-FnL" id="MPr-f3-y23"/>
-                        <outlet property="emailTF" destination="YrP-JO-eGF" id="Yco-rN-Q6a"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Get-uZ-Oh3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-4460.9302325581393" y="-1685.4077253218886"/>
-        </scene>
         <!--Forgot Teacher View Controller-->
         <scene sceneID="6Fg-xM-99M">
             <objects>
@@ -1561,6 +1494,134 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dj0-BT-q3U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1013" y="1202"/>
+        </scene>
+        <!--Verify Teacher View Controller-->
+        <scene sceneID="GOL-Kv-rLu">
+            <objects>
+                <viewController storyboardIdentifier="verifyteacher" id="3Ba-wQ-8oc" customClass="OTPVerifyTeacherViewController" customModule="cosci_activity_kpi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lcO-wB-XK4">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.44999998807907104" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="building" translatesAutoresizingMaskIntoConstraints="NO" id="PbC-bk-jJA">
+                                <rect key="frame" x="4" y="536" width="426" height="396"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AVh-Us-3cD">
+                                <rect key="frame" x="25" y="229" width="380" height="380"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jx2-z6-esQ" customClass="CustomTextField" customModule="cosci_activity_kpi" customModuleProvider="target">
+                                        <rect key="frame" x="32" y="90" width="316" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="aMS-Bs-jKX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="รหัสยืนยันตัวถูกส่งไปที่ Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vbf-j7-7TO">
+                                        <rect key="frame" x="32" y="40" width="316" height="30"/>
+                                        <fontDescription key="fontDescription" name="Kanit-Medium" family="Kanit" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ev4-nV-iag" customClass="OTPFieldView" customModule="OTPFieldView">
+                                        <rect key="frame" x="20" y="184" width="340" height="60"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="JS9-ag-gPU"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5mi-qo-nKY">
+                                        <rect key="frame" x="200" y="252" width="148" height="36"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Kanit-Medium" family="Kanit" pointSize="16"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="ส่ง OTP ใหม่อีกครั้ง?">
+                                            <color key="titleColor" red="0.0" green="0.53179506980000002" blue="0.78428819439999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="รหัสยืนยันตัวตน (OTP)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fz0-ve-bqB" customClass="CustomLable" customModule="cosci_activity_kpi" customModuleProvider="target">
+                                        <rect key="frame" x="32" y="155" width="316" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pPl-4k-PZl" customClass="CustomButton" customModule="cosci_activity_kpi" customModuleProvider="target">
+                                        <rect key="frame" x="32" y="322" width="316" height="38"/>
+                                        <color key="backgroundColor" red="0.0" green="0.48627450979999998" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="93W-RO-Ezc"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="ยืนยัน OTP">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loginButton:" destination="Vb6-tq-lMZ" eventType="touchUpInside" id="Y3l-Ec-4G5"/>
+                                            <action selector="verifyButton:" destination="3Ba-wQ-8oc" eventType="touchUpInside" id="Yju-ml-SAZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HAs-uX-tkv">
+                                        <rect key="frame" x="32" y="252" width="59" height="36"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Kanit-Medium" family="Kanit" pointSize="16"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="ย้อนกลับ">
+                                            <color key="titleColor" red="0.0" green="0.53179506980000002" blue="0.78428819439999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="backButton:" destination="3Ba-wQ-8oc" eventType="touchUpInside" id="t26-TX-5C2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="HAs-uX-tkv" firstAttribute="top" secondItem="ev4-nV-iag" secondAttribute="bottom" constant="8" id="2OC-9i-c5E"/>
+                                    <constraint firstAttribute="trailing" secondItem="5mi-qo-nKY" secondAttribute="trailing" constant="32" id="Agk-gr-ifl"/>
+                                    <constraint firstAttribute="trailing" secondItem="fz0-ve-bqB" secondAttribute="trailing" constant="32" id="BrO-BG-2az"/>
+                                    <constraint firstItem="ev4-nV-iag" firstAttribute="leading" secondItem="AVh-Us-3cD" secondAttribute="leading" constant="20" id="FGq-o7-cOo"/>
+                                    <constraint firstItem="HAs-uX-tkv" firstAttribute="leading" secondItem="AVh-Us-3cD" secondAttribute="leading" constant="32" id="FiM-WT-9TS"/>
+                                    <constraint firstAttribute="trailing" secondItem="Vbf-j7-7TO" secondAttribute="trailing" constant="32" id="HdH-rZ-OHI"/>
+                                    <constraint firstItem="jx2-z6-esQ" firstAttribute="leading" secondItem="AVh-Us-3cD" secondAttribute="leading" constant="32" id="Ife-a8-fas"/>
+                                    <constraint firstItem="5mi-qo-nKY" firstAttribute="top" secondItem="ev4-nV-iag" secondAttribute="bottom" constant="8" id="Kd5-ws-8sB"/>
+                                    <constraint firstAttribute="trailing" secondItem="pPl-4k-PZl" secondAttribute="trailing" constant="32" id="MHt-K2-Brs"/>
+                                    <constraint firstItem="Vbf-j7-7TO" firstAttribute="leading" secondItem="AVh-Us-3cD" secondAttribute="leading" constant="32" id="S2d-FC-EdD"/>
+                                    <constraint firstItem="jx2-z6-esQ" firstAttribute="top" secondItem="Vbf-j7-7TO" secondAttribute="bottom" constant="20" id="YAD-8R-Yav"/>
+                                    <constraint firstItem="ev4-nV-iag" firstAttribute="top" secondItem="fz0-ve-bqB" secondAttribute="bottom" constant="8" id="cWg-6o-nYg"/>
+                                    <constraint firstItem="fz0-ve-bqB" firstAttribute="leading" secondItem="AVh-Us-3cD" secondAttribute="leading" constant="32" id="d7G-s9-PZb"/>
+                                    <constraint firstItem="Vbf-j7-7TO" firstAttribute="top" secondItem="AVh-Us-3cD" secondAttribute="top" constant="40" id="dag-jU-TW9"/>
+                                    <constraint firstItem="pPl-4k-PZl" firstAttribute="leading" secondItem="AVh-Us-3cD" secondAttribute="leading" constant="32" id="hmR-fs-wKP"/>
+                                    <constraint firstItem="fz0-ve-bqB" firstAttribute="top" secondItem="jx2-z6-esQ" secondAttribute="bottom" constant="15" id="nBZ-sr-UXK"/>
+                                    <constraint firstAttribute="bottom" secondItem="pPl-4k-PZl" secondAttribute="bottom" constant="20" id="oxm-VG-NC4"/>
+                                    <constraint firstAttribute="trailing" secondItem="jx2-z6-esQ" secondAttribute="trailing" constant="32" id="pV5-3x-Ctd"/>
+                                    <constraint firstAttribute="trailing" secondItem="ev4-nV-iag" secondAttribute="trailing" constant="20" id="rW3-32-KXC"/>
+                                    <constraint firstAttribute="height" constant="380" id="sbv-02-p7F"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Z4M-zf-Q7B"/>
+                        <color key="backgroundColor" red="0.0" green="0.53179506980000002" blue="0.78428819439999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="AVh-Us-3cD" firstAttribute="leading" secondItem="Z4M-zf-Q7B" secondAttribute="leading" constant="25" id="94c-Hh-t57"/>
+                            <constraint firstItem="AVh-Us-3cD" firstAttribute="top" secondItem="Z4M-zf-Q7B" secondAttribute="top" constant="170" id="C5v-sT-OaG"/>
+                            <constraint firstItem="Z4M-zf-Q7B" firstAttribute="trailing" secondItem="AVh-Us-3cD" secondAttribute="trailing" constant="25" id="vZq-dV-mI3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailTF" destination="jx2-z6-esQ" id="QlA-eT-cnT"/>
+                        <outlet property="otpFieldView" destination="ev4-nV-iag" id="USh-iu-f1a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ggz-B0-fu0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4434" y="-1685"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

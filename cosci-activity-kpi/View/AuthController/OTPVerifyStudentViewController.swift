@@ -24,6 +24,7 @@ class OTPVerifyStudentViewController: UIViewController {
     }
 
     @IBAction func backButton(_ sender: Any) {
+        AppUtils.deleteEmailOTP()
         self.dismiss(animated: false, completion: nil)
     }
     
