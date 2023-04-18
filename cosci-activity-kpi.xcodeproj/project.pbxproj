@@ -73,6 +73,7 @@
 		CB095D0729DF26D0007E456C /* ForgotTeacherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB095D0629DF26D0007E456C /* ForgotTeacherViewController.swift */; };
 		CB1CDA3129EB390D005A6F5C /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1CDA2F29EB390D005A6F5C /* EventTableViewCell.swift */; };
 		CB1CDA3229EB390D005A6F5C /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB1CDA3029EB390D005A6F5C /* EventTableViewCell.xib */; };
+		CB69851729EF4CEB00607285 /* FileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB69851629EF4CEB00607285 /* FileViewModel.swift */; };
 		CB96591429DC388400FF309A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB96591329DC388400FF309A /* LoginViewController.swift */; };
 		CB96591629DC38DF00FF309A /* StudentUploadedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB96591529DC38DF00FF309A /* StudentUploadedViewController.swift */; };
 		CB96591829DC396B00FF309A /* StudentRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB96591729DC396B00FF309A /* StudentRegisterViewController.swift */; };
@@ -109,8 +110,8 @@
 		CBA858FA29CF790D00D863CC /* studentUploadedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA858F929CF790D00D863CC /* studentUploadedModel.swift */; };
 		CBA858FC29CF791F00D863CC /* teacherRegisteredModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA858FB29CF791F00D863CC /* teacherRegisteredModel.swift */; };
 		CBA858FE29CF793100D863CC /* teacherUploadedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA858FD29CF793100D863CC /* teacherUploadedModel.swift */; };
-		CBAA505929E622B90023B3C5 /* StudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAA505829E622B90023B3C5 /* StudentViewController.swift */; };
-		CBAA505B29E622C70023B3C5 /* TeacherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAA505A29E622C70023B3C5 /* TeacherViewController.swift */; };
+		CBAA505929E622B90023B3C5 /* StudentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAA505829E622B90023B3C5 /* StudentViewModel.swift */; };
+		CBAA505B29E622C70023B3C5 /* TeacherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAA505A29E622C70023B3C5 /* TeacherViewModel.swift */; };
 		CBAA505D29E73CE40023B3C5 /* SelectRoleForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAA505C29E73CE40023B3C5 /* SelectRoleForgotPasswordViewController.swift */; };
 		CBAA505F29E753B70023B3C5 /* StudentChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAA505E29E753B60023B3C5 /* StudentChangePasswordViewController.swift */; };
 		CBAA506129E753CB0023B3C5 /* TeacherChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAA506029E753CB0023B3C5 /* TeacherChangePasswordViewController.swift */; };
@@ -170,6 +171,7 @@
 		CB095D0629DF26D0007E456C /* ForgotTeacherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotTeacherViewController.swift; sourceTree = "<group>"; };
 		CB1CDA2F29EB390D005A6F5C /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
 		CB1CDA3029EB390D005A6F5C /* EventTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
+		CB69851629EF4CEB00607285 /* FileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileViewModel.swift; sourceTree = "<group>"; };
 		CB96591329DC388400FF309A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CB96591529DC38DF00FF309A /* StudentUploadedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentUploadedViewController.swift; sourceTree = "<group>"; };
 		CB96591729DC396B00FF309A /* StudentRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentRegisterViewController.swift; sourceTree = "<group>"; };
@@ -210,8 +212,8 @@
 		CBA858F929CF790D00D863CC /* studentUploadedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studentUploadedModel.swift; sourceTree = "<group>"; };
 		CBA858FB29CF791F00D863CC /* teacherRegisteredModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teacherRegisteredModel.swift; sourceTree = "<group>"; };
 		CBA858FD29CF793100D863CC /* teacherUploadedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teacherUploadedModel.swift; sourceTree = "<group>"; };
-		CBAA505829E622B90023B3C5 /* StudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentViewController.swift; sourceTree = "<group>"; };
-		CBAA505A29E622C70023B3C5 /* TeacherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherViewController.swift; sourceTree = "<group>"; };
+		CBAA505829E622B90023B3C5 /* StudentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentViewModel.swift; sourceTree = "<group>"; };
+		CBAA505A29E622C70023B3C5 /* TeacherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherViewModel.swift; sourceTree = "<group>"; };
 		CBAA505C29E73CE40023B3C5 /* SelectRoleForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRoleForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		CBAA505E29E753B60023B3C5 /* StudentChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentChangePasswordViewController.swift; sourceTree = "<group>"; };
 		CBAA506029E753CB0023B3C5 /* TeacherChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherChangePasswordViewController.swift; sourceTree = "<group>"; };
@@ -434,8 +436,9 @@
 			isa = PBXGroup;
 			children = (
 				CBA858E029CF781E00D863CC /* AuthViewModel.swift */,
-				CBAA505829E622B90023B3C5 /* StudentViewController.swift */,
-				CBAA505A29E622C70023B3C5 /* TeacherViewController.swift */,
+				CB69851629EF4CEB00607285 /* FileViewModel.swift */,
+				CBAA505829E622B90023B3C5 /* StudentViewModel.swift */,
+				CBAA505A29E622C70023B3C5 /* TeacherViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -721,9 +724,9 @@
 				CBA858FA29CF790D00D863CC /* studentUploadedModel.swift in Sources */,
 				2D246DDE29E881E400646D19 /* CustomButton.swift in Sources */,
 				CB96592229DC3D7100FF309A /* StudentEventListViewController.swift in Sources */,
-				CBAA505B29E622C70023B3C5 /* TeacherViewController.swift in Sources */,
+				CBAA505B29E622C70023B3C5 /* TeacherViewModel.swift in Sources */,
 				2D246DE029E8891900646D19 /* CustomTextField.swift in Sources */,
-				CBAA505929E622B90023B3C5 /* StudentViewController.swift in Sources */,
+				CBAA505929E622B90023B3C5 /* StudentViewModel.swift in Sources */,
 				CBE09EC629DE097F00F7566E /* SelectRoleRegisterViewController.swift in Sources */,
 				CBA858E729CF781E00D863CC /* Constants.swift in Sources */,
 				CBA858FC29CF791F00D863CC /* teacherRegisteredModel.swift in Sources */,
@@ -750,6 +753,7 @@
 				CB96592429DC403F00FF309A /* StudentCheckHistoryViewController.swift in Sources */,
 				2D26687D29EDAF3B00FD5C2A /* ConstantsInterface.swift in Sources */,
 				CBA858AB29CF77CF00D863CC /* AppDelegate.swift in Sources */,
+				CB69851729EF4CEB00607285 /* FileViewModel.swift in Sources */,
 				CBA858FE29CF793100D863CC /* teacherUploadedModel.swift in Sources */,
 				CB96592629DC405100FF309A /* StudentHistoryViewController.swift in Sources */,
 				CBA858EC29CF781E00D863CC /* AppUtils.swift in Sources */,

@@ -116,8 +116,8 @@ struct AppUtils {
     static func saveReqEventImg(img:String) {
         UserDefaults.standard.setValue(img, forKeyPath: Constants.AppConstants.REQ_EVENT_IMG)
     }
-    static func saveReqEventStudentName(name:String) {
-        UserDefaults.standard.setValue(name, forKeyPath: Constants.AppConstants.REQ_EVENT_STUDENT_NAME)
+    static func saveReqEventStatusReq(name:String) {
+        UserDefaults.standard.setValue(name, forKeyPath: Constants.AppConstants.REQ_EVENT_STATUSREQ)
     }
     static func saveReqEventType(type:String) {
         UserDefaults.standard.setValue(type, forKeyPath: Constants.AppConstants.REQ_EVENT_TYPE)
@@ -135,8 +135,8 @@ struct AppUtils {
     static func getReqEventImg() -> String? {
            return UserDefaults.standard.value(forKey: Constants.AppConstants.REQ_EVENT_IMG) as? String
     }
-    static func getReqEventStudentName() -> String? {
-           return UserDefaults.standard.value(forKey: Constants.AppConstants.REQ_EVENT_STUDENT_NAME) as? String
+    static func getReqEventStatusReq() -> String? {
+           return UserDefaults.standard.value(forKey: Constants.AppConstants.REQ_EVENT_STATUSREQ) as? String
     }
     static func getReqEventType() -> String? {
            return UserDefaults.standard.value(forKey: Constants.AppConstants.REQ_EVENT_TYPE) as? String
@@ -151,7 +151,7 @@ struct AppUtils {
     static func deleteReq() {
         UserDefaults.standard.removeObject(forKey: Constants.AppConstants.REQ_EVENT_NAME)
         UserDefaults.standard.removeObject(forKey: Constants.AppConstants.REQ_EVENT_IMG)
-        UserDefaults.standard.removeObject(forKey: Constants.AppConstants.REQ_EVENT_STUDENT_NAME)
+        UserDefaults.standard.removeObject(forKey: Constants.AppConstants.REQ_EVENT_STATUSREQ)
         UserDefaults.standard.removeObject(forKey: Constants.AppConstants.REQ_EVENT_TYPE)
         UserDefaults.standard.removeObject(forKey: Constants.AppConstants.REQ_EVENT_HOUR)
         UserDefaults.standard.removeObject(forKey: Constants.AppConstants.REQ_EVENT_TIME)

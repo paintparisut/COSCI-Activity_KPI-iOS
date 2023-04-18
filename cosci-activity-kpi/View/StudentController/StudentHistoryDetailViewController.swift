@@ -15,11 +15,13 @@ class StudentHistoryDetailViewController: UIViewController {
     @IBOutlet weak var reqEventTypeLB: UILabel!
     @IBOutlet weak var reqEventHourLB: UILabel!
     @IBOutlet weak var reqEventTimeLB: UILabel!
+    @IBOutlet weak var reqEventStatusLB: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         reqEventNameLB.text =  AppUtils.getReqEventName()
-        reqEventStudentnameLB.text = AppUtils.getReqEventStudentName()
+        reqEventStudentnameLB.text = AppUtils.getStudentName() ?? AppUtils.getTeacherName()
+        reqEventStatusLB.text = AppUtils.getReqEventStatusReq()
         reqEventTypeLB.text = AppUtils.getReqEventType()
         reqEventHourLB.text = AppUtils.getReqEventHour()
         reqEventTimeLB.text = AppUtils.getReqEventTime()

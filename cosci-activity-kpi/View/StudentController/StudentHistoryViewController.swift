@@ -49,7 +49,7 @@ class StudentHistoryViewController: UIViewController,UITableViewDelegate,UITable
                AppUtils.saveReqEventName(name: data[cell.tag].name_event ?? "")
                AppUtils.saveReqEventImg(img: data[cell.tag].event_img ?? "")
                AppUtils.saveReqEventHour(hour: data[cell.tag].activity_hour ?? "")
-               AppUtils.saveReqEventStudentName(name: data[cell.tag].name ?? "")
+               AppUtils.saveReqEventStatusReq(name: data[cell.tag].status_request ?? "")
                AppUtils.saveReqEventTime(time: data[cell.tag].date_request ?? "")
                AppUtils.saveReqEventType(type: data[cell.tag].event_type ?? "")
                
