@@ -14,11 +14,11 @@ final class CustomTextField: UITextField {
     }
 
     func CustomTf() {
-        self.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: self.frame.height))
+        self.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 12, height: self.frame.height))
         self.leftViewMode = .always
         self.layer.cornerRadius = 8
         self.layer.masksToBounds = true
-        self.font = UIFont(name: ConstantsInterface.ConstantFont.Regular, size: 16)
+        self.font = UIFont(name: ConstantsInterface.ConstantFont.Medium, size: 14)
     }
 
     override init(frame: CGRect) {

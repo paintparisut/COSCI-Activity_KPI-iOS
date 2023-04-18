@@ -23,7 +23,6 @@ class StudentEventListViewController: UIViewController,UITableViewDelegate,UITab
         refreshControl.attributedTitle = NSAttributedString(string:"เลื่อนลงเพื่อโหลดข้อมูลกิจกรรม")
         refreshControl.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
         tableView.addSubview(refreshControl)
-
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -37,7 +36,7 @@ class StudentEventListViewController: UIViewController,UITableViewDelegate,UITab
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "eventcell", for: indexPath) as! EventTableViewCell
-        cell.setEventcell(imgurl: eventlist[indexPath.row].event_img ?? "", name:  eventlist[indexPath.row].name_event ?? "", descript:  eventlist[indexPath.row].detail_event ?? "", time:  eventlist[indexPath.row].posted_timestamp ?? "", type:  eventlist[indexPath.row].event_type ?? "")
+        cell.setEventcell(imgurl: eventlist[indexPath.row].event_img ?? "", name:  eventlist[indexPath.row].name_event ?? "", time:  eventlist[indexPath.row].posted_timestamp ?? "", type:  eventlist[indexPath.row].event_type ?? "")
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(ontap(gesture:)))
         cell.tag = indexPath.row
         cell.addGestureRecognizer(tapGesture)

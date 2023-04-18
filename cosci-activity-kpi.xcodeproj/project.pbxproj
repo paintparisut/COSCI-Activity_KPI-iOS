@@ -67,6 +67,7 @@
 		2D26687D29EDAF3B00FD5C2A /* ConstantsInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D26687C29EDAF3B00FD5C2A /* ConstantsInterface.swift */; };
 		2D26687E29EDAF3B00FD5C2A /* ConstantsInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D26687C29EDAF3B00FD5C2A /* ConstantsInterface.swift */; };
 		2D26687F29EDAF3B00FD5C2A /* ConstantsInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D26687C29EDAF3B00FD5C2A /* ConstantsInterface.swift */; };
+		2DE6AE6129EF0B2D002C8965 /* CustomSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE6AE6029EF0B2D002C8965 /* CustomSegment.swift */; };
 		3FB760549DFF40AAEED13067 /* Pods_cosci_activity_kpi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B414E1EDE0E4AF2B09FA93AC /* Pods_cosci_activity_kpi.framework */; };
 		CB095D0529DF26C4007E456C /* ForgotStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB095D0429DF26C4007E456C /* ForgotStudentViewController.swift */; };
 		CB095D0729DF26D0007E456C /* ForgotTeacherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB095D0629DF26D0007E456C /* ForgotTeacherViewController.swift */; };
@@ -162,6 +163,7 @@
 		2D26684429EDADBE00FD5C2A /* Kanit-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		2D26684529EDADBE00FD5C2A /* Kanit-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-MediumItalic.ttf"; sourceTree = "<group>"; };
 		2D26687C29EDAF3B00FD5C2A /* ConstantsInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsInterface.swift; sourceTree = "<group>"; };
+		2DE6AE6029EF0B2D002C8965 /* CustomSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegment.swift; sourceTree = "<group>"; };
 		A013922E8BFA0CB27EB073F5 /* Pods-cosci-activity-kpi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cosci-activity-kpi.release.xcconfig"; path = "Target Support Files/Pods-cosci-activity-kpi/Pods-cosci-activity-kpi.release.xcconfig"; sourceTree = "<group>"; };
 		B414E1EDE0E4AF2B09FA93AC /* Pods_cosci_activity_kpi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cosci_activity_kpi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB095D0429DF26C4007E456C /* ForgotStudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotStudentViewController.swift; sourceTree = "<group>"; };
@@ -264,6 +266,7 @@
 				2D246DDD29E881E400646D19 /* CustomButton.swift */,
 				2D246DDF29E8891900646D19 /* CustomTextField.swift */,
 				2D246E0629E8915600646D19 /* CustomLable.swift */,
+				2DE6AE6029EF0B2D002C8965 /* CustomSegment.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -370,7 +373,6 @@
 		CBA858A929CF77CF00D863CC /* cosci-activity-kpi */ = {
 			isa = PBXGroup;
 			children = (
-				2D26683329EDAD9300FD5C2A /* CustomFonts */,
 				CBA858DD29CF781E00D863CC /* Services */,
 				CBA858E129CF781E00D863CC /* Utilities */,
 				CBA858DF29CF781E00D863CC /* ViewModel */,
@@ -441,6 +443,8 @@
 		CBA858E129CF781E00D863CC /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				2D26683329EDAD9300FD5C2A /* CustomFonts */,
+				2D246DDC29E8815F00646D19 /* Common */,
 				CBA858E629CF781E00D863CC /* AppUtils.swift */,
 				CBA858E229CF781E00D863CC /* ExtensionsHelper.swift */,
 				CBA858E329CF781E00D863CC /* Form */,
@@ -460,7 +464,6 @@
 		CBA858ED29CF787B00D863CC /* View */ = {
 			isa = PBXGroup;
 			children = (
-				2D246DDC29E8815F00646D19 /* Common */,
 				CB96591E29DC3A0A00FF309A /* StudentController */,
 				CB96591D29DC39F000FF309A /* TeacherController */,
 				CB96591229DC384D00FF309A /* AuthController */,
@@ -734,6 +737,7 @@
 				CB96592C29DC410800FF309A /* TeachProfileViewController.swift in Sources */,
 				CB96592029DC3D5200FF309A /* TeacherKPIListViewController.swift in Sources */,
 				CBAA505D29E73CE40023B3C5 /* SelectRoleForgotPasswordViewController.swift in Sources */,
+				2DE6AE6129EF0B2D002C8965 /* CustomSegment.swift in Sources */,
 				CBA858F829CF78FA00D863CC /* studentRegisteredModel.swift in Sources */,
 				CBA858F229CF78C600D863CC /* fileModel.swift in Sources */,
 				CB96592829DC40A000FF309A /* StudentProfileViewController.swift in Sources */,

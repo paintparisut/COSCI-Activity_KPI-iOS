@@ -11,12 +11,13 @@ class EventTableViewCell: UITableViewCell {
 
     @IBOutlet weak var eventImg: UIImageView!
     @IBOutlet weak var eventNameLB: UILabel!
-    @IBOutlet weak var eventDescLB: UILabel!
     @IBOutlet weak var eventTimeLB: UILabel!
     @IBOutlet weak var eventTypeLB: UILabel!
+    @IBOutlet weak var CardView: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        CardInitInterface()
         // Initialization code
     }
 
@@ -26,15 +27,26 @@ class EventTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    public func setEventcell(imgurl:String,name:String,descript:String,time:String,type:String){
+    func CardInitInterface() {
+        CardView.layer.shadowColor = UIColor.gray.cgColor
+        CardView.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
+        CardView.layer.shadowOpacity = 0.3
+        CardView.layer.masksToBounds = false
+        CardView.layer.shadowRadius = 4
+    }
+    
+    func LableInitInterFace() {
+        //
+    }
+    
+    public func setEventcell(imgurl:String,name:String,time:String,type:String){
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "d MMM yyyy"
         let date = dateFormat().stringToDate(date: time ?? "")
         let dateString = dateFormatter.string(from: date)
         
-        eventImg.image = UIImage(url: URL(string: Constants.URL_BASE+imgurl ))
+        eventImg.image = UIImage(url: URL(string: Constants.URL_BASE+"/"+imgurl ))
         eventNameLB.text = name
-        eventDescLB.text = descript
         eventTimeLB.text = dateString
         eventTypeLB.text = type
     }

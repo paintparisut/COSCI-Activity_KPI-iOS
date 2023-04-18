@@ -11,6 +11,7 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var usernameTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
+    @IBOutlet weak var forgotPassword: CustomButton!
     @IBOutlet weak var selectRoleSegment: UISegmentedControl!
     
     override func viewDidLoad() {
@@ -21,7 +22,9 @@ class LoginViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         let font = UIFont(name: ConstantsInterface.ConstantFont.Medium, size: 16)
         
-        UISegmentedControl.appearance().setTitleTextAttributes([NSAttributedString.Key.font: font, .foregroundColor: UIColor.white,], for: .normal)
+        UISegmentedControl.appearance().setTitleTextAttributes([NSAttributedString.Key.font: font, .foregroundColor: UIColor.darkGray,], for: .normal)
+        UISegmentedControl.appearance().layer.cornerRadius = 30
+        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
