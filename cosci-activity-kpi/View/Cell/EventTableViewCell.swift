@@ -18,13 +18,11 @@ class EventTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         CardInitInterface()
-        // Initialization code
+        ImageInitInterface()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
     func CardInitInterface() {
@@ -35,9 +33,10 @@ class EventTableViewCell: UITableViewCell {
         CardView.layer.shadowRadius = 4
     }
     
-    func LableInitInterFace() {
-        //
+    func ImageInitInterface() {
+        eventImg.layer.cornerRadius = 3.0
     }
+    
     
     public func setEventcell(imgurl:String,name:String,time:String,type:String){
         let dateFormatter = DateFormatter()

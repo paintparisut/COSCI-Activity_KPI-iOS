@@ -34,7 +34,7 @@ class CustomSegment: UISegmentedControl {
         self.clipsToBounds = true
         self.layer.cornerRadius = self.radius
         self.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
-        self.layer.frame.size.height = 32.0
+        self.layer.frame.size.height = 38.0
         self.layer.masksToBounds = true
         
         let selectedViewIndex = numberOfSegments

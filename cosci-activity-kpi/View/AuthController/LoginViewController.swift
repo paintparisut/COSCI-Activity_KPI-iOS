@@ -16,8 +16,8 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        usernameTF.text = "co631010205"
-        passwordTF.text = "123456789"
+        usernameTF.text = "co631010046"
+        passwordTF.text = "12341234"
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         let font = UIFont(name: ConstantsInterface.ConstantFont.Medium, size: 16)
