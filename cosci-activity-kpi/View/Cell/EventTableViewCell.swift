@@ -14,6 +14,7 @@ class EventTableViewCell: UITableViewCell {
     @IBOutlet weak var eventTimeLB: UILabel!
     @IBOutlet weak var eventTypeLB: UILabel!
     @IBOutlet weak var CardView: UIView!
+    @IBOutlet weak var TagCat: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,6 +25,16 @@ class EventTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
+    
+    func TagColorInterface(catagories:String) -> UIColor {
+        if catagories == "หมวดกิจกรรมเลือก" {
+            return UIColor(cgColor: ConstantsInterface.GraphicColors.COSCI_ERROR_COLOR)
+        } else if catagories == "หมวดกิจกรรมบังคับ" {
+            return UIColor(cgColor:ConstantsInterface.GraphicColors.COSCI_BLUECI_COLOR)
+        }
+        return UIColor.gray
+    }
+
     
     func CardInitInterface() {
         CardView.layer.shadowColor = UIColor.gray.cgColor
@@ -48,6 +59,7 @@ class EventTableViewCell: UITableViewCell {
         eventNameLB.text = name
         eventTimeLB.text = dateString
         eventTypeLB.text = type
+        TagCat.backgroundColor = TagColorInterface(catagories: type)
     }
     
 }

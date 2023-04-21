@@ -105,7 +105,8 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="CardView" destination="ISd-fj-Rle" id="VEE-5R-VXC"/>
+                <outlet property="CardView" destination="bfo-hp-VBI" id="6o5-eX-qi3"/>
+                <outlet property="TagCat" destination="qRL-0b-VNI" id="SkW-Jf-Vv5"/>
                 <outlet property="eventImg" destination="umX-oc-h4F" id="0Q2-nz-RHg"/>
                 <outlet property="eventNameLB" destination="oo0-h7-sYf" id="i4u-OB-Lxw"/>
                 <outlet property="eventTimeLB" destination="b2W-oM-ogd" id="ePV-GI-iCc"/>

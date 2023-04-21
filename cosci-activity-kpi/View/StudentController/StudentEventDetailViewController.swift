@@ -16,18 +16,20 @@ class StudentEventDetailViewController: UIViewController {
     @IBOutlet weak var eventActivityHourLB: UILabel!
     @IBOutlet weak var eventStartDateLB: UILabel!
     @IBOutlet weak var eventEndDateLB: UILabel!
-    @IBOutlet weak var eventPostedTimeLB: UILabel!
+//    @IBOutlet weak var eventPostedTimeLB: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        eventImg.image = UIImage(url: URL(string: Constants.URL_BASE+(AppUtils.getStudentEventImg() ?? "public/img/imgactivity.png")))
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = nil
+            self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
+        eventImg.image = UIImage(url: URL(string: Constants.URL_BASE+"/"+(AppUtils.getStudentEventImg() ?? "public/img/imgactivity.png")))
         eventNameLB.text = AppUtils.getStudentEventName()
         eventDetailLB.text = AppUtils.getStudentEventDetail()
-        eventTypeLB.text = "ประเภทกิจกรรม \(AppUtils.getStudentEventType() ?? "")"
+        eventTypeLB.text = AppUtils.getStudentEventType() ?? ""
         eventActivityHourLB.text = "ชั่วโมงกิจกรรม : \(AppUtils.getStudentEventHour() ?? 0) ชั่วโมง"
-        eventStartDateLB.text = "วันที่เริ่ม : \(formatDate(date: AppUtils.getStudentEventStart() ?? ""))"
-        eventEndDateLB.text = "วันสิ้นสุด : \(formatDate(date: AppUtils.getStudentEventEnd() ?? ""))"
-        eventPostedTimeLB.text = "โพสเมื่อ\(formatDate(date: AppUtils.getStudentEventTimeStamp() ?? ""))"
+        eventStartDateLB.text = "วันที่เริ่ม: \(formatDate(date: AppUtils.getStudentEventStart() ?? ""))"
+        eventEndDateLB.text = "วันสิ้นสุด: \(formatDate(date: AppUtils.getStudentEventEnd() ?? ""))"
+//        eventPostedTimeLB.text = "โพสเมื่อ\(formatDate(date: AppUtils.getStudentEventTimeStamp() ?? ""))"
         
 //        AppUtils.getStudentEventImgList() //get img list ทำรูปกิจกรรมเพิ่ม
         
