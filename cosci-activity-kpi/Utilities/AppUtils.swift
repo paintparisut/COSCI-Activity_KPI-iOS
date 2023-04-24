@@ -34,6 +34,9 @@ struct AppUtils {
     }
     
     //Event Student
+    static func saveStudentEventID(id:String) {
+        UserDefaults.standard.setValue(id, forKeyPath: Constants.AppConstants.STUDENT_EVENT_ID)
+    }
     static func saveStudentEventName(name:String) {
         UserDefaults.standard.setValue(name, forKeyPath: Constants.AppConstants.STUDENT_EVENT_NAME)
     }
@@ -61,7 +64,11 @@ struct AppUtils {
     static func saveStudentEventImglist(imgList:[String]) {
         UserDefaults.standard.setValue(imgList, forKeyPath: Constants.AppConstants.STUDENT_EVENT_IMGLIST)
     }
+    
 
+    static func getStudentEventID() -> String? {
+           return UserDefaults.standard.value(forKey: Constants.AppConstants.STUDENT_EVENT_ID) as? String
+    }
     static func getStudentEventName() -> String? {
            return UserDefaults.standard.value(forKey: Constants.AppConstants.STUDENT_EVENT_NAME) as? String
     }
@@ -91,6 +98,7 @@ struct AppUtils {
     }
     
     static func deleteEventStudent() {
+        UserDefaults.standard.removeObject(forKey: Constants.AppConstants.STUDENT_EVENT_ID)
         UserDefaults.standard.removeObject(forKey: Constants.AppConstants.STUDENT_EVENT_NAME)
         UserDefaults.standard.removeObject(forKey: Constants.AppConstants.STUDENT_EVENT_IMG)
         UserDefaults.standard.removeObject(forKey: Constants.AppConstants.STUDENT_EVENT_DETAIL)
@@ -255,6 +263,9 @@ struct AppUtils {
     //GET SAVE REMOVE CURRENT​ USER
     
     //SAVE STUDENT
+    static func saveStudentID(id:String) {
+        UserDefaults.standard.setValue(id, forKeyPath: Constants.AppConstants.CUR_STU_ID)
+    }
     static func saveStudentImg(img:String) {
         UserDefaults.standard.setValue(img, forKeyPath: Constants.AppConstants.CUR_STU_IMG)
     }
@@ -282,6 +293,9 @@ struct AppUtils {
     
     //GET STUDENT
     
+    static func getStudentID() -> String? {
+           return UserDefaults.standard.value(forKey: Constants.AppConstants.CUR_STU_ID) as? String
+       }
     static func getStudentImg() -> String? {
            return UserDefaults.standard.value(forKey: Constants.AppConstants.CUR_STU_IMG) as? String
        }
@@ -317,6 +331,9 @@ struct AppUtils {
     
     //SAVE TEACHER
     
+    static func saveTeacherID(id:String) {
+        UserDefaults.standard.setValue(id, forKeyPath: Constants.AppConstants.CUR_STU_ID)
+    }
     static func saveTeacherImg(img:String) {
         UserDefaults.standard.setValue(img, forKeyPath: Constants.AppConstants.CUR_TEA_IMG)
     }
@@ -342,6 +359,10 @@ struct AppUtils {
     
     //GET TEACHER
     
+    static func getTeacherId() -> String? {
+           return UserDefaults.standard.value(forKey: Constants.AppConstants.CUR_TEA_USER_ID
+           ) as? String
+       }
     static func getTeacherImg() -> String? {
            return UserDefaults.standard.value(forKey: Constants.AppConstants.CUR_TEA_IMG
            ) as? String
@@ -375,6 +396,7 @@ struct AppUtils {
     
     static func eraseAllStudentData() {
         UserDefaults.standard.removeObject(forKey: Constants.AppConstants.CUR_USR_TOKEN)
+        UserDefaults.standard.removeObject(forKey: Constants.AppConstants.CUR_STU_ID)
         UserDefaults.standard.removeObject(forKey: Constants.AppConstants.CUR_STU_IMG)
         UserDefaults.standard.removeObject(forKey: Constants.AppConstants.CUR_STU_NAME)
         UserDefaults.standard.removeObject(forKey: Constants.AppConstants.CUR_STU_USER_ID)
@@ -387,6 +409,7 @@ struct AppUtils {
     
     static func eraseAllTeacherData() {
         UserDefaults.standard.removeObject(forKey: Constants.AppConstants.CUR_USR_TOKEN)
+        UserDefaults.standard.removeObject(forKey: Constants.AppConstants.CUR_TEA_ID)
         UserDefaults.standard.removeObject(forKey: Constants.AppConstants.CUR_TEA_IMG)
         UserDefaults.standard.removeObject(forKey: Constants.AppConstants.CUR_TEA_NAME)
         UserDefaults.standard.removeObject(forKey: Constants.AppConstants.CUR_TEA_USER_ID)

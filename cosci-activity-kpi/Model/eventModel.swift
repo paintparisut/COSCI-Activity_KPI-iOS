@@ -8,6 +8,7 @@
 import Foundation
 
 struct eventDataModel : Codable {
+    let _id : String?
     let name_event : String?
     let detail_event : String?
     let start_date : String?

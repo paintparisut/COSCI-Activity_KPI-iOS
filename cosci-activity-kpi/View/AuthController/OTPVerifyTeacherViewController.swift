@@ -58,6 +58,7 @@ class OTPVerifyTeacherViewController: UIViewController {
             switch result {
             case .success(let response):
                 print("Success",response)
+                AppUtils.saveTeacherID(id: response._id ?? "")
                 AppUtils.saveTeacherImg(img: response.img_user ?? "")
                 AppUtils.saveTeacherName(name: response.name ?? "")
                 AppUtils.saveTeacherUserID(userID: response.user_id ?? "")

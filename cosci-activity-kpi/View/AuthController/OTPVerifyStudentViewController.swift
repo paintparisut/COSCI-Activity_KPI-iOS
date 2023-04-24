@@ -61,6 +61,7 @@ class OTPVerifyStudentViewController: UIViewController {
         AuthViewModel().verifyStudent(reqObj: model) { result in
             switch result {
             case .success(let response):
+                AppUtils.saveStudentID(id: response._id ?? "")
                 AppUtils.saveStudentImg(img: response.img_user ?? "")
                 AppUtils.saveStudentName(name: response.name ?? "")
                 AppUtils.saveStudentUserID(userID: response.user_id ?? "")

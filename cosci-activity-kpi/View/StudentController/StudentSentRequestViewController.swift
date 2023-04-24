@@ -69,11 +69,74 @@ class StudentSentRequestViewController: UIViewController, PHPickerViewController
     
     private func uploadimg() {
         var model = requestRegisterTeacherModel()
-        
         FileViewModel().uploadPhoto(with: data!, fileName: "") { result in
             switch result {
             case .success(let response):
                 print("Success",response)
+            case .failure(let error):
+                switch error{
+                case .BackEndError(let msg):
+                    print(msg)
+                case .Non200StatusCodeError(let val):
+                    print("Error Code: \(val.status) - \(val.message)")
+                case .UnParsableError:
+                    print("Error \(error)")
+                case .NoNetworkError:
+                    print("No network")
+                }
+            }
+        }
+    }
+    
+    private func sentReqStudent() {
+
+        var model = reqDataModel()
+        
+        model.id_event = AppUtils.getStudentEventID()
+        model.start_date = AppUtils.getStudentEventStart()
+        model.end_date = AppUtils.getStudentEventEnd()
+        model.uploaded_img = [] // set array img
+        model.uploaded_pdf = ""
+        model.status_request = "ส่งเรื่องแล้ว"
+        model.type_request = AppUtils.getStudentEventType()
+        
+        StudentViewModel().sendReqStudent(reqObj: model){ result in
+            switch result {
+            case .success(let response):
+                print("Success",response)
+                AppUtils.deleteEventStudent()
+            case .failure(let error):
+                switch error{
+                case .BackEndError(let msg):
+                    print(msg)
+                case .Non200StatusCodeError(let val):
+                    print("Error Code: \(val.status) - \(val.message)")
+                case .UnParsableError:
+                    print("Error \(error)")
+                case .NoNetworkError:
+                    print("No network")
+                }
+            }
+        }
+    }
+    
+    private func sentReqTeacher() {
+        
+        var model = requestCreateReqTeacherDataModel()
+        
+        model.id_event = AppUtils.getStudentEventID()
+        model.start_date = AppUtils.getStudentEventStart()
+        model.end_date = AppUtils.getStudentEventEnd()
+        model.uploaded_img = [] // set array img
+        model.uploaded_pdf = ""
+        model.status_request = "สำเร็จ"
+        model.type_request = AppUtils.getStudentEventType()
+        
+        TeacherViewModel().sendReqTeacher(reqObj: model){ result in
+            switch result {
+            case .success(let response):
+                print("Success",response)
+                AppUtils.deleteEventStudent()
             case .failure(let error):
                 switch error{
                 case .BackEndError(let msg):

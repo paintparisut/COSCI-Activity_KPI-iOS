@@ -45,6 +45,7 @@ class TeacherKPIListViewController: UIViewController, UITableViewDataSource, UIT
     @objc func ontap(gesture:UITapGestureRecognizer) {
            if let cell = gesture.view {
                print(cell.tag)
+               AppUtils.saveStudentEventID(id: eventlist[cell.tag]._id ?? "")
                AppUtils.saveStudentEventName(name: eventlist[cell.tag].name_event ?? "")
                AppUtils.saveStudentEventImg(img: eventlist[cell.tag].event_img ?? "")
                AppUtils.saveStudentEventDetail(detail: eventlist[cell.tag].detail_event ?? "")

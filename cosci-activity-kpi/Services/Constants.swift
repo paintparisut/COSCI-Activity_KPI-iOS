@@ -63,6 +63,7 @@ struct Constants {
     struct AppConstants {
         static let CUR_USR_TOKEN = "UserAuthToken"
         
+        static let CUR_STU_ID = "StudentID"
         static let CUR_STU_IMG = "StudentImage"
         static let CUR_STU_NAME = "StudentName"
         static let CUR_STU_USER_ID = "StudentUserID"
@@ -72,6 +73,7 @@ struct Constants {
         static let CUR_STU_EMAIL = "StudentEmail"
         static let CUR_STU_TEL = "StudentTel"
 
+        static let CUR_TEA_ID = "TeacherID"
         static let CUR_TEA_IMG = "TeacherImage"
         static let CUR_TEA_NAME = "TeacherName"
         static let CUR_TEA_USER_ID = "TeacheUserID"
@@ -92,6 +94,7 @@ struct Constants {
         static let UP_TEACHER_EMAIL = "UploadedTeacherEmail"
         static let UP_TEACHER_TEL = "UploadedTeacherTel"
 
+        static let STUDENT_EVENT_ID = "EventStudentID"
         static let STUDENT_EVENT_IMG = "EventStudentImg"
         static let STUDENT_EVENT_NAME = "EventStudentName"
         static let STUDENT_EVENT_DETAIL = "EventStudentDetail"
