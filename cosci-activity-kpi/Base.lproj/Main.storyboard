@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Vb6-tq-lMZ">
-    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -24,7 +25,7 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="ygY-VC-GjQ" customClass="ForgotStudentViewController" customModule="cosci_activity_kpi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jjJ-qs-oEu">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fcm-e3-3B2">
@@ -84,7 +85,7 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="qgP-WI-PiU" customClass="SelectRoleForgotPasswordViewController" customModule="cosci_activity_kpi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jsw-I4-Pg7">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6w-hS-JG8">
@@ -133,23 +134,23 @@
             <objects>
                 <viewController storyboardIdentifier="login" modalPresentationStyle="fullScreen" id="Vb6-tq-lMZ" customClass="LoginViewController" customModule="cosci_activity_kpi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="afo-AH-3ee">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.44999998807907104" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="building" translatesAutoresizingMaskIntoConstraints="NO" id="on2-mp-YsI">
-                                <rect key="frame" x="-4" y="546" width="425" height="383"/>
+                                <rect key="frame" x="1" y="478" width="370" height="333"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Title" translatesAutoresizingMaskIntoConstraints="NO" id="SvW-nm-LaF">
-                                <rect key="frame" x="-4" y="112" width="425" height="91"/>
+                                <rect key="frame" x="-4" y="95" width="370" height="92"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gxs-yj-yQz">
-                                <rect key="frame" x="25" y="227" width="380" height="519"/>
+                                <rect key="frame" x="25" y="227" width="325" height="519"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b7g-Um-dLt" customClass="CustomTextField" customModule="cosci_activity_kpi" customModuleProvider="target">
-                                        <rect key="frame" x="32" y="180.33333333333331" width="316" height="45"/>
+                                        <rect key="frame" x="32" y="180.66666666666669" width="261" height="45"/>
                                         <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="L7I-Kt-lvo"/>
@@ -159,7 +160,7 @@
                                         <textInputTraits key="textInputTraits" textContentType="password"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="HSd-bU-2QR" customClass="CustomTextField" customModule="cosci_activity_kpi" customModuleProvider="target">
-                                        <rect key="frame" x="32" y="94.333333333333314" width="316" height="45"/>
+                                        <rect key="frame" x="32" y="94.666666666666686" width="261" height="45"/>
                                         <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="rMb-tF-2HE"/>
@@ -169,7 +170,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="JWN-kT-lg4" customClass="CustomSegment" customModule="cosci_activity_kpi" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="380" height="32"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="325" height="32"/>
                                         <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <segments>
                                             <segment title="นิสิต"/>
@@ -178,7 +179,7 @@
                                         <color key="selectedSegmentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </segmentedControl>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nFh-wB-ijT" customClass="CustomButton" customModule="cosci_activity_kpi" customModuleProvider="target">
-                                        <rect key="frame" x="32" y="465" width="316" height="35"/>
+                                        <rect key="frame" x="32" y="465" width="261" height="35"/>
                                         <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="38" id="tJd-m5-FpU"/>
@@ -193,7 +194,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gYz-5A-2HF" customClass="CustomButton" customModule="cosci_activity_kpi" customModuleProvider="target">
-                                        <rect key="frame" x="32" y="408" width="316" height="34"/>
+                                        <rect key="frame" x="32" y="408" width="261" height="34"/>
                                         <color key="backgroundColor" red="0.0" green="0.48627450979999998" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="38" id="CvV-UX-Fq9"/>
@@ -207,13 +208,13 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="รหัสผ่าน" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3l-oz-VoE" customClass="CustomLable" customModule="cosci_activity_kpi" customModuleProvider="target">
-                                        <rect key="frame" x="32" y="151.33333333333331" width="316" height="21"/>
+                                        <rect key="frame" x="32" y="151.66666666666669" width="261" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="บัวศรีไอดี / ชื่อผู้ใช้" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jJe-Vm-8yf" customClass="CustomLable" customModule="cosci_activity_kpi" customModuleProvider="target">
-                                        <rect key="frame" x="32" y="66" width="316" height="20.333333333333329"/>
+                                        <rect key="frame" x="32" y="66" width="261" height="20.666666666666671"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -289,19 +290,19 @@
             <objects>
                 <viewController storyboardIdentifier="verifystudent" id="0m8-g7-cnI" customClass="OTPVerifyStudentViewController" customModule="cosci_activity_kpi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uOU-bY-MRn">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.44999998807907104" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="building" translatesAutoresizingMaskIntoConstraints="NO" id="FdB-6W-9B6">
-                                <rect key="frame" x="2" y="541" width="423" height="386"/>
+                                <rect key="frame" x="2" y="475" width="368" height="336"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e0r-89-YhE">
-                                <rect key="frame" x="25" y="229" width="380" height="380"/>
+                                <rect key="frame" x="25" y="217" width="325" height="380"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JaJ-ub-3df" customClass="CustomTextField" customModule="cosci_activity_kpi" customModuleProvider="target">
-                                        <rect key="frame" x="32" y="90" width="316" height="50"/>
+                                        <rect key="frame" x="32" y="90" width="261" height="50"/>
                                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="aQt-GF-kmJ"/>
@@ -310,13 +311,13 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="รหัสยืนยันตัวถูกส่งไปที่ Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xkT-qU-DPi">
-                                        <rect key="frame" x="32" y="40" width="316" height="30"/>
+                                        <rect key="frame" x="32" y="40" width="261" height="30"/>
                                         <fontDescription key="fontDescription" name="Kanit-Medium" family="Kanit" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u03-ej-5Ak" customClass="OTPFieldView" customModule="OTPFieldView">
-                                        <rect key="frame" x="20" y="184" width="340" height="60"/>
+                                        <rect key="frame" x="20" y="184" width="285" height="60"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="wKj-zP-y0q"/>
@@ -335,13 +336,13 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="รหัสยืนยันตัวตน (OTP)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOw-J5-uCE" customClass="CustomLable" customModule="cosci_activity_kpi" customModuleProvider="target">
-                                        <rect key="frame" x="32" y="155" width="316" height="21"/>
+                                        <rect key="frame" x="32" y="155" width="261" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTQ-PH-jrt" customClass="CustomButton" customModule="cosci_activity_kpi" customModuleProvider="target">
-                                        <rect key="frame" x="32" y="322" width="316" height="38"/>
+                                        <rect key="frame" x="32" y="322" width="261" height="38"/>
                                         <color key="backgroundColor" red="0.0" green="0.48627450979999998" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="38" id="iTg-ll-En4"/>
@@ -420,7 +421,7 @@
             <objects>
                 <viewController modalPresentationStyle="overFullScreen" id="BYZ-38-t0r" customClass="TacherUploadedViewController" customModule="cosci_activity_kpi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YTO-Qw-hHB">
@@ -465,7 +466,7 @@
             <objects>
                 <viewController storyboardIdentifier="teacherregister" modalPresentationStyle="fullScreen" hidesBottomBarWhenPushed="YES" id="fXI-yE-Vku" customClass="TeacherRegisterViewController" customModule="cosci_activity_kpi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="n7R-r3-MKb">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="air-xs-A5M">
@@ -561,7 +562,7 @@
             <objects>
                 <viewController storyboardIdentifier="teacherkpi" id="9gI-pN-fUG" customClass="TeacherKPIListViewController" customModule="cosci_activity_kpi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pIk-gf-xNw">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7l4-dK-Sk3">
@@ -599,7 +600,7 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="LMj-9b-ywE" customClass="TeachProfileViewController" customModule="cosci_activity_kpi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="emC-m4-hEh">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="ชื่อ" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rEu-cr-5Ug">
@@ -680,7 +681,7 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="Srq-oa-lOg" customClass="TeacherChangePasswordViewController" customModule="cosci_activity_kpi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JaJ-Hj-AET">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Niq-nX-acV">
@@ -739,7 +740,7 @@
             <objects>
                 <viewController id="5LQ-NM-ZuG" customClass="TeacherHistoryViewController" customModule="cosci_activity_kpi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DEZ-Zi-uzd">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="N4P-ed-J1T">
@@ -770,14 +771,14 @@
             <objects>
                 <viewController storyboardIdentifier="studentevent" id="gF5-ov-99U" customClass="StudentEventListViewController" customModule="cosci_activity_kpi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8Qx-1E-wcD">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eao-0O-SZC">
-                                <rect key="frame" x="0.0" y="114" width="430" height="735"/>
+                                <rect key="frame" x="0.0" y="101" width="375" height="628"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Bzw-5G-yGP">
-                                        <rect key="frame" x="0.0" y="61" width="430" height="674"/>
+                                        <rect key="frame" x="0.0" y="67" width="375" height="561"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="sectionIndexBackgroundColor" red="0.94117647059999998" green="0.69803921570000005" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
@@ -786,7 +787,7 @@
                                         </connections>
                                     </tableView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="กิจกรรมนิสิตที่สามารถเข้าร่วมได้" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GKq-bV-02B">
-                                        <rect key="frame" x="30" y="25" width="380" height="21"/>
+                                        <rect key="frame" x="30" y="25" width="325" height="27"/>
                                         <fontDescription key="fontDescription" name="Kanit-SemiBold" family="Kanit" pointSize="18"/>
                                         <color key="textColor" red="0.0" green="0.48627450979999998" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -809,13 +810,13 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="กิจกรรมนิสิต" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aej-ZJ-PGX">
-                                <rect key="frame" x="0.0" y="69" width="430" height="35"/>
+                                <rect key="frame" x="0.0" y="57" width="375" height="34"/>
                                 <fontDescription key="fontDescription" name="Kanit-SemiBold" family="Kanit" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="66g-pe-0I4">
-                                <rect key="frame" x="371" y="69" width="49" height="35"/>
+                                <rect key="frame" x="316" y="57" width="49" height="34"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="bell.fill" catalog="system">
@@ -852,20 +853,20 @@
             <objects>
                 <viewController storyboardIdentifier="eventdetail" id="fqy-I2-472" customClass="StudentEventDetailViewController" customModule="cosci_activity_kpi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="L9y-QJ-pzw">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PRe-mn-d1W">
-                                <rect key="frame" x="0.0" y="114" width="430" height="818"/>
+                                <rect key="frame" x="0.0" y="101" width="375" height="711"/>
                                 <subviews>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pfi-db-eY5">
-                                        <rect key="frame" x="0.0" y="30" width="430" height="788"/>
+                                        <rect key="frame" x="0.0" y="30" width="375" height="681"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yHr-Ta-Jrp" userLabel="ViewinScroll">
-                                                <rect key="frame" x="0.0" y="0.0" width="430" height="596.66666666666663"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="596.66666666666663"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fvc-yp-RlA">
-                                                        <rect key="frame" x="35" y="45.666666666666657" width="360" height="219.99999999999997"/>
+                                                        <rect key="frame" x="35" y="45.666666666666657" width="305" height="219.99999999999997"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="220" id="hdw-Ko-gwh"/>
                                                         </constraints>
@@ -876,22 +877,22 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IoC-QJ-rPG">
-                                                        <rect key="frame" x="35" y="5.0000000000000018" width="360" height="25.666666666666671"/>
+                                                        <rect key="frame" x="35" y="5.0000000000000018" width="305" height="25.666666666666671"/>
                                                         <fontDescription key="fontDescription" name="Kanit-Bold" family="Kanit" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.48627450979999998" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mf5-cG-Zqm">
-                                                        <rect key="frame" x="35" y="340.66666666666669" width="360" height="24"/>
+                                                        <rect key="frame" x="35" y="340.66666666666669" width="305" height="24"/>
                                                         <fontDescription key="fontDescription" name="Kanit-Medium" family="Kanit" pointSize="16"/>
                                                         <color key="textColor" red="0.39215686274509803" green="0.39215686274509803" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TTc-Ql-Mse">
-                                                        <rect key="frame" x="35" y="295.66666666666669" width="56.333333333333343" height="30"/>
+                                                        <rect key="frame" x="35" y="295.66666666666669" width="56.666666666666657" height="30"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5SM-Sd-U6k">
-                                                                <rect key="frame" x="8" y="0.0" width="40.333333333333336" height="30"/>
+                                                                <rect key="frame" x="8" y="0.0" width="40.666666666666664" height="30"/>
                                                                 <fontDescription key="fontDescription" name="Kanit-Medium" family="Kanit" pointSize="16"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -912,25 +913,25 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ics-6q-OdW">
-                                                        <rect key="frame" x="35" y="379.66666666666663" width="360" height="24"/>
+                                                        <rect key="frame" x="35" y="379.66666666666669" width="305" height="24"/>
                                                         <fontDescription key="fontDescription" name="Kanit-Medium" family="Kanit" pointSize="16"/>
                                                         <color key="textColor" red="0.39215686274509803" green="0.39215686274509803" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eM8-SE-BKd">
-                                                        <rect key="frame" x="35" y="413.66666666666663" width="360" height="24"/>
+                                                        <rect key="frame" x="35" y="413.66666666666663" width="305" height="24"/>
                                                         <fontDescription key="fontDescription" name="Kanit-Medium" family="Kanit" pointSize="16"/>
                                                         <color key="textColor" red="0.3921568627" green="0.3921568627" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPr-5N-QoV">
-                                                        <rect key="frame" x="35" y="442.66666666666663" width="360" height="24"/>
+                                                        <rect key="frame" x="35" y="442.66666666666663" width="305" height="24"/>
                                                         <fontDescription key="fontDescription" name="Kanit-Medium" family="Kanit" pointSize="16"/>
                                                         <color key="textColor" red="0.3921568627" green="0.3921568627" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5aK-fF-3od">
-                                                        <rect key="frame" x="35" y="536.66666666666663" width="360" height="40"/>
+                                                        <rect key="frame" x="35" y="536.66666666666663" width="305" height="40"/>
                                                         <color key="backgroundColor" red="0.0" green="0.48627450979999998" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="0oC-q9-Gas"/>
@@ -1002,7 +1003,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pHe-LQ-Pcj">
-                                <rect key="frame" x="10" y="69" width="40" height="35"/>
+                                <rect key="frame" x="10" y="57" width="40" height="34"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="chevron.backward" catalog="system">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1012,7 +1013,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="กิจกรรมนิสิต" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PsM-Zn-T1O">
-                                <rect key="frame" x="0.0" y="69" width="430" height="35"/>
+                                <rect key="frame" x="0.0" y="57" width="375" height="34"/>
                                 <fontDescription key="fontDescription" name="Kanit-SemiBold" family="Kanit" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -1052,11 +1053,11 @@
             <objects>
                 <viewController storyboardIdentifier="studentrequest" id="OFc-kk-onT" customClass="StudentSentRequestViewController" customModule="cosci_activity_kpi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TOi-bE-YWO">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M5m-X7-BzZ">
-                                <rect key="frame" x="10" y="69" width="40" height="35"/>
+                                <rect key="frame" x="10" y="57" width="40" height="34"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="chevron.backward" catalog="system"/>
@@ -1065,22 +1066,22 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ยื่นคำร้อง" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TpR-9f-IPL">
-                                <rect key="frame" x="0.0" y="69" width="430" height="30"/>
+                                <rect key="frame" x="0.0" y="57" width="375" height="30"/>
                                 <fontDescription key="fontDescription" name="Kanit-SemiBold" family="Kanit" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Od-P5-WRh">
-                                <rect key="frame" x="0.0" y="109" width="430" height="823"/>
+                                <rect key="frame" x="0.0" y="97" width="375" height="715"/>
                                 <subviews>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YJl-pt-IXb">
-                                        <rect key="frame" x="0.0" y="30" width="430" height="793"/>
+                                        <rect key="frame" x="0.0" y="30" width="375" height="685"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xyy-pg-eU6">
-                                                <rect key="frame" x="0.0" y="0.0" width="430" height="799"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="799"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uwb-ux-uIY">
-                                                        <rect key="frame" x="25" y="20" width="380" height="27"/>
+                                                        <rect key="frame" x="25" y="20" width="325" height="27"/>
                                                         <attributedString key="attributedText">
                                                             <fragment content="ส่วนที่ 1 กิจกรรมที่เข้าร่วม">
                                                                 <attributes>
@@ -1092,7 +1093,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pLA-io-czU">
-                                                        <rect key="frame" x="25" y="237" width="380" height="27"/>
+                                                        <rect key="frame" x="25" y="237" width="325" height="27"/>
                                                         <attributedString key="attributedText">
                                                             <fragment content="ส่วนที่ 2 ข้อมูลผู้ยื่นคำร้อง">
                                                                 <attributes>
@@ -1104,7 +1105,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jAE-jA-k0B" customClass="CustomShadowCard" customModule="cosci_activity_kpi" customModuleProvider="target">
-                                                        <rect key="frame" x="25" y="57" width="380" height="160"/>
+                                                        <rect key="frame" x="25" y="57" width="325" height="160"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ezp-rv-rsU">
                                                                 <rect key="frame" x="15" y="15" width="130" height="130"/>
@@ -1119,7 +1120,7 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIf-17-wgf">
-                                                                <rect key="frame" x="160" y="15" width="205" height="48"/>
+                                                                <rect key="frame" x="160" y="15" width="150" height="48"/>
                                                                 <attributedString key="attributedText">
                                                                     <fragment content="กิจกรรมวันลอยกระทงมหาวิทยาลัยศรีนครกดกด้เ่ากดเกดเ">
                                                                         <attributes>
@@ -1131,7 +1132,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBi-Dq-lzD">
-                                                                <rect key="frame" x="160" y="73" width="205" height="24"/>
+                                                                <rect key="frame" x="160" y="73" width="150" height="24"/>
                                                                 <fontDescription key="fontDescription" name="Kanit-Medium" family="Kanit" pointSize="16"/>
                                                                 <color key="textColor" red="0.39215686274509803" green="0.39215686274509803" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -1190,16 +1191,16 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vv8-DC-kvy" customClass="CustomShadowCard" customModule="cosci_activity_kpi" customModuleProvider="target">
-                                                        <rect key="frame" x="25" y="274" width="380" height="182"/>
+                                                        <rect key="frame" x="25" y="274" width="325" height="182"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="รหัสประจำตัว" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhi-qz-Sl1" customClass="CustomLable" customModule="cosci_activity_kpi" customModuleProvider="target">
-                                                                <rect key="frame" x="20" y="15" width="340" height="21"/>
+                                                                <rect key="frame" x="20" y="15" width="285" height="21"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ekT-kP-d5H" customClass="CustomTextField" customModule="cosci_activity_kpi" customModuleProvider="target">
-                                                                <rect key="frame" x="20" y="41" width="340" height="40"/>
+                                                                <rect key="frame" x="20" y="41" width="285" height="40"/>
                                                                 <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="40" id="pfw-21-XRN"/>
@@ -1208,13 +1209,13 @@
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ชื่อ-สกุล" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cFF-zK-bOi" customClass="CustomLable" customModule="cosci_activity_kpi" customModuleProvider="target">
-                                                                <rect key="frame" x="20" y="101" width="340" height="21"/>
+                                                                <rect key="frame" x="20" y="101" width="285" height="21"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Keb-3Y-K5D" customClass="CustomTextField" customModule="cosci_activity_kpi" customModuleProvider="target">
-                                                                <rect key="frame" x="20" y="127" width="340" height="40"/>
+                                                                <rect key="frame" x="20" y="127" width="285" height="40"/>
                                                                 <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="40" id="LI0-af-ITh"/>
@@ -1246,7 +1247,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HJd-Xv-eiD" customClass="CustomShadowCard" customModule="cosci_activity_kpi" customModuleProvider="target">
-                                                        <rect key="frame" x="25" y="513" width="380" height="146"/>
+                                                        <rect key="frame" x="25" y="513" width="325" height="146"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="146" id="7Se-eJ-Qfi"/>
@@ -1258,7 +1259,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buD-Ij-CvF">
-                                                        <rect key="frame" x="25" y="476" width="380" height="27"/>
+                                                        <rect key="frame" x="25" y="476" width="325" height="27"/>
                                                         <attributedString key="attributedText">
                                                             <fragment content="ส่วนที่ 3 อัพโหลดหลักฐาน">
                                                                 <attributes>
@@ -1270,7 +1271,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FUF-so-hsw" customClass="CustomButton" customModule="cosci_activity_kpi" customModuleProvider="target">
-                                                        <rect key="frame" x="35" y="709" width="360" height="40"/>
+                                                        <rect key="frame" x="35" y="709" width="305" height="40"/>
                                                         <color key="backgroundColor" red="0.0" green="0.48627450979999998" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="Dll-6c-1Th"/>
@@ -1364,11 +1365,11 @@
             <objects>
                 <viewController id="orG-fF-mHe" customClass="StudentHistoryViewController" customModule="cosci_activity_kpi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="20k-2B-x63">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="r7W-w8-zLx">
-                                <rect key="frame" x="0.0" y="59" width="430" height="790"/>
+                                <rect key="frame" x="0.0" y="47" width="375" height="682"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="orG-fF-mHe" id="mqV-Qx-OJ7"/>
@@ -1401,7 +1402,7 @@
             <objects>
                 <viewController id="DJp-mp-Z3V" customClass="StudentCheckHistoryViewController" customModule="cosci_activity_kpi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wyg-cr-bW8">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="2Ta-Kg-itA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1418,7 +1419,7 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="pRU-FJ-UW3" customClass="StudentProfileViewController" customModule="cosci_activity_kpi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZfC-Zj-bD1">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dat-xV-D4C">
@@ -1512,52 +1513,165 @@
             <objects>
                 <viewController modalPresentationStyle="overFullScreen" id="iAi-4V-7yc" customClass="StudentUploadedViewController" customModule="cosci_activity_kpi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vcf-rG-5T8">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zm3-CE-plh">
-                                <rect key="frame" x="159" y="416" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.44999998807907104" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="building" translatesAutoresizingMaskIntoConstraints="NO" id="8vD-YD-h7d">
+                                <rect key="frame" x="2" y="484" width="370" height="333"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c1C-Qu-L06">
+                                <rect key="frame" x="25" y="227" width="325" height="340"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZpG-f0-vrr" customClass="CustomTextField" customModule="cosci_activity_kpi" customModuleProvider="target">
+                                        <rect key="frame" x="32" y="114" width="261" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="gJf-Tt-pAg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="สมัครสมาชิก" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DnQ-0h-30P">
+                                        <rect key="frame" x="32" y="35" width="261" height="33"/>
+                                        <fontDescription key="fontDescription" name="Kanit-Medium" family="Kanit" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="psA-Kw-i4v" customClass="CustomButton" customModule="cosci_activity_kpi" customModuleProvider="target">
+                                        <rect key="frame" x="32" y="282" width="261" height="38"/>
+                                        <color key="backgroundColor" red="0.0" green="0.48627450979999998" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="FAx-3G-Lrb"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="สมัครสมาชิก">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loginButton:" destination="Vb6-tq-lMZ" eventType="touchUpInside" id="S8u-xU-JtK"/>
+                                            <action selector="submitButton:" destination="iAi-4V-7yc" eventType="touchUpInside" id="D5R-gG-E7r"/>
+                                            <action selector="verifyButton:" destination="3Ba-wQ-8oc" eventType="touchUpInside" id="A3d-EE-jXe"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="รหัสประจำตัวนิสิต" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xu0-m0-UFJ" customClass="CustomLable" customModule="cosci_activity_kpi" customModuleProvider="target">
+                                        <rect key="frame" x="32" y="83" width="261" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O7o-no-8bq">
+                                        <rect key="frame" x="32" y="174" width="261" height="35"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exclamationmark.triangle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="rdg-kA-kTL">
+                                                <rect key="frame" x="5" y="7.9999999999999982" width="25" height="19.333333333333329"/>
+                                                <color key="tintColor" systemColor="systemRedColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="25" id="wOZ-tv-yv7"/>
+                                                </constraints>
+                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AfO-4W-zFT">
+                                                <rect key="frame" x="35" y="5" width="218" height="25"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="กรอกรหัสประจำตัวไม่ถูกต้อง">
+                                                        <attributes>
+                                                            <color key="NSColor" systemColor="systemRedColor"/>
+                                                            <font key="NSFont" size="14" name="Kanit-Medium"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="0.0053481722255370734" blue="0.02013789187350723" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="rdg-kA-kTL" secondAttribute="bottom" constant="5" id="4nd-f9-FMf"/>
+                                            <constraint firstAttribute="trailing" secondItem="AfO-4W-zFT" secondAttribute="trailing" constant="8" id="Mr7-wX-fNd"/>
+                                            <constraint firstItem="rdg-kA-kTL" firstAttribute="leading" secondItem="O7o-no-8bq" secondAttribute="leading" constant="5" id="aTZ-nu-i1Z"/>
+                                            <constraint firstItem="AfO-4W-zFT" firstAttribute="top" secondItem="O7o-no-8bq" secondAttribute="top" constant="5" id="cNB-t1-hLl"/>
+                                            <constraint firstItem="rdg-kA-kTL" firstAttribute="top" secondItem="O7o-no-8bq" secondAttribute="top" constant="5" id="emD-ZL-M2c"/>
+                                            <constraint firstAttribute="height" constant="35" id="iWk-50-4dH"/>
+                                            <constraint firstItem="AfO-4W-zFT" firstAttribute="leading" secondItem="rdg-kA-kTL" secondAttribute="trailing" constant="5" id="nqn-4d-cvx"/>
+                                            <constraint firstAttribute="bottom" secondItem="AfO-4W-zFT" secondAttribute="bottom" constant="5" id="ucb-8y-NmR"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="O7o-no-8bq" firstAttribute="top" secondItem="ZpG-f0-vrr" secondAttribute="bottom" constant="10" id="4WJ-TX-0WO"/>
+                                    <constraint firstItem="DnQ-0h-30P" firstAttribute="leading" secondItem="c1C-Qu-L06" secondAttribute="leading" constant="32" id="5eO-Ne-H3C"/>
+                                    <constraint firstAttribute="trailing" secondItem="DnQ-0h-30P" secondAttribute="trailing" constant="32" id="Aab-Rl-XLm"/>
+                                    <constraint firstItem="psA-Kw-i4v" firstAttribute="leading" secondItem="c1C-Qu-L06" secondAttribute="leading" constant="32" id="DWo-HH-IFb"/>
+                                    <constraint firstAttribute="height" constant="340" id="Dll-Xb-ujP"/>
+                                    <constraint firstAttribute="trailing" secondItem="O7o-no-8bq" secondAttribute="trailing" constant="32" id="MMg-Nu-mCO"/>
+                                    <constraint firstItem="xu0-m0-UFJ" firstAttribute="leading" secondItem="c1C-Qu-L06" secondAttribute="leading" constant="32" id="PyH-Xa-1lz"/>
+                                    <constraint firstItem="ZpG-f0-vrr" firstAttribute="top" secondItem="xu0-m0-UFJ" secondAttribute="bottom" constant="10" id="RTN-VY-qke"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZpG-f0-vrr" secondAttribute="trailing" constant="32" id="YTf-Ej-dG8"/>
+                                    <constraint firstItem="DnQ-0h-30P" firstAttribute="top" secondItem="c1C-Qu-L06" secondAttribute="top" constant="35" id="Yr4-Ae-yVI"/>
+                                    <constraint firstAttribute="trailing" secondItem="xu0-m0-UFJ" secondAttribute="trailing" constant="32" id="dyG-gx-pHy"/>
+                                    <constraint firstItem="O7o-no-8bq" firstAttribute="leading" secondItem="c1C-Qu-L06" secondAttribute="leading" constant="32" id="iiu-EZ-q1U"/>
+                                    <constraint firstAttribute="trailing" secondItem="psA-Kw-i4v" secondAttribute="trailing" constant="32" id="kbo-fB-Yfg"/>
+                                    <constraint firstAttribute="bottom" secondItem="psA-Kw-i4v" secondAttribute="bottom" constant="20" id="lXu-Dd-7Xr"/>
+                                    <constraint firstItem="xu0-m0-UFJ" firstAttribute="top" secondItem="DnQ-0h-30P" secondAttribute="bottom" constant="15" id="sfm-ey-aLJ"/>
+                                    <constraint firstItem="ZpG-f0-vrr" firstAttribute="leading" secondItem="c1C-Qu-L06" secondAttribute="leading" constant="32" id="xrS-r0-eU9"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awS-Lf-54n">
+                                <rect key="frame" x="25" y="62" width="90" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="YpX-Sk-9hB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Kanit-Medium" family="Kanit" pointSize="20"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="ย้อนกลับ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <imageReference key="image" image="chevron.backward" catalog="system" symbolScale="large"/>
+                                </state>
                                 <connections>
-                                    <action selector="submitButton:" destination="iAi-4V-7yc" eventType="touchUpInside" id="9VR-x4-oLe"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FVr-kD-4uO">
-                                <rect key="frame" x="106" y="341" width="180" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UK8-Hg-U9X">
-                                <rect key="frame" x="23" y="59" width="62" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Back"/>
-                                <connections>
-                                    <action selector="backButton:" destination="iAi-4V-7yc" eventType="touchUpInside" id="bcX-Bx-b4d"/>
+                                    <action selector="backButton:" destination="iAi-4V-7yc" eventType="touchUpInside" id="4ZI-e7-PZ8"/>
+                                    <action selector="backButton:" destination="3Ba-wQ-8oc" eventType="touchUpInside" id="DiU-Dq-ijR"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Vo2-bg-glS"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.0" green="0.48627450979999998" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="c1C-Qu-L06" firstAttribute="leading" secondItem="Vo2-bg-glS" secondAttribute="leading" constant="25" id="C01-wX-OCd"/>
+                            <constraint firstItem="Vo2-bg-glS" firstAttribute="trailing" secondItem="c1C-Qu-L06" secondAttribute="trailing" constant="25" id="LIy-l8-5Ll"/>
+                            <constraint firstItem="awS-Lf-54n" firstAttribute="leading" secondItem="Vo2-bg-glS" secondAttribute="leading" constant="25" id="ZEW-xz-Z8m"/>
+                            <constraint firstItem="c1C-Qu-L06" firstAttribute="top" secondItem="Vo2-bg-glS" secondAttribute="top" constant="180" id="bvk-HZ-WCC"/>
+                            <constraint firstItem="awS-Lf-54n" firstAttribute="top" secondItem="Vo2-bg-glS" secondAttribute="top" constant="15" id="dY1-fN-6Kw"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="sI7-Ya-T8G"/>
                     <connections>
-                        <outlet property="useridTF" destination="FVr-kD-4uO" id="ryH-uP-t1t"/>
+                        <outlet property="useridTF" destination="ZpG-f0-vrr" id="7e0-LV-j8Z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XNA-lM-PLc" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2949" y="1082"/>
+            <point key="canvasLocation" x="-2949.7674418604652" y="1080.9012875536482"/>
         </scene>
         <!--Student Register View Controller-->
         <scene sceneID="BZF-Yn-btk">
             <objects>
                 <viewController storyboardIdentifier="studentregister" modalPresentationStyle="overFullScreen" id="0FO-wo-pEg" customClass="StudentRegisterViewController" customModule="cosci_activity_kpi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ExC-UT-r45">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZX-Rm-1xn">
@@ -1666,7 +1780,7 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="SBb-Pe-HTU" customClass="SelectRoleRegisterViewController" customModule="cosci_activity_kpi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eIb-xd-wVY">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZLP-pp-q2G">
@@ -1711,7 +1825,7 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="bRo-ez-xTs" customClass="ForgotTeacherViewController" customModule="cosci_activity_kpi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ub8-OS-WCY">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JQK-ZF-6aI">
@@ -1811,7 +1925,7 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="MqU-uh-CJo" customClass="StudentChangePasswordViewController" customModule="cosci_activity_kpi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="p72-qn-S3F">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yEJ-nD-UkQ">
@@ -1870,7 +1984,7 @@
             <objects>
                 <viewController storyboardIdentifier="reqdetail" id="Jl9-6R-SIx" customClass="StudentHistoryDetailViewController" customModule="cosci_activity_kpi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dPQ-9e-HHq">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Elr-pt-qdu">
@@ -1958,19 +2072,19 @@
             <objects>
                 <viewController storyboardIdentifier="verifyteacher" id="3Ba-wQ-8oc" customClass="OTPVerifyTeacherViewController" customModule="cosci_activity_kpi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lcO-wB-XK4">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.44999998807907104" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="building" translatesAutoresizingMaskIntoConstraints="NO" id="PbC-bk-jJA">
-                                <rect key="frame" x="0.0" y="540" width="429" height="387"/>
+                                <rect key="frame" x="-2" y="474" width="375" height="336"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AVh-Us-3cD">
-                                <rect key="frame" x="25" y="229" width="380" height="380"/>
+                                <rect key="frame" x="25" y="217" width="325" height="380"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jx2-z6-esQ" customClass="CustomTextField" customModule="cosci_activity_kpi" customModuleProvider="target">
-                                        <rect key="frame" x="32" y="90" width="316" height="50"/>
+                                        <rect key="frame" x="32" y="90" width="261" height="50"/>
                                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="aMS-Bs-jKX"/>
@@ -1979,13 +2093,13 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="รหัสยืนยันตัวถูกส่งไปที่ Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vbf-j7-7TO">
-                                        <rect key="frame" x="32" y="40" width="316" height="30"/>
+                                        <rect key="frame" x="32" y="40" width="261" height="30"/>
                                         <fontDescription key="fontDescription" name="Kanit-Medium" family="Kanit" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ev4-nV-iag" customClass="OTPFieldView" customModule="OTPFieldView">
-                                        <rect key="frame" x="20" y="184" width="340" height="60"/>
+                                        <rect key="frame" x="20" y="184" width="285" height="60"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="JS9-ag-gPU"/>
@@ -2001,13 +2115,13 @@
                                         </state>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="รหัสยืนยันตัวตน (OTP)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fz0-ve-bqB" customClass="CustomLable" customModule="cosci_activity_kpi" customModuleProvider="target">
-                                        <rect key="frame" x="32" y="155" width="316" height="21"/>
+                                        <rect key="frame" x="32" y="155" width="261" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pPl-4k-PZl" customClass="CustomButton" customModule="cosci_activity_kpi" customModuleProvider="target">
-                                        <rect key="frame" x="32" y="322" width="316" height="38"/>
+                                        <rect key="frame" x="32" y="322" width="261" height="38"/>
                                         <color key="backgroundColor" red="0.0" green="0.48627450979999998" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="38" id="93W-RO-Ezc"/>
@@ -2091,6 +2205,7 @@
         <image name="building" width="809" height="743"/>
         <image name="checklist.checked" catalog="system" width="128" height="107"/>
         <image name="chevron.backward" catalog="system" width="97" height="128"/>
+        <image name="exclamationmark.triangle.fill" catalog="system" width="128" height="109"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="systemBackgroundColor">
@@ -2101,6 +2216,9 @@
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

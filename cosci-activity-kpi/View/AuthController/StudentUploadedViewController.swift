@@ -9,7 +9,7 @@ import UIKit
 
 class StudentUploadedViewController: UIViewController {
 
-    @IBOutlet weak var useridTF: UITextField!
+    @IBOutlet weak var useridTF: CustomTextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
