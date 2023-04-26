@@ -220,7 +220,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wWT-VW-VRV" customClass="CustomButton" customModule="cosci_activity_kpi" customModuleProvider="target">
-                                        <rect key="frame" x="249" y="343" width="99" height="35"/>
+                                        <rect key="frame" x="194" y="343" width="99" height="35"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="ลืมรหัสผ่าน?">
@@ -324,7 +324,7 @@
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6lp-zJ-Rt7">
-                                        <rect key="frame" x="200" y="252" width="148" height="36"/>
+                                        <rect key="frame" x="145" y="252" width="148" height="36"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Kanit-Medium" family="Kanit" pointSize="16"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -398,13 +398,32 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kQW-Pi-VEB">
+                                <rect key="frame" x="25" y="62" width="90" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="RZ0-95-F1I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Kanit-Medium" family="Kanit" pointSize="20"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="ย้อนกลับ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <imageReference key="image" image="chevron.backward" catalog="system" symbolScale="large"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButton:" destination="iAi-4V-7yc" eventType="touchUpInside" id="KDH-BX-3gL"/>
+                                    <action selector="backButton:" destination="3Ba-wQ-8oc" eventType="touchUpInside" id="uoP-fM-Enx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dgo-b7-EFA"/>
                         <color key="backgroundColor" red="0.0" green="0.53333333333333333" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="kQW-Pi-VEB" firstAttribute="leading" secondItem="dgo-b7-EFA" secondAttribute="leading" constant="25" id="Wi5-Cp-zoG"/>
                             <constraint firstItem="e0r-89-YhE" firstAttribute="top" secondItem="dgo-b7-EFA" secondAttribute="top" constant="170" id="ZpS-Sh-tXG"/>
                             <constraint firstItem="e0r-89-YhE" firstAttribute="leading" secondItem="dgo-b7-EFA" secondAttribute="leading" constant="25" id="boD-gF-XYB"/>
                             <constraint firstItem="dgo-b7-EFA" firstAttribute="trailing" secondItem="e0r-89-YhE" secondAttribute="trailing" constant="25" id="tkL-Pl-qeI"/>
+                            <constraint firstItem="kQW-Pi-VEB" firstAttribute="top" secondItem="dgo-b7-EFA" secondAttribute="top" constant="15" id="x6d-we-s7w"/>
                         </constraints>
                     </view>
                     <connections>
@@ -1659,6 +1678,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="sI7-Ya-T8G"/>
                     <connections>
+                        <outlet property="errorView" destination="O7o-no-8bq" id="37N-Ty-2tP"/>
                         <outlet property="useridTF" destination="ZpG-f0-vrr" id="7e0-LV-j8Z"/>
                     </connections>
                 </viewController>
@@ -2106,7 +2126,7 @@
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5mi-qo-nKY">
-                                        <rect key="frame" x="200" y="252" width="148" height="36"/>
+                                        <rect key="frame" x="145" y="252" width="148" height="36"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Kanit-Medium" family="Kanit" pointSize="16"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -2177,10 +2197,29 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZ8-hE-VRF">
+                                <rect key="frame" x="25" y="62" width="90" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="mdJ-rf-vdV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Kanit-Medium" family="Kanit" pointSize="20"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="ย้อนกลับ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <imageReference key="image" image="chevron.backward" catalog="system" symbolScale="large"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButton:" destination="3Ba-wQ-8oc" eventType="touchUpInside" id="IIT-yf-lyL"/>
+                                    <action selector="backButton:" destination="iAi-4V-7yc" eventType="touchUpInside" id="Sgv-eB-XJT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Z4M-zf-Q7B"/>
                         <color key="backgroundColor" red="0.0" green="0.53179506980000002" blue="0.78428819439999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="sZ8-hE-VRF" firstAttribute="top" secondItem="Z4M-zf-Q7B" secondAttribute="top" constant="15" id="3DV-gb-Ypn"/>
+                            <constraint firstItem="sZ8-hE-VRF" firstAttribute="leading" secondItem="Z4M-zf-Q7B" secondAttribute="leading" constant="25" id="7y1-KW-a7d"/>
                             <constraint firstItem="AVh-Us-3cD" firstAttribute="leading" secondItem="Z4M-zf-Q7B" secondAttribute="leading" constant="25" id="94c-Hh-t57"/>
                             <constraint firstItem="AVh-Us-3cD" firstAttribute="top" secondItem="Z4M-zf-Q7B" secondAttribute="top" constant="170" id="C5v-sT-OaG"/>
                             <constraint firstItem="Z4M-zf-Q7B" firstAttribute="trailing" secondItem="AVh-Us-3cD" secondAttribute="trailing" constant="25" id="vZq-dV-mI3"/>

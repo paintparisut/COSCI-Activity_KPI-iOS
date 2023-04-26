@@ -10,10 +10,11 @@ import UIKit
 class StudentUploadedViewController: UIViewController {
 
     @IBOutlet weak var useridTF: CustomTextField!
+    @IBOutlet weak var errorView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        errorView.isHidden = true
         // Do any additional setup after loading the view.
     }
     
@@ -42,10 +43,13 @@ class StudentUploadedViewController: UIViewController {
                 switch error{
                 case .BackEndError(let msg):
                     print(msg)
+                    self.errorView.isHidden = false
                 case .Non200StatusCodeError(let val):
                     print("Error Code: \(val.status) - \(val.message)")
+                    self.errorView.isHidden = false
                 case .UnParsableError:
                     print("Error \(error)")
+                    self.errorView.isHidden = false
                 case .NoNetworkError:
                     print("No network")
                 }
