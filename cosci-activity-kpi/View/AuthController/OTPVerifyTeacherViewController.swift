@@ -20,6 +20,10 @@ class OTPVerifyTeacherViewController: UIViewController {
         implementotpView()
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
     func implementotpView(){
         self.otpFieldView.otpInputType = .numeric
         self.otpFieldView.fieldsCount = 6

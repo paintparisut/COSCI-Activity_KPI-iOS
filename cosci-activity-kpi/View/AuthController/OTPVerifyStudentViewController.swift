@@ -52,6 +52,9 @@ class OTPVerifyStudentViewController: UIViewController {
         self.otpFieldView.filledBackgroundColor = UIColor.systemGray6
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
     
     private func fetchVerify(otp:String) {
         var model = requestOtpModel()

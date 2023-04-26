@@ -178,6 +178,4 @@ class LoginViewController: UIViewController {
             self.view.frame.origin.y = 0
         }
     }
-    
-    
 }

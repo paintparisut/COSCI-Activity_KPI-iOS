@@ -9,6 +9,7 @@ import UIKit
 
 class TacherUploadedViewController: UIViewController {
 
+    @IBOutlet weak var errorView: UIView!
     @IBOutlet weak var teacherTF: UITextField!
     
     @IBAction func submitBT(_ sender: Any) {
@@ -20,7 +21,14 @@ class TacherUploadedViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.errorView.isHidden = true
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
 
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
     
     private func fetchUploaded() {
@@ -42,6 +50,7 @@ class TacherUploadedViewController: UIViewController {
                 case .Non200StatusCodeError(let val):
                     print("Error Code: \(val.status) - \(val.message)")
                 case .UnParsableError:
+                    self.errorView.isHidden = false
                     print("Error \(error)")
                 case .NoNetworkError:
                     print("No network")
@@ -50,11 +59,23 @@ class TacherUploadedViewController: UIViewController {
         }
     }
     
-
     func registerView() {
         let secondVC = storyboard?.instantiateViewController(withIdentifier: "teacherregister") as! TeacherRegisterViewController
         secondVC.modalPresentationStyle = .fullScreen
         self.present(secondVC, animated:false, completion:nil)
     }
+    
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0 {
+                self.view.frame.origin.y -= keyboardSize.height/2.2
+            }
+        }
+    }
 
+    @objc func keyboardWillHide(notification: NSNotification) {
+        if self.view.frame.origin.y != 0 {
+            self.view.frame.origin.y = 0
+        }
+    }
 }
