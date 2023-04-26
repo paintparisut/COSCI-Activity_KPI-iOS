@@ -13,21 +13,37 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordTF: UITextField!
     @IBOutlet weak var forgotPassword: CustomButton!
     @IBOutlet weak var selectRoleSegment: UISegmentedControl!
+    @IBOutlet weak var loginLabel: CustomLable!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         usernameTF.text = "co631010046"
         passwordTF.text = "12341234"
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         let font = UIFont(name: ConstantsInterface.ConstantFont.Medium, size: 16)
-        
         UISegmentedControl.appearance().setTitleTextAttributes([NSAttributedString.Key.font: font, .foregroundColor: UIColor.darkGray,], for: .normal)
         UISegmentedControl.appearance().layer.cornerRadius = 30
         AppUtils.eraseAllStudentData()
         AppUtils.eraseAllTeacherData()
-
-        
+        loginSegment()
+        keyboardPush()
+    }
+    
+    @IBAction func segmentOnChange(_ sender: Any) {
+        loginSegment()
+    }
+    
+    func keyboardPush() {
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    func loginSegment() {
+        if selectRoleSegment.selectedSegmentIndex == 0 {
+            self.loginLabel.text = "บัวศรีไอดี"
+        }
+        else {
+            self.loginLabel.text = "ชื่อผู้ใช้งาน"
+        }
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -35,8 +51,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func loginButton(_ sender: Any) {
-        if selectRoleSegment.selectedSegmentIndex == 0 {
-            fetchLoginStudent()
+        if selectRoleSegment.selectedSegmentIndex == 0 {            fetchLoginStudent()
         }
         else {
             fetchLoginTeacher()

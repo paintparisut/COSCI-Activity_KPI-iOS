@@ -20,6 +20,8 @@ class StudentRegisterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         studentidTF.text = AppUtils.getUploadedStudentId()
         nameTF.text = AppUtils.getUploadedStudentName()
         majorTF.text = AppUtils.getUploadedStudentMajor()
@@ -30,15 +32,14 @@ class StudentRegisterViewController: UIViewController {
         register()
     }
     
-    @IBAction func cancleButton(_ sender: Any) {
-        AppUtils.deleteUploadedStudent()
-        self.loginPage()
-    }
-    
+//    @IBAction func cancleButton(_ sender: Any) {
+//        AppUtils.deleteUploadedStudent()
+//        self.loginPage()
+//    }
 
     @IBAction func backButton(_ sender: Any) {
         AppUtils.deleteUploadedStudent()
-        self.dismiss(animated: false, completion: nil)
+        self.loginPage()
 
     }
     
@@ -80,6 +81,20 @@ class StudentRegisterViewController: UIViewController {
         let secondVC = storyboard?.instantiateViewController(withIdentifier: "login") as! LoginViewController
         secondVC.modalPresentationStyle = .fullScreen
         self.present(secondVC, animated:false, completion:nil)
+    }
+    
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0 {
+                self.view.frame.origin.y -= keyboardSize.height/1.2
+            }
+        }
+    }
+
+    @objc func keyboardWillHide(notification: NSNotification) {
+        if self.view.frame.origin.y != 0 {
+            self.view.frame.origin.y = 0
+        }
     }
     
 }
