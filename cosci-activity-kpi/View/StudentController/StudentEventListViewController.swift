@@ -23,6 +23,8 @@ class StudentEventListViewController: UIViewController,UITableViewDelegate,UITab
         refreshControl.attributedTitle = NSAttributedString(string:"เลื่อนลงเพื่อโหลดข้อมูลกิจกรรม")
         refreshControl.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
         tableView.addSubview(refreshControl)
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: ConstantsInterface.ConstantFont.Medium, size: 14)!], for: .normal)
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: ConstantsInterface.ConstantFont.Medium, size: 14)!], for: .selected)
     }
     
     override func viewDidAppear(_ animated: Bool) {
