@@ -18,9 +18,9 @@ struct fileModel : Codable {
 struct ResponseUploadImage: Codable {
     let result: String
     let message: String
-    let data: ImageUrlDataModel
+    let data: [String]
 }
 
-struct ImageUrlDataModel: Codable {
-    let url: [String]?
-}
+//struct ImageUrlDataModel: Codable {
+//    let url: [String]?
+//}

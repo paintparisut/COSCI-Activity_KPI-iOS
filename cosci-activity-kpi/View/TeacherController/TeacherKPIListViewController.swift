@@ -15,6 +15,7 @@ class TeacherKPIListViewController: UIViewController, UITableViewDataSource, UIT
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         getKpiData()
         tableView.register(UINib(nibName: "EventTableViewCell", bundle: nil), forCellReuseIdentifier: "eventcell")
         tableView.dataSource = self

@@ -9,15 +9,17 @@ import Foundation
 import Alamofire
 
 struct FileViewModel {
-    public func uploadPhoto(with data: Data, fileName: String, completion: @escaping (Result<String, ServiceError>) -> Void) {
+    public func uploadPhoto(with imagesData: [UIImage], completion: @escaping (Result<[String], ServiceError>) -> Void) {
         let headers: HTTPHeaders = ["Authorization" : AppUtils.getUsrAuthToken()!,
                                     "Content-Type": "multipart/form-data"]
         
-        let request = AF.upload(multipartFormData: {
-            MultipartFormData in
-            MultipartFormData.append(data, withName: "file", fileName: fileName, mimeType: "image/jpeg")
-        }, to: Constants.URL_BASE+Constants.URL_MIDDLEWARE+Constants.URL_ROUTES_FILE+Constants.URL_PATH_FILE_UPLOADIMG, method: .post, headers: headers)
-        
+        let request = AF.upload(multipartFormData: { multipartFormData in
+            for (index, image) in imagesData.enumerated() {
+                if let imageData = image.jpegData(compressionQuality: 1.0) {
+                    multipartFormData.append(imageData, withName: "file", fileName: "image\(index).jpg", mimeType: "image/jpeg")
+                }
+            }
+        },to: Constants.URL_BASE+Constants.URL_MIDDLEWARE+Constants.URL_ROUTES_FILE+Constants.URL_PATH_FILE_UPLOADIMG, method: .post, headers: headers)
         request.responseDecodable(of: ResponseUploadImage.self) { (response) in
             print("RESPONSE",response)
             switch response.result {
@@ -25,14 +27,8 @@ struct FileViewModel {
                 guard let data = response.value else {return}
                 
                 if data.result == "OK" {
-                    let imageurl:ImageUrlDataModel = data.data
-                    completion(.success(imageurl.url?[0] ?? ""))
-                }
-                else if data.result == "nOK" {
-                    completion(.failure(ServiceError.BackEndError(errorMessage: data.message, data: "")))
-                }
-                else if data.result == "Not found" {
-                    completion(.failure(ServiceError.BackEndError(errorMessage: data.result, data: "")))
+                    let imageurl:ResponseUploadImage = data
+                    completion(.success(imageurl.data))
                 }
                 else {
                     completion(.failure(ServiceError.Non200StatusCodeError(APIError(message: data.result, status: "500"))))

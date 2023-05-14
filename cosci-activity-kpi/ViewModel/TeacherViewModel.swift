@@ -59,6 +59,7 @@ struct TeacherViewModel {
            
         let request = AF.request(Constants.URL_BASE+Constants.URL_MIDDLEWARE+Constants.URL_ROUTES_TEACHER+Constants.URL_PATH_TEACHER_REQHISTORY, method: .get, headers: headers)
 
+        print(Constants.URL_BASE+Constants.URL_MIDDLEWARE+Constants.URL_ROUTES_TEACHER+Constants.URL_PATH_TEACHER_REQHISTORY)
            request.responseDecodable(of: ResponseRequestTeacherDataModel.self) { (response) in
                switch response.result {
                case .success(_):

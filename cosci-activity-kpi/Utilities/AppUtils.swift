@@ -33,6 +33,17 @@ struct AppUtils {
         return AppUtils.JWT.decryptUsrAuthTokenUserRole()
     }
     
+    //upload image req
+    static func saveImgList(img:[String]) {
+        UserDefaults.standard.setValue(img, forKeyPath: Constants.AppConstants.UPLOADED_IMG_REQ)
+    }
+    static func getImgList() -> [String]? {
+           return UserDefaults.standard.value(forKey: Constants.AppConstants.UPLOADED_IMG_REQ) as? [String]
+    }
+    static func eraseImgList() {
+        UserDefaults.standard.removeObject(forKey: Constants.AppConstants.UPLOADED_IMG_REQ)
+    }
+    
     //Event Student
     static func saveStudentEventID(id:String) {
         UserDefaults.standard.setValue(id, forKeyPath: Constants.AppConstants.STUDENT_EVENT_ID)
@@ -98,6 +109,7 @@ struct AppUtils {
     }
     
     static func deleteEventStudent() {
+        UserDefaults.standard.removeObject(forKey: Constants.AppConstants.UPLOADED_IMG_REQ)
         UserDefaults.standard.removeObject(forKey: Constants.AppConstants.STUDENT_EVENT_ID)
         UserDefaults.standard.removeObject(forKey: Constants.AppConstants.STUDENT_EVENT_NAME)
         UserDefaults.standard.removeObject(forKey: Constants.AppConstants.STUDENT_EVENT_IMG)
@@ -118,6 +130,9 @@ struct AppUtils {
 //    static let REQ_EVENT_TIME = "RequestEventTime"
     
     //REQ HISTORY
+    static func saveReqEventID(name:String) {
+        UserDefaults.standard.setValue(name, forKeyPath: Constants.AppConstants.REQ_EVENT_ID)
+    }
     static func saveReqEventName(name:String) {
         UserDefaults.standard.setValue(name, forKeyPath: Constants.AppConstants.REQ_EVENT_NAME)
     }
@@ -137,6 +152,9 @@ struct AppUtils {
         UserDefaults.standard.setValue(time, forKeyPath: Constants.AppConstants.REQ_EVENT_TIME)
     }
     
+    static func getReqEventID() -> String? {
+           return UserDefaults.standard.value(forKey: Constants.AppConstants.REQ_EVENT_ID) as? String
+    }
     static func getReqEventName() -> String? {
            return UserDefaults.standard.value(forKey: Constants.AppConstants.REQ_EVENT_NAME) as? String
     }
@@ -157,6 +175,7 @@ struct AppUtils {
     }
 
     static func deleteReq() {
+        UserDefaults.standard.removeObject(forKey: Constants.AppConstants.REQ_EVENT_ID)
         UserDefaults.standard.removeObject(forKey: Constants.AppConstants.REQ_EVENT_NAME)
         UserDefaults.standard.removeObject(forKey: Constants.AppConstants.REQ_EVENT_IMG)
         UserDefaults.standard.removeObject(forKey: Constants.AppConstants.REQ_EVENT_STATUSREQ)
@@ -332,7 +351,7 @@ struct AppUtils {
     //SAVE TEACHER
     
     static func saveTeacherID(id:String) {
-        UserDefaults.standard.setValue(id, forKeyPath: Constants.AppConstants.CUR_STU_ID)
+        UserDefaults.standard.setValue(id, forKeyPath: Constants.AppConstants.CUR_TEA_ID)
     }
     static func saveTeacherImg(img:String) {
         UserDefaults.standard.setValue(img, forKeyPath: Constants.AppConstants.CUR_TEA_IMG)

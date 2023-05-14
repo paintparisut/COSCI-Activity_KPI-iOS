@@ -123,6 +123,7 @@
 		CBCDFFB929ECBB6C0072223C /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCDFFB729ECBB6C0072223C /* HistoryTableViewCell.swift */; };
 		CBCDFFBA29ECBB6C0072223C /* HistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBCDFFB829ECBB6C0072223C /* HistoryTableViewCell.xib */; };
 		CBE09EC629DE097F00F7566E /* SelectRoleRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE09EC529DE097F00F7566E /* SelectRoleRegisterViewController.swift */; };
+		CBFBFF322A0FA49E002D20EA /* UploadedImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFBFF312A0FA49E002D20EA /* UploadedImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -226,6 +227,7 @@
 		CBCDFFB729ECBB6C0072223C /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		CBCDFFB829ECBB6C0072223C /* HistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryTableViewCell.xib; sourceTree = "<group>"; };
 		CBE09EC529DE097F00F7566E /* SelectRoleRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRoleRegisterViewController.swift; sourceTree = "<group>"; };
+		CBFBFF312A0FA49E002D20EA /* UploadedImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadedImageViewController.swift; sourceTree = "<group>"; };
 		F508E1F9497F7DB192D57F5A /* Pods-cosci-activity-kpi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cosci-activity-kpi.debug.xcconfig"; path = "Target Support Files/Pods-cosci-activity-kpi/Pods-cosci-activity-kpi.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -344,6 +346,7 @@
 				CB96592129DC3D7100FF309A /* StudentEventListViewController.swift */,
 				CBCDFFB129ECAA860072223C /* StudentEventDetailViewController.swift */,
 				CBCDFFB329ECB7AC0072223C /* StudentSentRequestViewController.swift */,
+				CBFBFF312A0FA49E002D20EA /* UploadedImageViewController.swift */,
 				CB96592529DC405100FF309A /* StudentHistoryViewController.swift */,
 				CBCDFFB529ECB8E00072223C /* StudentHistoryDetailViewController.swift */,
 				CB96592329DC403F00FF309A /* StudentCheckHistoryViewController.swift */,
@@ -736,6 +739,7 @@
 				CBAA505F29E753B70023B3C5 /* StudentChangePasswordViewController.swift in Sources */,
 				CB96592A29DC40C600FF309A /* TeacherHistoryViewController.swift in Sources */,
 				CBA858F429CF78D700D863CC /* otpModel.swift in Sources */,
+				CBFBFF322A0FA49E002D20EA /* UploadedImageViewController.swift in Sources */,
 				CB96591429DC388400FF309A /* LoginViewController.swift in Sources */,
 				CBA858F629CF78E700D863CC /* requestModel.swift in Sources */,
 				CBCDFFB629ECB8E00072223C /* StudentHistoryDetailViewController.swift in Sources */,

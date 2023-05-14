@@ -46,6 +46,7 @@ class StudentHistoryViewController: UIViewController,UITableViewDelegate,UITable
     @objc func ontap(gesture:UITapGestureRecognizer) {
            if let cell = gesture.view {
                print(cell.tag)
+               AppUtils.saveReqEventID(name: data[cell.tag]._id ?? "")
                AppUtils.saveReqEventName(name: data[cell.tag].name_event ?? "")
                AppUtils.saveReqEventImg(img: data[cell.tag].event_img ?? "")
                AppUtils.saveReqEventHour(hour: data[cell.tag].activity_hour ?? "")

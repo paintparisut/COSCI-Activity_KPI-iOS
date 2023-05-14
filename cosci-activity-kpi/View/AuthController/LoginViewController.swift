@@ -17,13 +17,19 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        usernameTF.text = "co631010046"
-        passwordTF.text = "12341234"
+        usernameTF.text = "co631010205"
+        passwordTF.text = "123456789"
         let font = UIFont(name: ConstantsInterface.ConstantFont.Medium, size: 16)
         UISegmentedControl.appearance().setTitleTextAttributes([NSAttributedString.Key.font: font, .foregroundColor: UIColor.darkGray,], for: .normal)
         UISegmentedControl.appearance().layer.cornerRadius = 30
         AppUtils.eraseAllStudentData()
         AppUtils.eraseAllTeacherData()
+        AppUtils.deleteReq()
+        AppUtils.deleteEmailOTP()
+        AppUtils.deleteEventStudent()
+        AppUtils.deleteUploadedStudent()
+        AppUtils.deleteUploadedTeacher()
+        AppUtils.eraseImgList()
         loginSegment()
         keyboardPush()
     }
@@ -40,9 +46,13 @@ class LoginViewController: UIViewController {
     func loginSegment() {
         if selectRoleSegment.selectedSegmentIndex == 0 {
             self.loginLabel.text = "บัวศรีไอดี"
+            usernameTF.text = ""
+            passwordTF.text = ""
         }
         else {
             self.loginLabel.text = "ชื่อผู้ใช้งาน"
+            usernameTF.text = ""
+            passwordTF.text = ""
         }
     }
     

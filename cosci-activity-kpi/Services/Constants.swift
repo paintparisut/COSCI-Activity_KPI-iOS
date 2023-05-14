@@ -53,6 +53,8 @@ struct Constants {
     static let URL_PATH_STUDENT_SINGLEEVENT = "/event/"
     static let URL_PATH_STUDENT_CREATEREQ = "/request"
     static let URL_PATH_STUDENT_CHANGPASSWORD = "/changepassword"
+    static let URL_PATH_STUDENT_DELETEREQ = "/delete"
+
 
     static let URL_PATH_TEACHER_REQHISTORY = "/request-history"
     static let URL_PATH_TEACHER_KPIACTIVE = "/kpi-active"
@@ -105,12 +107,16 @@ struct Constants {
         static let STUDENT_EVENT_POSTEDTIMESTAMP = "EventStudentTimeStamp"
         static let STUDENT_EVENT_IMGLIST = "EventStudentImgList"
 
+        static let REQ_EVENT_ID = "RequestEventID"
         static let REQ_EVENT_NAME = "RequestEventName"
         static let REQ_EVENT_IMG = "RequestEventImg"
         static let REQ_EVENT_STATUSREQ = "RequestEventStatusReq"
         static let REQ_EVENT_TYPE = "RequestEventType"
         static let REQ_EVENT_HOUR = "RequestEventHour"
         static let REQ_EVENT_TIME = "RequestEventTime"
+        
+        static let UPLOADED_IMG_REQ = "UploadImageRequest"
+
     }
 }
 

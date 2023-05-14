@@ -34,6 +34,11 @@ class StudentHistoryDetailViewController: UIViewController {
         self.dismiss(animated: false, completion: nil)
     }
     
+    @IBAction func deleteButton(_ sender: Any) {
+        deleteReq()
+        self.dismiss(animated: false, completion: nil)
+    }
+    
     public func formatDate(date:String) -> String{
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "d MMM yyyy"
@@ -42,4 +47,29 @@ class StudentHistoryDetailViewController: UIViewController {
         return dateString
     }
 
+    private func deleteReq() {
+        var model = resquestDeleteReq()
+        model._id = AppUtils.getReqEventID()
+ 
+        print(model)
+        StudentViewModel().deleteReq(reqObj: model) { result in
+            switch result {
+            case .success(let response):
+                print("Success",response)
+                AppUtils.deleteReq()
+            case .failure(let error):
+                switch error{
+                case .BackEndError(let msg):
+                    print(msg)
+                case .Non200StatusCodeError(let val):
+                    print("Error Code: \(val.status) - \(val.message)")
+                case .UnParsableError:
+                    print("Error \(error)")
+                case .NoNetworkError:
+                    print("No network")
+                }
+            }
+        }
+    }
+    
 }

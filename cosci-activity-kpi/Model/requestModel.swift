@@ -101,7 +101,6 @@ struct requestReqTeacherDataModel : Codable {
 }
 
 struct requestCreateReqTeacherDataModel : Codable {
-    
     var id_event : String?
     var start_date : String?
     var end_date : String?
@@ -129,6 +128,7 @@ struct resCreateReqTeacherDataModel : Codable {
     let status_request : String?
     let type_request : String?
     let permissions_request : String?
+    
 }
 
 struct ResponseRequestTeacherModel: Codable {

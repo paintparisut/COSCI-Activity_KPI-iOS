@@ -73,3 +73,13 @@ struct resquestChangeStudentModel: Codable {
     var confirmpassword: String?
 }
 
+struct resquestDeleteReq: Codable {
+    var _id: String?
+}
+
+struct responseDeleteReq: Codable {
+    let result: String
+    let message: String
+    let data:resDataModel
+}
+
