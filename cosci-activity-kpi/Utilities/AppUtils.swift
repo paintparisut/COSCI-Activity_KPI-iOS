@@ -104,8 +104,8 @@ struct AppUtils {
     static func getStudentEventTimeStamp() -> String? {
            return UserDefaults.standard.value(forKey: Constants.AppConstants.STUDENT_EVENT_POSTEDTIMESTAMP) as? String
     }
-    static func getStudentEventImgList() -> String? {
-           return UserDefaults.standard.value(forKey: Constants.AppConstants.STUDENT_EVENT_IMGLIST) as? String
+    static func getStudentEventImgList() -> [String]? {
+           return UserDefaults.standard.value(forKey: Constants.AppConstants.STUDENT_EVENT_IMGLIST) as? [String]
     }
     
     static func deleteEventStudent() {
