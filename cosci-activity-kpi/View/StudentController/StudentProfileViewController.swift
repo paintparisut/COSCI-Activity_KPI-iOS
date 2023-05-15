@@ -23,6 +23,7 @@ class StudentProfileViewController: UIViewController {
 
     @IBAction func logoutButton(_ sender: Any) {
         AppUtils.eraseAllStudentData()
+        
     }
     
 

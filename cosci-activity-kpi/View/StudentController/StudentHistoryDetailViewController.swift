@@ -21,7 +21,7 @@ class StudentHistoryDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         reqEventNameLB.text =  AppUtils.getReqEventName()
-        reqEventStudentnameLB.text = "ผู้ยื่นตำร้อง: \(AppUtils.getStudentName()!)"
+        reqEventStudentnameLB.text = "ผู้ยื่นตำร้อง: \(AppUtils.getStudentName() ?? AppUtils.getTeacherName()!)"
         reqEventStatusLB.text = "สถานะ: \(AppUtils.getReqEventStatusReq()!)"
         reqEventTypeLB.text = AppUtils.getReqEventType()!
         reqEventHourLB.text = "ได้รับ: \(AppUtils.getReqEventHour()!) ชั่วโมง"
