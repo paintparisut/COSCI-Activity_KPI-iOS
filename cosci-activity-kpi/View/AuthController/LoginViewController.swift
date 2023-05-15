@@ -81,6 +81,7 @@ class LoginViewController: UIViewController {
               switch result {
               case .success(let response):
                   print("Success",response)
+                  print((response.major!) + " " + response.teacher!)
                   AppUtils.saveStudentID(id: response._id ?? "")
                   AppUtils.saveStudentImg(img: response.img_user ?? "")
                   AppUtils.saveStudentName(name: response.name ?? "")

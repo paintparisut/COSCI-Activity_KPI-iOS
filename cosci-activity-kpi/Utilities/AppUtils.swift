@@ -145,6 +145,11 @@ struct AppUtils {
     static func saveReqEventType(type:String) {
         UserDefaults.standard.setValue(type, forKeyPath: Constants.AppConstants.REQ_EVENT_TYPE)
     }
+    
+    static func saveReqEventImgUpload(type:[String]) {
+        UserDefaults.standard.setValue(type, forKeyPath: Constants.AppConstants.REQ_EVENT_IMGUPLOAD)
+    }
+    
     static func saveReqEventHour(hour:String) {
         UserDefaults.standard.setValue(hour, forKeyPath: Constants.AppConstants.REQ_EVENT_HOUR)
     }
@@ -173,6 +178,9 @@ struct AppUtils {
     static func getReqEventTime() -> String? {
            return UserDefaults.standard.value(forKey: Constants.AppConstants.REQ_EVENT_TIME) as? String
     }
+    static func getReqEventImgUpload() -> [String]? {
+           return UserDefaults.standard.value(forKey: Constants.AppConstants.REQ_EVENT_IMGUPLOAD) as? [String]
+    }
 
     static func deleteReq() {
         UserDefaults.standard.removeObject(forKey: Constants.AppConstants.REQ_EVENT_ID)
@@ -182,6 +190,7 @@ struct AppUtils {
         UserDefaults.standard.removeObject(forKey: Constants.AppConstants.REQ_EVENT_TYPE)
         UserDefaults.standard.removeObject(forKey: Constants.AppConstants.REQ_EVENT_HOUR)
         UserDefaults.standard.removeObject(forKey: Constants.AppConstants.REQ_EVENT_TIME)
+        UserDefaults.standard.removeObject(forKey: Constants.AppConstants.REQ_EVENT_IMGUPLOAD)
     }
     
     //OTP

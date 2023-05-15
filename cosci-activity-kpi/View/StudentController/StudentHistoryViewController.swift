@@ -53,6 +53,7 @@ class StudentHistoryViewController: UIViewController,UITableViewDelegate,UITable
                AppUtils.saveReqEventStatusReq(name: data[cell.tag].status_request ?? "")
                AppUtils.saveReqEventTime(time: data[cell.tag].date_request ?? "")
                AppUtils.saveReqEventType(type: data[cell.tag].event_type ?? "")
+               AppUtils.saveReqEventImgUpload(type: data[cell.tag].uploaded_img ?? [""])
                
                detailReqPage()
            }

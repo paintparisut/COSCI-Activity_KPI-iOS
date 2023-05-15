@@ -68,7 +68,10 @@
 		2D26687E29EDAF3B00FD5C2A /* ConstantsInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D26687C29EDAF3B00FD5C2A /* ConstantsInterface.swift */; };
 		2D26687F29EDAF3B00FD5C2A /* ConstantsInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D26687C29EDAF3B00FD5C2A /* ConstantsInterface.swift */; };
 		2D50241E29F4A0B800D9A310 /* CustomShadowCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D50241D29F4A0B800D9A310 /* CustomShadowCard.swift */; };
-		2D8480542A1230F600FF0CF3 /* SelectImageColCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8480532A1230F600FF0CF3 /* SelectImageColCell.swift */; };
+		2D8480562A123F3800FF0CF3 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8480552A123F3800FF0CF3 /* ImageCell.swift */; };
+		2D8480582A12587E00FF0CF3 /* ImageUploadListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8480572A12587E00FF0CF3 /* ImageUploadListCell.swift */; };
+		2D84805A2A127F1F00FF0CF3 /* ImageUploadSuccessCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8480592A127F1F00FF0CF3 /* ImageUploadSuccessCell.swift */; };
+		2D84805C2A12AA5A00FF0CF3 /* HistoryDetailViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D84805B2A12AA5A00FF0CF3 /* HistoryDetailViewCell.swift */; };
 		2DE6AE6129EF0B2D002C8965 /* CustomSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE6AE6029EF0B2D002C8965 /* CustomSegment.swift */; };
 		3FB760549DFF40AAEED13067 /* Pods_cosci_activity_kpi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B414E1EDE0E4AF2B09FA93AC /* Pods_cosci_activity_kpi.framework */; };
 		CB095D0529DF26C4007E456C /* ForgotStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB095D0429DF26C4007E456C /* ForgotStudentViewController.swift */; };
@@ -168,7 +171,10 @@
 		2D26684529EDADBE00FD5C2A /* Kanit-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-MediumItalic.ttf"; sourceTree = "<group>"; };
 		2D26687C29EDAF3B00FD5C2A /* ConstantsInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsInterface.swift; sourceTree = "<group>"; };
 		2D50241D29F4A0B800D9A310 /* CustomShadowCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShadowCard.swift; sourceTree = "<group>"; };
-		2D8480532A1230F600FF0CF3 /* SelectImageColCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectImageColCell.swift; sourceTree = "<group>"; };
+		2D8480552A123F3800FF0CF3 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		2D8480572A12587E00FF0CF3 /* ImageUploadListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploadListCell.swift; sourceTree = "<group>"; };
+		2D8480592A127F1F00FF0CF3 /* ImageUploadSuccessCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploadSuccessCell.swift; sourceTree = "<group>"; };
+		2D84805B2A12AA5A00FF0CF3 /* HistoryDetailViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDetailViewCell.swift; sourceTree = "<group>"; };
 		2DE6AE6029EF0B2D002C8965 /* CustomSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegment.swift; sourceTree = "<group>"; };
 		A013922E8BFA0CB27EB073F5 /* Pods-cosci-activity-kpi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cosci-activity-kpi.release.xcconfig"; path = "Target Support Files/Pods-cosci-activity-kpi/Pods-cosci-activity-kpi.release.xcconfig"; sourceTree = "<group>"; };
 		B414E1EDE0E4AF2B09FA93AC /* Pods_cosci_activity_kpi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cosci_activity_kpi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -305,6 +311,17 @@
 			path = CustomFonts;
 			sourceTree = "<group>";
 		};
+		2D858FBC2A12AF340001F183 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				2D8480552A123F3800FF0CF3 /* ImageCell.swift */,
+				2D8480592A127F1F00FF0CF3 /* ImageUploadSuccessCell.swift */,
+				2D8480572A12587E00FF0CF3 /* ImageUploadListCell.swift */,
+				2D84805B2A12AA5A00FF0CF3 /* HistoryDetailViewCell.swift */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
 		B13C86DA5A30A177312D4A13 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -354,7 +371,7 @@
 				CB96592329DC403F00FF309A /* StudentCheckHistoryViewController.swift */,
 				CB96592729DC40A000FF309A /* StudentProfileViewController.swift */,
 				CBAA505E29E753B60023B3C5 /* StudentChangePasswordViewController.swift */,
-				2D8480532A1230F600FF0CF3 /* SelectImageColCell.swift */,
+				2D858FBC2A12AF340001F183 /* CollectionViewCell */,
 			);
 			path = StudentController;
 			sourceTree = "<group>";
@@ -740,14 +757,15 @@
 				CBA858E729CF781E00D863CC /* Constants.swift in Sources */,
 				CBA858FC29CF791F00D863CC /* teacherRegisteredModel.swift in Sources */,
 				CBAA505F29E753B70023B3C5 /* StudentChangePasswordViewController.swift in Sources */,
+				2D84805A2A127F1F00FF0CF3 /* ImageUploadSuccessCell.swift in Sources */,
 				CB96592A29DC40C600FF309A /* TeacherHistoryViewController.swift in Sources */,
 				CBA858F429CF78D700D863CC /* otpModel.swift in Sources */,
-				2D8480542A1230F600FF0CF3 /* SelectImageColCell.swift in Sources */,
 				CBFBFF322A0FA49E002D20EA /* UploadedImageViewController.swift in Sources */,
 				CB96591429DC388400FF309A /* LoginViewController.swift in Sources */,
 				CBA858F629CF78E700D863CC /* requestModel.swift in Sources */,
 				CBCDFFB629ECB8E00072223C /* StudentHistoryDetailViewController.swift in Sources */,
 				CB095D0529DF26C4007E456C /* ForgotStudentViewController.swift in Sources */,
+				2D84805C2A12AA5A00FF0CF3 /* HistoryDetailViewCell.swift in Sources */,
 				CB96592C29DC410800FF309A /* TeachProfileViewController.swift in Sources */,
 				CB96592029DC3D5200FF309A /* TeacherKPIListViewController.swift in Sources */,
 				CBAA505D29E73CE40023B3C5 /* SelectRoleForgotPasswordViewController.swift in Sources */,
@@ -762,6 +780,7 @@
 				CBA858F029CF78B700D863CC /* eventModel.swift in Sources */,
 				CBAA506129E753CB0023B3C5 /* TeacherChangePasswordViewController.swift in Sources */,
 				CB96592429DC403F00FF309A /* StudentCheckHistoryViewController.swift in Sources */,
+				2D8480562A123F3800FF0CF3 /* ImageCell.swift in Sources */,
 				2D26687D29EDAF3B00FD5C2A /* ConstantsInterface.swift in Sources */,
 				CBA858AB29CF77CF00D863CC /* AppDelegate.swift in Sources */,
 				CB69851729EF4CEB00607285 /* FileViewModel.swift in Sources */,
@@ -774,6 +793,7 @@
 				CBCDFFB429ECB7AC0072223C /* StudentSentRequestViewController.swift in Sources */,
 				CBA858E929CF781E00D863CC /* ExtensionsHelper.swift in Sources */,
 				CBA858AD29CF77CF00D863CC /* SceneDelegate.swift in Sources */,
+				2D8480582A12587E00FF0CF3 /* ImageUploadListCell.swift in Sources */,
 				CBA2E1D729D5F3130078E722 /* Error.swift in Sources */,
 				CBCDFFB229ECAA860072223C /* StudentEventDetailViewController.swift in Sources */,
 				CBA2E1DB29D5F9AC0078E722 /* TacherUploadedViewController.swift in Sources */,

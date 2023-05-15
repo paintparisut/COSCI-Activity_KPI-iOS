@@ -6,60 +6,69 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Kanit-Regular.ttf">
+            <string>Kanit-Regular</string>
+        </array>
+        <array key="Kanit-SemiBold.ttf">
+            <string>Kanit-SemiBold</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="historycell" rowHeight="170" id="KGk-i7-Jjw" customClass="HistoryTableViewCell" customModule="cosci_activity_kpi" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="368" height="170"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="historycell" rowHeight="129" id="KGk-i7-Jjw" customClass="HistoryTableViewCell" customModule="cosci_activity_kpi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="368" height="129"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="368" height="170"/>
+                <rect key="frame" x="0.0" y="0.0" width="368" height="129"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ชื่อกิจกรรม" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9Z-ii-0fE">
-                        <rect key="frame" x="14" y="14" width="78" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="ชื่อกิจกรรม" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9Z-ii-0fE">
+                        <rect key="frame" x="25" y="15" width="318" height="24"/>
+                        <fontDescription key="fontDescription" name="Kanit-SemiBold" family="Kanit" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ประเภท" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MrT-0c-DZ9">
-                        <rect key="frame" x="14" y="49" width="55" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="สถานะ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVW-wp-bSz">
-                        <rect key="frame" x="14" y="84" width="47" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="เวลา" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9SH-wK-Why">
-                        <rect key="frame" x="14" y="119" width="33" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Pn-cV-ZOI">
+                        <rect key="frame" x="24.999999999999996" y="54" width="57.666666666666657" height="24"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="สถานะ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVW-wp-bSz">
+                                <rect key="frame" x="8" y="0.0" width="41.666666666666664" height="24"/>
+                                <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="0.33060844370860926" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="TVW-wp-bSz" secondAttribute="bottom" constant="5" id="BUd-cg-DVC"/>
+                            <constraint firstAttribute="trailing" secondItem="TVW-wp-bSz" secondAttribute="trailing" constant="8" id="R6u-Hn-Nis"/>
+                            <constraint firstItem="TVW-wp-bSz" firstAttribute="leading" secondItem="5Pn-cV-ZOI" secondAttribute="leading" constant="8" id="RBE-uL-Pmu"/>
+                            <constraint firstItem="TVW-wp-bSz" firstAttribute="top" secondItem="5Pn-cV-ZOI" secondAttribute="top" constant="5" id="pue-89-Qry"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="MrT-0c-DZ9" firstAttribute="top" secondItem="c9Z-ii-0fE" secondAttribute="bottom" constant="14" id="5Z3-ot-hsZ"/>
-                    <constraint firstItem="TVW-wp-bSz" firstAttribute="top" secondItem="MrT-0c-DZ9" secondAttribute="bottom" constant="14" id="Ib9-tA-BEq"/>
-                    <constraint firstItem="9SH-wK-Why" firstAttribute="leading" secondItem="TVW-wp-bSz" secondAttribute="leading" id="JB4-FI-2uE"/>
-                    <constraint firstItem="c9Z-ii-0fE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="MUs-kY-VFu"/>
-                    <constraint firstItem="TVW-wp-bSz" firstAttribute="leading" secondItem="MrT-0c-DZ9" secondAttribute="leading" id="PvF-L6-mYW"/>
-                    <constraint firstItem="MrT-0c-DZ9" firstAttribute="leading" secondItem="c9Z-ii-0fE" secondAttribute="leading" id="SpO-Lb-cKJ"/>
-                    <constraint firstItem="9SH-wK-Why" firstAttribute="top" secondItem="TVW-wp-bSz" secondAttribute="bottom" constant="14" id="c5e-wA-rON"/>
-                    <constraint firstItem="c9Z-ii-0fE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="fd0-3r-rF2"/>
+                    <constraint firstItem="5Pn-cV-ZOI" firstAttribute="top" secondItem="c9Z-ii-0fE" secondAttribute="bottom" constant="15" id="NbV-kh-Iha"/>
+                    <constraint firstItem="c9Z-ii-0fE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="QQ7-ve-0cw"/>
+                    <constraint firstAttribute="bottom" secondItem="5Pn-cV-ZOI" secondAttribute="bottom" constant="15" id="SQu-hj-ObC"/>
+                    <constraint firstItem="c9Z-ii-0fE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="aUM-bC-SAQ"/>
+                    <constraint firstAttribute="trailing" secondItem="c9Z-ii-0fE" secondAttribute="trailing" constant="25" id="cbL-Kw-g2L"/>
+                    <constraint firstItem="5Pn-cV-ZOI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="j0W-Gt-JhC"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="reqEventNameLB" destination="c9Z-ii-0fE" id="i5r-PV-gzk"/>
                 <outlet property="reqEventStatusLB" destination="TVW-wp-bSz" id="9XI-cf-UzU"/>
-                <outlet property="reqEventType" destination="MrT-0c-DZ9" id="Mac-9P-Kpi"/>
-                <outlet property="reqTimeLB" destination="9SH-wK-Why" id="oys-gT-aSL"/>
             </connections>
-            <point key="canvasLocation" x="51.908396946564885" y="64.08450704225352"/>
+            <point key="canvasLocation" x="51.908396946564885" y="48.943661971830991"/>
         </tableViewCell>
     </objects>
 </document>

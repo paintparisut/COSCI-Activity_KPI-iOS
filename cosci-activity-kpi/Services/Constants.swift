@@ -114,7 +114,7 @@ struct Constants {
         static let REQ_EVENT_TYPE = "RequestEventType"
         static let REQ_EVENT_HOUR = "RequestEventHour"
         static let REQ_EVENT_TIME = "RequestEventTime"
-        
+        static let REQ_EVENT_IMGUPLOAD = "RequestEventImgUpload"
         static let UPLOADED_IMG_REQ = "UploadImageRequest"
 
     }
