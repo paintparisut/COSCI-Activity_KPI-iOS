@@ -12,13 +12,23 @@ class StudentSentRequestViewController: UIViewController{
     var imagePicker = UIImagePickerController()
     var data: Data?
     
+    @IBOutlet weak var StudentName: CustomTextField!
+    @IBOutlet weak var StudentId: CustomTextField!
+    @IBOutlet weak var EventCatagories: UILabel!
+    @IBOutlet weak var EventTimeRecive: UILabel!
+    @IBOutlet weak var EventImage: UIImageView!
+    @IBOutlet weak var EventTitle: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-//        AppUtils.getImgList() //ลิสรูปภาพที่ใช้โชว์
+        self.EventTimeRecive.text = "\(AppUtils.getStudentEventHour() ?? 0) ชั่วโมง"
+        self.EventTitle.text = AppUtils.getStudentEventName()
+        self.EventImage.image = UIImage(url: URL(string: Constants.URL_BASE+"/"+(AppUtils.getStudentEventImg() ?? "public/img/imgactivity.png")))
+        self.EventCatagories.text = AppUtils.getStudentEventType()
+        self.StudentName.text = AppUtils.getStudentName()
+        self.StudentId.text = AppUtils.getStudentStudentID()
     }
 
     @IBAction func backButton(_ sender: Any) {
-        AppUtils.deleteEventStudent()
         self.dismiss(animated: false, completion: nil)
     }
     

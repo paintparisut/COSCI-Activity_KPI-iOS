@@ -20,6 +20,7 @@ class StudentEventDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(AppUtils.getStudentEventImgList())
         self.navigationController?.interactivePopGestureRecognizer?.delegate = nil
             self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
         eventImg.image = UIImage(url: URL(string: Constants.URL_BASE+"/"+(AppUtils.getStudentEventImg() ?? "public/img/imgactivity.png")))

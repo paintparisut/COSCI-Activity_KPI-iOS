@@ -68,6 +68,7 @@
 		2D26687E29EDAF3B00FD5C2A /* ConstantsInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D26687C29EDAF3B00FD5C2A /* ConstantsInterface.swift */; };
 		2D26687F29EDAF3B00FD5C2A /* ConstantsInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D26687C29EDAF3B00FD5C2A /* ConstantsInterface.swift */; };
 		2D50241E29F4A0B800D9A310 /* CustomShadowCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D50241D29F4A0B800D9A310 /* CustomShadowCard.swift */; };
+		2D8480542A1230F600FF0CF3 /* SelectImageColCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8480532A1230F600FF0CF3 /* SelectImageColCell.swift */; };
 		2DE6AE6129EF0B2D002C8965 /* CustomSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE6AE6029EF0B2D002C8965 /* CustomSegment.swift */; };
 		3FB760549DFF40AAEED13067 /* Pods_cosci_activity_kpi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B414E1EDE0E4AF2B09FA93AC /* Pods_cosci_activity_kpi.framework */; };
 		CB095D0529DF26C4007E456C /* ForgotStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB095D0429DF26C4007E456C /* ForgotStudentViewController.swift */; };
@@ -167,6 +168,7 @@
 		2D26684529EDADBE00FD5C2A /* Kanit-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-MediumItalic.ttf"; sourceTree = "<group>"; };
 		2D26687C29EDAF3B00FD5C2A /* ConstantsInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsInterface.swift; sourceTree = "<group>"; };
 		2D50241D29F4A0B800D9A310 /* CustomShadowCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShadowCard.swift; sourceTree = "<group>"; };
+		2D8480532A1230F600FF0CF3 /* SelectImageColCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectImageColCell.swift; sourceTree = "<group>"; };
 		2DE6AE6029EF0B2D002C8965 /* CustomSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegment.swift; sourceTree = "<group>"; };
 		A013922E8BFA0CB27EB073F5 /* Pods-cosci-activity-kpi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cosci-activity-kpi.release.xcconfig"; path = "Target Support Files/Pods-cosci-activity-kpi/Pods-cosci-activity-kpi.release.xcconfig"; sourceTree = "<group>"; };
 		B414E1EDE0E4AF2B09FA93AC /* Pods_cosci_activity_kpi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cosci_activity_kpi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -352,6 +354,7 @@
 				CB96592329DC403F00FF309A /* StudentCheckHistoryViewController.swift */,
 				CB96592729DC40A000FF309A /* StudentProfileViewController.swift */,
 				CBAA505E29E753B60023B3C5 /* StudentChangePasswordViewController.swift */,
+				2D8480532A1230F600FF0CF3 /* SelectImageColCell.swift */,
 			);
 			path = StudentController;
 			sourceTree = "<group>";
@@ -739,6 +742,7 @@
 				CBAA505F29E753B70023B3C5 /* StudentChangePasswordViewController.swift in Sources */,
 				CB96592A29DC40C600FF309A /* TeacherHistoryViewController.swift in Sources */,
 				CBA858F429CF78D700D863CC /* otpModel.swift in Sources */,
+				2D8480542A1230F600FF0CF3 /* SelectImageColCell.swift in Sources */,
 				CBFBFF322A0FA49E002D20EA /* UploadedImageViewController.swift in Sources */,
 				CB96591429DC388400FF309A /* LoginViewController.swift in Sources */,
 				CBA858F629CF78E700D863CC /* requestModel.swift in Sources */,

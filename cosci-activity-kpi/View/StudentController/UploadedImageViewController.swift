@@ -10,14 +10,14 @@ import PhotosUI
 
 class UploadedImageViewController: UIViewController, PHPickerViewControllerDelegate{
 
+    @IBOutlet weak var collectionView: UICollectionView!
     var data = [UIImage]() //แสดงรูปอัพโหลด
     var imgselected = [String]() // ใส่รูปทีเลือกแล้ว เก็บรูปที่เลือก
     var selectimage = AppUtils.getStudentEventImgList()//show selectรูปภาพ
-
+    var selectionIndex = [-1]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
     }
     
 
@@ -95,6 +95,38 @@ class UploadedImageViewController: UIViewController, PHPickerViewControllerDeleg
                 }
             }
         }
+    }
+    
+}
+
+
+extension UploadedImageViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        print(selectimage)
+        return selectimage?.count ?? 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SelectImageColCell", for: indexPath) as! SelectImageColCell
+        cell.ImageShow.image = UIImage(named: "CosciBD")
+        if selectionIndex.contains(indexPath.item) {
+            cell.layer.borderWidth = 2
+
+        } else {
+            cell.layer.borderWidth = 0
+        }
+        
+        cell.layoutIfNeeded()
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 10
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 10
     }
     
 }

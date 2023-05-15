@@ -56,7 +56,7 @@ class StudentEventListViewController: UIViewController,UITableViewDelegate,UITab
                AppUtils.saveStudentEventHour(hour: eventlist[cell.tag].activity_hour ?? 0)
                AppUtils.saveStudentEventStart(time: eventlist[cell.tag].start_date ?? "")
                AppUtils.saveStudentEventEnd(time: eventlist[cell.tag].end_date ?? "")
-               AppUtils.saveStudentEventImglist(imgList: eventlist[cell.tag].event_img_list ?? [])
+               AppUtils.saveStudentEventImglist(imgList: eventlist[cell.tag].event_img_list ?? ["test"])
                AppUtils.saveStudentEventTimeStamp(time: eventlist[cell.tag].posted_timestamp ?? "")
                detailEventPage() 
            }
@@ -88,7 +88,7 @@ class StudentEventListViewController: UIViewController,UITableViewDelegate,UITab
 
     private func pullrefresh() {
         refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
-          refreshControl.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
+        refreshControl.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
     }
 
     @objc func refresh(_ sender: AnyObject) {

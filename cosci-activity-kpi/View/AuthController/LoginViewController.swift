@@ -46,8 +46,8 @@ class LoginViewController: UIViewController {
     func loginSegment() {
         if selectRoleSegment.selectedSegmentIndex == 0 {
             self.loginLabel.text = "บัวศรีไอดี"
-            usernameTF.text = ""
-            passwordTF.text = ""
+            usernameTF.text = "co631010046"
+            passwordTF.text = "12341234"
         }
         else {
             self.loginLabel.text = "ชื่อผู้ใช้งาน"
