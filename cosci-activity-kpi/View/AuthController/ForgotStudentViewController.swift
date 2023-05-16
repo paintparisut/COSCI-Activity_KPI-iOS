@@ -11,9 +11,10 @@ class ForgotStudentViewController: UIViewController {
 
     @IBOutlet weak var useridTF: UITextField!
     
+    @IBOutlet weak var ErrorTag: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.ErrorTag.isHidden = true
     }
     
 
@@ -45,6 +46,7 @@ class ForgotStudentViewController: UIViewController {
                     print(msg)
                 case .Non200StatusCodeError(let val):
                     print("Error Code: \(val.status) - \(val.message)")
+                    self.ErrorTag.isHidden = false
                 case .UnParsableError:
                     print("Error \(error)")
                 case .NoNetworkError:

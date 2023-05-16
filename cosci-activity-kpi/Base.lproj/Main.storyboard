@@ -38,6 +38,7 @@
                                 </state>
                                 <connections>
                                     <action selector="backButton:" destination="ygY-VC-GjQ" eventType="touchUpInside" id="3VO-mF-8fy"/>
+                                    <action selector="cancleButton:" destination="ygY-VC-GjQ" eventType="touchUpInside" id="c1G-K6-lNJ"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.44999998807907104" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="building" translatesAutoresizingMaskIntoConstraints="NO" id="ZOU-zf-XVc">
@@ -97,7 +98,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b96-mn-WE0">
                                                 <rect key="frame" x="35" y="5" width="218" height="25"/>
                                                 <attributedString key="attributedText">
-                                                    <fragment content="กรอกรหัสประจำตัวไม่ถูกต้อง">
+                                                    <fragment content="กรอกข้อมูลไม่ถูกต้อง">
                                                         <attributes>
                                                             <color key="NSColor" systemColor="systemRedColor"/>
                                                             <font key="NSFont" size="14" name="Kanit-Medium"/>
@@ -164,6 +165,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="iQE-8S-ckv"/>
                     <connections>
+                        <outlet property="ErrorTag" destination="Nim-CU-Ao8" id="ITV-1p-wrA"/>
                         <outlet property="useridTF" destination="oFr-IA-Ep4" id="CIT-my-yBd"/>
                     </connections>
                 </viewController>
@@ -179,13 +181,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6w-hS-JG8">
-                                <rect key="frame" x="139" y="282" width="101" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6w-hS-JG8">
+                                <rect key="frame" x="140" y="283" width="101" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="STUDENT">
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="STUDENT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="ygY-VC-GjQ" kind="show" animates="NO" id="c4Q-Y3-1jY"/>
                                 </connections>
@@ -201,18 +204,37 @@
                                     <segue destination="bRo-ez-xTs" kind="show" animates="NO" id="00r-dz-Djj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKV-8g-kqP">
-                                <rect key="frame" x="16" y="59" width="62" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Back"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eMG-fZ-yEQ">
+                                <rect key="frame" x="20" y="77" width="66" height="39"/>
+                                <fontDescription key="fontDescription" name="Kanit-Medium" family="Kanit" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="ย้อนกลับ">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
-                                    <action selector="backButton:" destination="qgP-WI-PiU" eventType="touchUpInside" id="QCc-UF-59h"/>
+                                    <action selector="backButton:" destination="qgP-WI-PiU" eventType="touchUpInside" id="gLe-YD-u3R"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KhL-3F-YbH">
+                                <rect key="frame" x="113" y="177" width="152" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="เลือกประเภทผู้ใช้งาน">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="Kanit-SemiBold"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="G0m-Rc-4lB"/>
                         <color key="backgroundColor" red="0.0" green="0.53333333333333333" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eMG-fZ-yEQ" firstAttribute="leading" secondItem="G0m-Rc-4lB" secondAttribute="leading" constant="20" id="eof-So-o5P"/>
+                            <constraint firstItem="eMG-fZ-yEQ" firstAttribute="top" secondItem="G0m-Rc-4lB" secondAttribute="top" constant="30" id="sPl-rR-bHR"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ocu-j6-VtA"/>
                 </viewController>
@@ -248,7 +270,7 @@
                                         </constraints>
                                         <color key="textColor" red="0.27450980392156865" green="0.27450980392156865" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" textContentType="password"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="HSd-bU-2QR" customClass="CustomTextField" customModule="cosci_activity_kpi" customModuleProvider="target">
                                         <rect key="frame" x="32" y="94.666666666666686" width="261" height="45"/>
@@ -2484,10 +2506,6 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <imageReference key="image" image="chevron.backward" catalog="system" symbolScale="large"/>
                                 </state>
-                                <connections>
-                                    <action selector="backButton:" destination="iAi-4V-7yc" eventType="touchUpInside" id="4ZI-e7-PZ8"/>
-                                    <action selector="backButton:" destination="3Ba-wQ-8oc" eventType="touchUpInside" id="DiU-Dq-ijR"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Vo2-bg-glS"/>
@@ -2527,10 +2545,10 @@
                                 <rect key="frame" x="25" y="147" width="325" height="561"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3gm-Jx-fwk">
-                                        <rect key="frame" x="0.0" y="0.0" width="325" height="806.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="325" height="814"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ydi-WJ-Vnb" customClass="CustomTextField" customModule="cosci_activity_kpi" customModuleProvider="target">
-                                                <rect key="frame" x="32" y="101.66666666666666" width="261" height="40"/>
+                                                <rect key="frame" x="32" y="109" width="261" height="40"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="rek-FE-CyY"/>
@@ -2539,13 +2557,13 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="สมัครสมาชิก" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oBP-iI-Ijm">
-                                                <rect key="frame" x="32" y="35" width="261" height="25.666666666666671"/>
+                                                <rect key="frame" x="32" y="35" width="261" height="33"/>
                                                 <fontDescription key="fontDescription" name="Kanit-Medium" family="Kanit" pointSize="22"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GK4-JW-2Gd" customClass="CustomButton" customModule="cosci_activity_kpi" customModuleProvider="target">
-                                                <rect key="frame" x="32" y="748.66666666666663" width="261" height="38"/>
+                                                <rect key="frame" x="32" y="756" width="261" height="38"/>
                                                 <color key="backgroundColor" red="0.0" green="0.48627450979999998" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="38" id="7I6-Hn-lkz"/>
@@ -2559,13 +2577,13 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="รหัสประจำตัวนิสิต" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gB-Op-xR6" customClass="CustomLable" customModule="cosci_activity_kpi" customModuleProvider="target">
-                                                <rect key="frame" x="32" y="75.666666666666657" width="261" height="21"/>
+                                                <rect key="frame" x="32" y="83" width="261" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1JZ-VC-efF" customClass="CustomTextField" customModule="cosci_activity_kpi" customModuleProvider="target">
-                                                <rect key="frame" x="32" y="177.66666666666669" width="261" height="40"/>
+                                                <rect key="frame" x="32" y="185" width="261" height="40"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="nas-Sp-CBy"/>
@@ -2574,13 +2592,13 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ชื่อ-สกุล" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gas-Pf-Ah9" customClass="CustomLable" customModule="cosci_activity_kpi" customModuleProvider="target">
-                                                <rect key="frame" x="32" y="151.66666666666669" width="261" height="21"/>
+                                                <rect key="frame" x="32" y="159" width="261" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GTO-T2-fUY" customClass="CustomTextField" customModule="cosci_activity_kpi" customModuleProvider="target">
-                                                <rect key="frame" x="32" y="253.66666666666669" width="261" height="40"/>
+                                                <rect key="frame" x="32" y="261" width="261" height="40"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="J11-8N-GSj"/>
@@ -2589,13 +2607,13 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="สาขาวิชา" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N4z-tJ-7mi" customClass="CustomLable" customModule="cosci_activity_kpi" customModuleProvider="target">
-                                                <rect key="frame" x="32" y="227.66666666666669" width="261" height="21"/>
+                                                <rect key="frame" x="32" y="235" width="261" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="70W-U2-bB8" customClass="CustomTextField" customModule="cosci_activity_kpi" customModuleProvider="target">
-                                                <rect key="frame" x="32" y="329.66666666666669" width="261" height="40"/>
+                                                <rect key="frame" x="32" y="337" width="261" height="40"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="gZS-JS-SCO"/>
@@ -2604,13 +2622,13 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="อาจารย์ที่ปรึกษา" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jPc-pt-OAJ" customClass="CustomLable" customModule="cosci_activity_kpi" customModuleProvider="target">
-                                                <rect key="frame" x="32" y="303.66666666666669" width="261" height="21"/>
+                                                <rect key="frame" x="32" y="311" width="261" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PJM-Zi-JK0" customClass="CustomTextField" customModule="cosci_activity_kpi" customModuleProvider="target">
-                                                <rect key="frame" x="32" y="405.66666666666663" width="261" height="40"/>
+                                                <rect key="frame" x="32" y="413" width="261" height="40"/>
                                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="lPy-o8-N6r"/>
@@ -2619,13 +2637,13 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8c-0I-qdK" customClass="CustomLable" customModule="cosci_activity_kpi" customModuleProvider="target">
-                                                <rect key="frame" x="32" y="379.66666666666663" width="261" height="21"/>
+                                                <rect key="frame" x="32" y="387" width="261" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Zi-9N-Hza" customClass="CustomTextField" customModule="cosci_activity_kpi" customModuleProvider="target">
-                                                <rect key="frame" x="32" y="481.66666666666663" width="261" height="40"/>
+                                                <rect key="frame" x="32" y="489" width="261" height="40"/>
                                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="PPQ-Ir-iUm"/>
@@ -2634,13 +2652,13 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="เบอร์โทรศัพท์" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="onx-M6-0Bm" customClass="CustomLable" customModule="cosci_activity_kpi" customModuleProvider="target">
-                                                <rect key="frame" x="32" y="455.66666666666663" width="261" height="21"/>
+                                                <rect key="frame" x="32" y="463" width="261" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Diz-MF-Fhz" customClass="CustomTextField" customModule="cosci_activity_kpi" customModuleProvider="target">
-                                                <rect key="frame" x="32" y="557.66666666666663" width="261" height="40"/>
+                                                <rect key="frame" x="32" y="565" width="261" height="40"/>
                                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="vBt-Q4-PsC"/>
@@ -2649,13 +2667,13 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="รหัสผ่าน" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u69-gm-WqD" customClass="CustomLable" customModule="cosci_activity_kpi" customModuleProvider="target">
-                                                <rect key="frame" x="32" y="531.66666666666663" width="261" height="21"/>
+                                                <rect key="frame" x="32" y="539" width="261" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fgd-wt-zBX" customClass="CustomTextField" customModule="cosci_activity_kpi" customModuleProvider="target">
-                                                <rect key="frame" x="32" y="633.66666666666663" width="261" height="40"/>
+                                                <rect key="frame" x="32" y="641" width="261" height="40"/>
                                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="k2d-p4-Pxw"/>
@@ -2664,13 +2682,13 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ยืนยันรหัสผ่าน" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zGn-Sb-5sI" customClass="CustomLable" customModule="cosci_activity_kpi" customModuleProvider="target">
-                                                <rect key="frame" x="32" y="607.66666666666663" width="261" height="21"/>
+                                                <rect key="frame" x="32" y="615" width="261" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h4N-iJ-8Q7">
-                                                <rect key="frame" x="32" y="683.66666666666663" width="261" height="35"/>
+                                                <rect key="frame" x="32" y="691" width="261" height="35"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exclamationmark.triangle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="kIL-JD-uVJ">
                                                         <rect key="frame" x="5" y="7.9999999999999982" width="25" height="19.333333333333329"/>
@@ -2794,7 +2812,7 @@
                                 </userDefinedRuntimeAttributes>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJQ-zY-doi">
-                                <rect key="frame" x="25" y="62" width="90" height="24"/>
+                                <rect key="frame" x="25" y="62" width="90" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="UfR-Ck-aGD"/>
                                 </constraints>
@@ -2849,7 +2867,9 @@
                                 <rect key="frame" x="146" y="282" width="101" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="STUDENT"/>
+                                <buttonConfiguration key="configuration" style="plain" title="STUDENT">
+                                    <color key="baseForegroundColor" red="0.99019607840000001" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="iAi-4V-7yc" kind="show" animates="NO" id="whB-IU-G0j"/>
                                 </connections>
@@ -2858,23 +2878,31 @@
                                 <rect key="frame" x="147" y="409" width="99" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="TEACHER"/>
+                                <buttonConfiguration key="configuration" style="plain" title="TEACHER">
+                                    <color key="baseForegroundColor" red="0.99019607840000001" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="odF-1N-GfI"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tEO-e6-MTa">
-                                <rect key="frame" x="23" y="59" width="62" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Back"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xdf-1R-gAk">
+                                <rect key="frame" x="25" y="77" width="66" height="39"/>
+                                <fontDescription key="fontDescription" name="Kanit-Medium" family="Kanit" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="ย้อนกลับ">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
-                                    <action selector="backButton:" destination="SBb-Pe-HTU" eventType="touchUpInside" id="2M0-dO-53D"/>
+                                    <action selector="backButton:" destination="SBb-Pe-HTU" eventType="touchUpInside" id="3Q7-Se-b7d"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MV1-uy-B4p"/>
-                        <color key="backgroundColor" red="0.029036013409999999" green="0.4852471948" blue="0.71910524369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.231372565" green="0.52549022440000004" blue="0.76470589639999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Xdf-1R-gAk" firstAttribute="leading" secondItem="MV1-uy-B4p" secondAttribute="leading" constant="25" id="dwN-S7-8gV"/>
+                            <constraint firstItem="Xdf-1R-gAk" firstAttribute="top" secondItem="MV1-uy-B4p" secondAttribute="top" constant="30" id="to7-az-6T0"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Vk2-sc-B24"/>
                 </viewController>
@@ -2898,8 +2926,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="backButton:" destination="bRo-ez-xTs" eventType="touchUpInside" id="JOu-wg-Mc0"/>
-                                    <action selector="backButton:" destination="ygY-VC-GjQ" eventType="touchUpInside" id="Uxe-dj-XNH"/>
+                                    <action selector="backButton:" destination="bRo-ez-xTs" eventType="touchUpInside" id="Rpm-xi-asH"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.44999998807907104" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="building" translatesAutoresizingMaskIntoConstraints="NO" id="LTD-AG-h0x">
